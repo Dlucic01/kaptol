@@ -1,0 +1,1075 @@
+/* ============================
+   CSS RESET
+   ============================ */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+/* ============================
+   CUSTOM PROPERTIES
+   ============================ */
+:root {
+  /* Typography */
+  --text-xs: 14px;
+  --text-sm: 15px;
+  --text-base: 16px;
+  --text-price: 17px;
+  --text-item: 18px;
+  --text-h5: 20px;
+  --text-h4: 24px;
+  --text-h3: 28px;
+  --text-h2: 36px;
+  --text-h1: 42px;
+
+  /* Weights */
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+
+  /* Spacing */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+  --space-2xl: 48px;
+  --space-general: 56px;
+  --space-3xl: 64px;
+
+  --space-4xl: 72px;
+
+
+  /* Colors */
+  --color-bg: #1b395b;
+  --color-text: #fffabd;
+  --color-border: rgba(255, 250, 189, 0.85);
+  --color-border-alcohol: rgb(232, 234, 237, 0.85);
+  --color-border-cocktails: rgb(45, 10, 30, 0.85);
+  --color-border-food: rgb(45, 10, 30, 0.85);
+
+
+
+  --color-accent: #fffabd;
+
+  /* Category colors */
+  --bg-breakfast: #1b395b;
+  --bg-hot-beverages: #3b2208;
+  --bg-soft-drinks: #e84a2d;
+  --bg-food: #d68c45;
+  --bg-wine: #2d0a1e;
+  --bg-beer: #2d7a3e;
+  --bg-alcohol: #050505;
+  --bg-cocktails: #ffb7c5;
+  --bg-cinema: #1b395b;
+  --bg-footer: #1b395b;
+
+  --text-dark: #1b395b;
+  --text-food: #3b2208;
+  --text-cocktails: #2d0a1e;
+  --text-alcohol: #e8eaed;
+
+  /* Layout */
+  --max-width: 720px;
+}
+
+/* ============================
+   PHONE (≤600px)
+   ============================ */
+@media (max-width: 600px) {
+  :root {
+    --text-xs: 12px;
+    --text-sm: 13px;
+    --text-base: 14px;
+    --text-price: 14px;
+    --text-item: 16px;
+    --text-h5: 17px;
+    --text-h4: 19px;
+    --text-h3: 21px;
+    --text-h2: 36px;
+    --text-h1: 28px;
+
+    --space-xs: 3px;
+    --space-sm: 6px;
+    --space-md: 10px;
+    --space-lg: 14px;
+    --space-xl: 20px;
+    --space-2xl: 28px;
+  }
+}
+
+/* ============================
+   BASE
+   ============================ */
+html {
+  font-size: var(--text-base);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overscroll-behavior: none;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: auto;
+
+}
+
+body {
+  font-family: 'Futura', 'Twentieth Century', 'Century Gothic',
+    'Didact Gothic', 'Questrial', 'Jost',
+    'Segoe UI', 'Helvetica Neue', system-ui, sans-serif;
+  font-size: var(--text-base);
+  font-weight: var(--weight-regular);
+  line-height: 1.5;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--space-lg) var(--space-xl);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overscroll-behavior: none;
+  overflow-x: hidden;
+}
+
+
+
+main {
+  margin-bottom: 0;
+}
+
+
+
+
+/* ============================
+   TYPOGRAPHY
+   ============================ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: var(--weight-regular);
+  line-height: 1.2;
+  color: var(--color-text);
+  margin: var(--space-sm) 0 var(--space-sm);
+  margin-top: var(--space-3xl);
+}
+
+h1 {
+  font-size: var(--text-h1);
+  font-weight: var(--weight-semibold);
+  margin-top: var(--space-sm);
+  border-bottom: 2px solid var(--color-accent);
+  padding-bottom: var(--space-sm);
+  display: inline-block;
+}
+
+h2 {
+  font-size: var(--text-h2);
+  margin-top: var(--space-2xl);
+  padding: var(--space-sm) var(--space-md);
+  letter-spacing: 0.02em;
+  margin-bottom: -50px;
+}
+
+
+h2 {
+  border-bottom: 2px solid currentColor;
+  padding-bottom: var(--space-sm);
+  display: inline-block;
+  width: 100%;
+  position: relative;
+}
+
+h2 small {
+  position: absolute;
+  right: 0;
+  bottom: 4px;
+}
+
+h3 {
+  font-size: var(--text-h3);
+  font-weight: var(--weight-medium);
+  margin-top: var(--space-4xl);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  width: 100%;
+  position: relative;
+  display: inline-block;
+}
+
+h3 small {
+  position: absolute;
+  right: 0;
+  bottom: 4px;
+  text-transform: none;
+}
+
+h4 {
+  font-size: var(--text-h4);
+  font-weight: var(--weight-medium);
+  margin-top: var(--space-2xl);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+p,
+li,
+blockquote,
+address {
+  font-size: var(--text-base);
+  margin-bottom: var(--space-md);
+}
+
+strong,
+b {
+  font-weight: var(--weight-semibold);
+}
+
+small {
+  font-size: var(--text-xs);
+  opacity: 0.8;
+}
+
+/* ============================
+   HEADER
+   ============================ */
+header {
+  text-align: center;
+  border-bottom: 1px solid var(--color-border);
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  background: var(--color-bg);
+
+  /* Fixed positioning */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  /* High z-index to stay on top */
+
+  /* Padding with safe areas for PWA */
+  padding: 4px var(--space-xl) 0 var(--space-xl);
+  padding-top: env(safe-area-inset-top, 4px);
+  padding-left: env(safe-area-inset-left, var(--space-xl));
+  padding-right: env(safe-area-inset-right, var(--space-xl));
+
+  /* Performance */
+  will-change: transform;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+
+  /* Ensure it has a height */
+  min-height: 60px;
+  height: auto;
+
+  /* Prevent overflow */
+  overflow: hidden;
+}
+
+header .header-logo {
+  display: block;
+  margin: 0 auto var(--space-md);
+  height: auto;
+  max-width: 240px;
+  margin-bottom: var(--space-sm);
+
+}
+
+
+.header-drawer-trigger {
+  padding: 10px 0;
+  cursor: pointer;
+  width: 15%;
+  align-self: center !important;
+
+}
+
+#header-drawer-line {
+  width: 100%;
+  background-color: #fffabd;
+  height: 3px;
+  cursor: pointer;
+  align-self: center !important;
+
+}
+
+
+.header-drawer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out, opacity 0.3s ease-out;
+  width: 100%;
+}
+
+.header-drawer.open {
+  max-height: 650px;
+  opacity: 1;
+  transition: max-height 0.5s ease-in, opacity 0.3s ease-in;
+}
+
+
+
+.header-drawer>* {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: var(--space-md);
+  min-width: 50%;
+  padding: 0 var(--space-md);
+
+}
+
+/* Add border between the two columns */
+.header-drawer>*:first-child {
+  border-right: 1px solid #fffabd;
+}
+
+
+.header-drawer svg {}
+
+.header-drawer-left {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: var(--space-md);
+}
+
+.header-drawer-right {}
+
+.header-drawer-space-top {
+  height: 0;
+  transition: all 0.2s ease-out;
+
+}
+
+.header-drawer-space-bot {
+  height: 0;
+  transition: all 0.2s ease-out;
+
+
+}
+
+
+.header-drawer-space-expanded {
+  height: 24px;
+}
+
+
+
+
+
+.menu-item a {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* ============================
+   MAIN & FOOTER
+   ============================ */
+main {
+  flex: 1;
+}
+
+/* 
+footer {
+  margin-top: var(--space-2xl);
+  padding-top: var(--space-lg);
+  border-top: 1px solid var(--color-border);
+  font-size: var(--text-sm);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: var(--space-sm);
+  text-align: center;
+}
+
+footer p,
+footer small {
+  margin: 0;
+  font-size: var(--text-sm);
+}
+*/
+/* ============================
+   MENU LISTS
+   ============================ */
+dl {
+  margin: var(--space-lg) 0 0;
+}
+
+dt {
+  font-weight: var(--weight-regular);
+  font-size: var(--text-item);
+  margin-top: var(--space-md);
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  border-bottom: 1px solid var(--color-border);
+}
+
+dd {
+  margin-left: 0;
+  margin-bottom: var(--space-md);
+  font-size: var(--text-sm);
+  opacity: 0.9;
+  padding-top: var(--space-xs);
+}
+
+dt span.price {
+  font-weight: var(--weight-medium);
+  font-size: var(--text-price);
+  letter-spacing: 0.02em;
+  margin-left: var(--space-sm);
+  white-space: nowrap;
+}
+
+/* ============================
+   MISC
+   ============================ */
+blockquote {
+  margin: var(--space-lg) 0;
+  padding-left: var(--space-md);
+  border-left: 3px solid var(--color-accent);
+  font-style: italic;
+  opacity: 0.8;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background: var(--color-border);
+  margin: var(--space-xl) 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+::selection {
+  background: var(--color-accent);
+  color: var(--color-bg);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+/* ============================
+   CATEGORY SECTIONS
+   ============================ */
+#bar-info {
+  background-color: var(--bg-breakfast);
+  color: var(--color-text);
+  margin-bottom: 0 !important;
+  margin-top: 0 !important;
+  padding-top: 240px !important;
+}
+
+
+#breakfast {
+  background-color: var(--bg-breakfast);
+  color: var(--color-text);
+  margin-top: 0 !important;
+}
+
+#hot-beverages {
+  background-color: var(--bg-hot-beverages);
+  color: var(--color-text);
+}
+
+#soft-drinks {
+  background-color: var(--bg-soft-drinks);
+  color: var(--color-text);
+}
+
+#food {
+  background-color: var(--bg-food);
+  color: var(--text-food);
+}
+
+#wine {
+  background-color: var(--bg-wine);
+  color: var(--color-text);
+}
+
+#beer {
+  background-color: var(--bg-beer);
+  color: var(--color-text);
+}
+
+#alcohol {
+  background-color: var(--bg-alcohol);
+  color: var(--text-alcohol);
+}
+
+#alcohol dt {
+  border-bottom: 1px solid var(--color-border-alcohol);
+}
+
+#cocktails {
+  background-color: var(--bg-cocktails);
+  color: var(--text-cocktails);
+}
+
+#cocktails dt {
+  border-bottom: 1px solid var(--color-border-cocktails);
+}
+
+
+#food dt {
+  border-bottom: 1px solid var(--color-border-food);
+}
+
+#cinema {
+  background-color: var(--bg-cinema);
+  color: var(--color-text);
+}
+
+#footer {
+  background-color: var(--bg-footer);
+  color: var(--color-text);
+}
+
+#bar-info,
+#breakfast,
+#hot-beverages,
+#soft-drinks,
+#food,
+#wine,
+#beer,
+#alcohol,
+#cocktails,
+#cinema {
+  padding:
+    /*var(--space-3xl)*/
+    88px var(--space-general) var(--space-md) var(--space-general);
+  margin: 0;
+  border-radius: 0px;
+}
+
+#cinema {
+  margin-bottom: 0;
+}
+
+/* Category headings — inherit section color */
+#breakfast h2,
+#hot-beverages h2,
+#soft-drinks h2,
+#wine h2,
+#beer h2,
+#footer h2,
+#cinema h2 {
+  color: var(--color-text);
+}
+
+#food h2 {
+  color: var(--text-food);
+}
+
+#alcohol h2 {
+  color: var(--text-alcohol);
+}
+
+#cocktails h2 {
+  color: var(--text-cocktails);
+}
+
+#breakfast h2,
+#hot-beverages h2,
+#soft-drinks h2,
+#food h2,
+#wine h2,
+#beer h2,
+#alcohol h2,
+#cocktails h2,
+#cinema h2,
+#footer h2 {
+  background: transparent;
+  border-left: none;
+  padding: 0;
+  margin-top: 0;
+}
+
+/* Category text overrides */
+#food dt,
+#food dd,
+#food span.price,
+#food h3 {
+  color: var(--text-food);
+}
+
+#cocktails dt,
+#cocktails dd,
+#cocktails span.price,
+#cocktails h3 {
+  color: var(--text-cocktails);
+}
+
+#alcohol dt,
+#alcohol dd,
+#alcohol span.price,
+#alcohol h3 {
+  color: var(--text-alcohol);
+}
+
+
+/* ============================
+   PHONE: full-bleed, compact
+   ============================ */
+@media (max-width: 600px) {
+  body {
+    padding: 0;
+  }
+
+  header {
+    padding: 4px var(--space-xl) 0 var(--space-xl);
+    ;
+    top: 0;
+    background: var(--color-bg);
+    z-index: 10;
+  }
+
+  header .header-logo {
+    margin-bottom: var(--space-sm);
+  }
+
+  main {
+    padding: 0;
+  }
+
+  #bar-info,
+  #breakfast,
+  #hot-beverages,
+  #soft-drinks,
+  #food,
+  #wine,
+  #beer,
+  #alcohol,
+  #cocktails,
+  #cinema {
+    margin: 0;
+    padding: var(--space-4xl) var(--space-xl) var(--space-2xl) var(--space-xl);
+  }
+
+  dl {
+    margin-top: var(--space-sm);
+  }
+
+  dt {
+    /*margin-top: var(--space-sm);*/
+  }
+
+  dd {
+    margin-bottom: var(--space-sm);
+  }
+
+
+}
+
+
+
+
+
+body,
+header {
+  transition: background-color 0.5s ease-out;
+}
+
+#svg-bg,
+#svg-border,
+#svg-text {
+  transition: fill 0.5s ease-out;
+
+}
+
+
+
+
+
+
+
+#footer {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: var(--space-xl) var(--space-md);
+}
+
+
+
+
+
+/* 
+Kino / Cinema 
+*/
+
+
+.movie-grid {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+  margin: var(--space-lg) 0;
+}
+
+.movie-item {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: var(--space-md);
+  align-items: start;
+  border-bottom: 1px solid #fffabd;
+  padding: var(--space-2xl) 0 var(--space-sm);
+  z-index: 5;
+}
+
+.movie-item:last-child {}
+
+.movie-desc h3 {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  margin: 0;
+}
+
+.movie-desc span.age {
+  display: inline-flex;
+  line-height: 1;
+  min-width: 24px;
+}
+
+.movie-desc span.age img {
+  width: 24px;
+  height: 24px;
+  display: block;
+}
+
+.poster-wrapper {
+  display: block;
+  /*aspect-ratio: 2/3;*/
+  overflow: hidden;
+  background: #1a1a1a;
+}
+
+.poster-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.movie-desc {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+  height: 100%;
+  
+}
+
+.movie-desc>a {
+  text-decoration: none;
+}
+
+.movie-desc h3 {
+  font-size: var(--text-h3);
+  font-weight: var(--weight-semibold);
+  margin: 0;
+  color: var(--color-text);
+  line-height: 1.2;
+}
+
+.movie-desc h3 .filmlabel {
+  font-size: var(--text-xs);
+  background: var(--color-accent, #e63946);
+  color: #fff;
+  padding: 2px 6px;
+  border-radius: 3px;
+  margin-left: 8px;
+  vertical-align: middle;
+}
+
+.age-duration {
+  font-size: var(--text-xs);
+  margin-bottom: var(--space-xs);
+}
+
+.age {
+  font-size: var(--text-xs);
+  max-width: 24px;
+  height: auto;
+}
+
+.age-duration .duration {
+  font-size: var(--text-xs);
+}
+
+.najava-wrapper {}
+
+.time-format {
+  margin-top: auto;
+}
+
+.kinoholder {}
+
+.day-wrapper {}
+
+.timings-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+}
+
+/* Showtime performance links/boxes */
+.perf {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2px;
+  border: 1px solid var(--color-accent);
+  padding: var(--space-xs) var(--space-sm);
+  min-width: 80px;
+  flex: 0 1 auto;
+  text-decoration: none;
+  color: var(--color-text);
+  transition: background-color 0.2s ease;
+}
+
+.perf:not(.disabled):hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.perf.disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.perf .format {
+  font-size: 12px;
+  text-align: center;
+  padding: 2px 0;
+  letter-spacing: 0.08em;
+  font-weight: var(--weight-bold);
+  opacity: 0.6;
+  text-transform: uppercase;
+}
+
+.perf .time {
+  font-size: var(--text-xs);
+  text-align: center;
+  padding: 2px 0;
+  letter-spacing: 0.03em;
+  font-weight: var(--weight-medium);
+}
+
+.perf .venue {
+  font-size: 9px;
+  text-align: center;
+  padding: 1px 0;
+  opacity: 0.7;
+}
+
+/* ============================
+   CINEMA RESPONSIVE
+   ============================ */
+
+@media (max-width: 600px) {
+  .movie-item {
+    grid-template-columns: 200px 1fr;
+    gap: var(--space-sm);
+    padding-bottom: var(--space-md);
+  }
+
+  .movie-desc h3 {
+    font-size: var(--text-h3);
+  }
+
+  .age-duration {
+    flex-direction: column;
+    gap: 2px;
+    align-items: flex-start;
+    font-size: var(--text-xs);
+  }
+
+  .timings-wrapper {
+    gap: var(--space-xs);
+  }
+
+  .perf {
+    min-width: 65px;
+    padding: var(--space-xs);
+  }
+
+  .perf .format {
+    font-size: 8px;
+  }
+
+  .perf .time {
+    font-size: 10px;
+    padding: 1px 0;
+  }
+
+  .perf .venue {
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 400px) {
+  .movie-item {
+    grid-template-columns: 162px 1fr;
+    gap: var(--space-xs);
+  }
+
+  .perf {
+    min-width: 55px;
+  }
+
+  .perf .format {
+    font-size: 7px;
+  }
+
+  .perf .time {
+    font-size: 12px;
+  }
+
+  .perf .venue {
+    font-size: 9px;
+  }
+
+  .movie-desc span.age {
+    display: inline-flex;
+    line-height: 1;
+    min-width: 21px;
+  }
+
+  .movie-desc span.age img {
+    width: 21px;
+    height: 21px;
+    display: block;
+    /* removes any inline spacing below image */
+  }
+}
+
+
+
+
+
+
+*/ a {
+  all: unset;
+  cursor: pointer;
+}
+
+p,
+a {
+  font-family: inherit;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: inherit;
+  text-decoration: none;
+  /* etc */
+}
+
+#wow-cocktail {
+  scroll-margin-top: 200px;
+
+}
+
+
+.footer-logo {
+  width: 100%;
+  height: auto;
+  display: block;
+  padding-top: 2rem;
+
+  filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.4)) drop-shadow(0 0 30px rgba(255, 255, 255, 0.15));
+  transition: filter 0.6s ease;
+}
+
+.footer-logo:hover {
+  filter: drop-shadow(0 0 25px rgba(255, 255, 255, 0.6)) drop-shadow(0 0 50px rgba(255, 255, 255, 0.25));
+}
+
+.next-page {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background: #1b395b;
+  border: 1px solid #fffabd;
+  border-radius: 50%;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+
+.banner-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+
+.banner-container svg {
+  width: 100%;
+  display: block;
+
+  /* Mask that fades from bottom to top */
+  mask-image: linear-gradient(to bottom,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(0, 0, 0, 0.8) 20%,
+      rgba(0, 0, 0, 0.3) 60%,
+      rgba(0, 0, 0, 0) 100%);
+  -webkit-mask-image: linear-gradient(to bottom,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(0, 0, 0, 0.8) 20%,
+      rgba(0, 0, 0, 0.3) 60%,
+      rgba(0, 0, 0, 0) 100%);
+}
