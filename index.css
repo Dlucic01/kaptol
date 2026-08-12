@@ -80,7 +80,7 @@ section {
   --bg-alcohol: #050505;
   --bg-cocktails: #ffb7c5;
   --bg-cinema: #1b395b;
-  --bg-footer: #1b395b;
+  --bg-footer: #050505;
 
   --text-dark: #1b395b;
   --text-food: #3b2208;
@@ -140,7 +140,6 @@ body {
   background-color: var(--color-bg);
   max-width: var(--max-width);
   margin: 0 auto;
-  padding: 0 var(--space-lg) var(--space-xl);
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -563,8 +562,8 @@ img {
 }
 
 #footer {
-  background-color: var(--bg-footer);
-  color: var(--color-text);
+
+  /* height: 950px */
 }
 
 #bar-info,
@@ -725,7 +724,7 @@ header {
 
 
 
-#footer {
+/* #footer {
   width: 100vw;
   position: relative;
   left: 50%;
@@ -737,8 +736,7 @@ header {
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: var(--space-xl) var(--space-md);
-}
+} */
 
 
 
@@ -1054,6 +1052,8 @@ a {
   position: relative;
   width: 100%;
   overflow: hidden;
+  padding-top: 100px;
+  background: #050505;
 }
 
 
