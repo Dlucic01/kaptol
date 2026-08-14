@@ -267,24 +267,23 @@ header {
   left: 0;
   right: 0;
   z-index: 1000;
-  /* High z-index to stay on top */
+  width: var(--max-width);
 
   padding: 4px var(--space-xl) 0 var(--space-xl);
 
   padding-top:100px !important;
   margin-top:-100px !important;
 
-  /* Performance */
   will-change: transform;
   transform: translateZ(0);
   backface-visibility: hidden;
 
-  /* Ensure it has a height */
   min-height: 60px;
   height: auto;
 
-  /* Prevent overflow */
   overflow: hidden;
+  align-self: center;
+  justify-self: center;
   
 }
 
@@ -663,6 +662,8 @@ img {
     top: 0;
     background: var(--color-bg);
     z-index: 10;
+    width:100vw;
+
   }
 
   header .header-logo {
@@ -671,6 +672,7 @@ img {
 
   main {
     padding: 0;
+
   }
 
   #bar-info,
@@ -1072,4 +1074,12 @@ a {
       rgba(0, 0, 0, 0.8) 20%,
       rgba(0, 0, 0, 0.3) 60%,
       rgba(0, 0, 0, 0) 100%);
+}
+
+.category-end-note {
+  padding-top:24px;
+font-size: 18px; text-align: center;
+margin-bottom: 0 !important;
+letter-spacing: 0.3rem;
+opacity: 0.75;
 }
