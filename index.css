@@ -649,8 +649,17 @@ img {
 
 
 /* ============================
-   PHONE: full-bleed, compact
+   PHONE
    ============================ */
+
+/* Body breakpoint*/
+   @media (max-width: 720px) {
+    header {
+          width:100vw;
+
+    }
+  }
+
 @media (max-width: 600px) {
   body {
     padding: 0;
@@ -662,7 +671,6 @@ img {
     top: 0;
     background: var(--color-bg);
     z-index: 10;
-    width:100vw;
 
   }
 
