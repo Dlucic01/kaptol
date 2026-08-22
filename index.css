@@ -135,7 +135,7 @@ html {
 }
 
 body {
-  font-family: 'Futura', 'Twentieth Century', 'Century Gothic',
+  font-family: 'Futura',  'Century Gothic', 'Twentieth Century',
     'Didact Gothic', 'Questrial', 'Jost',
     'Segoe UI', 'Helvetica Neue', system-ui, sans-serif;
   font-size: var(--text-base);
