@@ -15,7 +15,7 @@
   <meta name="keywords" content="">
   <meta name="robots" content="index, follow">
 
-<meta name="format-detection" content="telephone=no">
+  <meta name="format-detection" content="telephone=no">
 
   <link rel="canonical" href="https://dlucic01.github.io/kaptol">
   <link rel="manifest" href="manifest.json" />
@@ -1929,7 +1929,7 @@
 
         </div>
       </div>
-            <p class="category-end-note">－※－</p>
+      <p class="category-end-note">－※－</p>
 
     </section>
 
@@ -1976,19 +1976,23 @@
         <div class="footer-info-socials">
           <img src="img/brushstroke.svg" alt="" class="footer-contact-background-img-two">
           <div class="footer-contact-icons">
-            <img src="img/instagram.svg" alt="Instagram" class="footer-contact-icon">
-            <img src="img/email.svg" alt="E-mail" class="footer-contact-icon">
-            <img src="img/facebook.svg" alt="Facebook" class="footer-contact-icon">
+            <a href="https://www.instagram.com/kaptolboutiquecinema/"><img src="img/instagram.svg" alt="Instagram"
+                class="footer-contact-icon"></a>
+            <a href="mailto:info@kaptolcinema.hr"><img src="img/email.svg" alt="E-mail" class="footer-contact-icon"></a>
+            <a href="https://www.facebook.com/KaptolBoutiqueCinema"><img src="img/facebook.svg" alt="Facebook"
+                class="footer-contact-icon"></a>
 
           </div>
         </div>
-                      <p class="footer-info-text-two">Nova Ves 17<br>10 000, Zagreb</p>
+        <a href="https://www.google.com/maps/search/?api=1&query=Kaptol+Boutique+Cinema" style="z-index: 10;">
+          <p class="footer-info-text-two">Nova Ves 17<br>10 000, Zagreb</p>
+        </a>
 
 
 
 
       </div>
-            <p class="footer-copyright">© 2026 Kaptol Boutique Cinema & Bar</p>
+      <p class="footer-copyright">© 2026 Kaptol Boutique Cinema & Bar</p>
 
       <!--
       <div class="footer-info">
@@ -2121,13 +2125,7 @@
 
   }
 
-  // Also keep the click event on the line element
-  // (though it's redundant with onclick, it's good practice)
-  line.addEventListener('click', (e) => {
-    // Prevent the onclick from firing twice if both are present
-    e.stopPropagation();
-    toggleDrawer();
-  });
+
 
 
   async function goTo(targetId, duration = 2000) {
@@ -2199,7 +2197,6 @@
   const drawerPs = document.querySelectorAll('.header-drawer a');
   const drawerFirstChild = document.querySelector('.header-drawer > *:first-child');
 
-  console.log(drawerLine);
 
   function updateColors(bgColor, h2Color) {
     body.style.backgroundColor = bgColor;
@@ -2386,6 +2383,18 @@
   });
 </script>
 
+
+<script>
+  // Credits
+  console.clear
+
+  console.log("Credits")
+  console.log("__________________")
+  console.log("")
+
+  console.log("Made by David Lucić")
+  console.log("With the support of our dear managment and students")
+</script>
 
 
 </html>
