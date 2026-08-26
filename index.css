@@ -466,6 +466,7 @@ dt span.price {
   letter-spacing: 0.02em;
   margin-left: var(--space-sm);
   white-space: nowrap;
+  align-self: end;
 }
 
 /* ============================
@@ -1575,12 +1576,49 @@ a {
 
 
 #event-schedule {
-  margin-top: var(--space-2xl)
+  margin-top: var(--space-2xl);
 }
 
 .event-schedule-img {
   height: 32px;
   width: auto;
+}
+
+
+#event-schedule dt {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: var(--space-xl);
+  width: 100%;
+}
+
+#event-schedule dt span.price {
+  font-weight: var(--weight-medium);
+  font-size: var(--text-price);
+  letter-spacing: 0.02em;
+  padding-left: var(--space-sm);
+  white-space: normal;
+  text-align: right;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  flex-shrink: 0; /* Prevents price from shrinking */
+  max-width: 65%; /* Adjust as needed */
+}
+
+#event-schedule dt span.price::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0px;
+  height: 1px;
+  background-color: #fffabd;
+}
+
+
+#event-schedule dd {
+text-align: right;
 }
 
 
@@ -1597,7 +1635,9 @@ a {
 }
 
 
-
+.event-schedule-start {
+  font-size: var(--text-h2) !important;
+}
 
 
 
@@ -1641,3 +1681,269 @@ margin-bottom:var(--space-4xl)
   line-height: 1.25;
   margin: auto 0 auto 16px;
 }
+
+
+
+
+        .swiss-container {
+            max-width: 1000px;
+            width: 100%;
+            background: #ffffff;
+            box-shadow: 0 0 0 1px #d0d0d0, 0 8px 24px rgba(0,0,0,0.04);
+            padding: 2rem 2rem 2.5rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+            transition: all 0.2s ease;
+        }
+
+        /* Naslov eventa – jasan, švicarski tipografski naglasak */
+        .swiss-title {
+            font-size: 1.8rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            text-transform: uppercase;
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 3px solid #1a1a1a;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+
+        .swiss-title span {
+            font-size: 0.9rem;
+            font-weight: 500;
+            letter-spacing: 0.08em;
+            color: #1a1a1a;
+            background: #1a1a1a;
+            color: white;
+            padding: 0.2rem 0.8rem;
+            border-radius: 100px;
+            text-transform: uppercase;
+        }
+
+        /* Glavni sadržaj – grid s jasnim stupcima, švicarski minimalizam */
+        .event-grid {
+            display: grid;
+            grid-template-columns: 1fr auto;
+            gap: 0;
+            width: 100%;
+            border-top: 2px solid #1a1a1a;
+        }
+
+        /* Lijevi stupac – raspored dt/dd */
+        .schedule-list {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        /* svaki blok = redak s granicama */
+        .schedule-item {
+            display: grid;
+            grid-template-columns: 1fr 130px; /* tekst + cijena/vrijeme */
+            border-bottom: 1px solid #b0b0b0;
+            padding: 1.2rem 0;
+            transition: background 0.15s;
+        }
+
+        .schedule-item:hover {
+            background: #f9f9f9;
+        }
+
+        /* Lijevi dio: dt i dd */
+        .item-main {
+            display: flex;
+            flex-direction: column;
+            gap: 0.25rem;
+        }
+
+        .item-main dt {
+            font-size: 1.25rem;
+            font-weight: 700;
+            letter-spacing: -0.01em;
+            line-height: 1.3;
+            color: #000;
+            text-transform: uppercase;
+            margin: 0;
+            padding-right: 0.5rem;
+        }
+
+        .item-main dd {
+            font-size: 0.95rem;
+            font-weight: 400;
+            color: #2e2e2e;
+            margin: 0;
+            letter-spacing: 0.02em;
+            opacity: 0.85;
+        }
+
+        /* Vremenski stupac – desno poravnat, čist */
+        .item-time {
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-align: right;
+            align-self: center;
+            letter-spacing: 0.02em;
+            white-space: nowrap;
+            padding-left: 1rem;
+            border-left: 2px solid #1a1a1a;
+            margin-left: 0.5rem;
+            color: #1a1a1a;
+            text-transform: uppercase;
+        }
+
+        /* dodatni redak s desne strane – "Test" */
+        .side-test {
+            grid-column: 2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-left: 2px solid #1a1a1a;
+            padding: 0 1rem;
+            background: #f0f0f0;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            font-size: 0.9rem;
+            color: #1a1a1a;
+            min-width: 100px;
+            white-space: nowrap;
+        }
+
+        /* prilagodba za specifičan raspored: zadnji red obično bez donje crte */
+        .schedule-item:last-child {
+            border-bottom: none;
+            padding-bottom: 0.5rem;
+        }
+
+        /* responzivnost – manji ekrani se prilagođavaju švicarskoj rešetci */
+        @media (max-width: 650px) {
+            .swiss-container {
+                padding: 1.2rem;
+            }
+            .swiss-title {
+                font-size: 1.5rem;
+                flex-wrap: wrap;
+                gap: 0.5rem;
+            }
+            .event-grid {
+                grid-template-columns: 1fr;
+                border-top: 2px solid #1a1a1a;
+            }
+            .side-test {
+                grid-column: 1;
+                border-left: none;
+                border-top: 2px solid #1a1a1a;
+                padding: 0.8rem 0;
+                justify-content: flex-start;
+                background: white;
+                margin-top: 0.5rem;
+            }
+            .schedule-item {
+                grid-template-columns: 1fr;
+                gap: 0.3rem;
+                border-bottom: 1px solid #aaa;
+            }
+            .item-time {
+                text-align: left;
+                border-left: none;
+                padding-left: 0;
+                margin-left: 0;
+                font-weight: 500;
+                border-top: 1px dashed #aaa;
+                padding-top: 0.4rem;
+                margin-top: 0.2rem;
+                width: 100%;
+                text-transform: none;
+            }
+            .item-main dt {
+                font-size: 1.15rem;
+            }
+        }
+
+        /* dodatni švicarski elementi: crveni akcenti (vrlo diskretno) */
+        .accent-dot {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            background: #e63946;
+            margin-right: 8px;
+            border-radius: 2px;
+            vertical-align: middle;
+        }
+
+        .schedule-item:nth-child(3) .item-main dt::before {
+            content: "●";
+            color: #e63946;
+            font-size: 0.8rem;
+            margin-right: 0.5rem;
+            display: inline-block;
+        }
+
+
+
+        .schedule {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  border: 1px solid #fffabd;
+}
+
+.schedule dt,
+.schedule dd {
+  margin: 0;
+  padding: 10px 15px;
+  border-bottom: 1px solid #fffabd;
+}
+
+.schedule dt {
+  grid-column: 1;
+  border-right: 1px solid #fffabd;
+}
+
+.schedule dd {
+  grid-column: 2;
+}
+
+/* Remove bottom border from last row */
+.schedule dt:last-of-type,
+.schedule dd:last-of-type {
+  border-bottom: none;
+}
+
+
+ .grid {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 10px;
+    max-width: 500px;
+  }
+  
+  .header {
+    font-weight: bold;
+    border-bottom: 1px solid #fffabd;
+    
+  }
+  
+  .time {
+    font-weight: bold;
+        border-bottom: 1px solid #fffabd;
+    border-right: 1px solid #fffabd;
+
+  }
+  
+  .item {
+    border-bottom: 1px solid #fffabd;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .gap {
+    border-right: 1px solid #fffabd;
+  }
+
+  .title {
+        border-bottom: 1px solid #fffabd;
+
+  }
