@@ -375,7 +375,11 @@ header .header-logo {
   gap: var(--space-md);
 }
 
-.header-drawer-right {}
+.header-drawer-right {
+  display: flex;
+  justify-content: space-around;
+  align-items: end;
+}
 
 .header-drawer-space-top {
   height: 0;
@@ -1950,41 +1954,47 @@ margin-bottom:var(--space-4xl)
   }
 
  .grid {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 10px;
-            min-width: 100%;
-        }
-        .item {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: repeat(2, 1fr);
-            background: transparent;
-            padding: 10px;
-            width: 100%;
-            position: relative;
-            bor
-        }
-        .item::before {
-            content: '';
-            position: absolute;
-            left: 10px;
-            right: 10px;
-            top: 50%;
-            border-top: 1px solid #fffabd;
-        }
-        .item::after {
-            content: '';
-            position: absolute;
-            top: 10px;
-            bottom: 10px;
-            left: 50%;
-            border-left: 1px solid #fffabd;
-        }
-        .item div {
-            background: transparent;
-            padding: 10px;
-            text-align: center;
-            position: relative;
-            z-index: 1;
-        }
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    min-width: 100%;
+}
+.item {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: repeat(2, 1fr);
+    background: transparent;
+    padding: 10px;
+    width: 100%;
+    text-align: right;
+    
+}
+.item div {
+    background: transparent;
+    padding: 4px;
+    text-align: left;
+}
+.item div:nth-child(1) {
+    border-bottom: 1px solid #fffabd;
+    text-align: left;
+    align-self: end;
+}
+.item div:nth-child(2) {
+    border-bottom: 1px solid #fffabd;
+        text-align: right;
+            align-self: end;
+                border-left: 1px solid #fffabd;
+
+
+
+}
+.item div:nth-child(4) {
+        text-align: right;
+            align-self: start;
+                            border-left: 1px solid #fffabd;
+
+
+
+}
+.item div:nth-child(3) {
+}
