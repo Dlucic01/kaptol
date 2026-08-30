@@ -379,6 +379,7 @@ header .header-logo {
   display: flex;
   justify-content: space-around;
   align-items: end;
+  flex-direction: row;
 }
 
 .header-drawer-space-top {
@@ -515,7 +516,7 @@ img {
   color: var(--color-text);
   margin-bottom: 0 !important;
   margin-top: 0 !important;
-  padding-top: 200px !important;
+  padding-top: 184px !important;
   
 }
 
