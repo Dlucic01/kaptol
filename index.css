@@ -274,16 +274,14 @@ header {
   justify-content: center;
   background: var(--color-bg);
 
-  /* Fixed positioning */
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 1000;
+
   width: var(--max-width);
-
-  padding: 4px var(--space-xl) 0 var(--space-xl);
-
+  padding: 4px var(--space-xl) 0;
   padding-top: 100px !important;
   margin-top: -100px !important;
 
@@ -293,11 +291,27 @@ header {
 
   min-height: 60px;
   height: auto;
-
-  overflow: hidden;
+  overflow: visible; /* important */
   align-self: center;
   justify-self: center;
+}
 
+/* crispy bottom "swallow" */
+header::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -18px;
+  height: 18px;
+
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.22),
+    rgba(0, 0, 0, 0)
+  );
+
+  pointer-events: none;
 }
 
 header .header-logo {
@@ -305,7 +319,6 @@ header .header-logo {
   margin: 0 auto var(--space-md);
   height: auto;
   max-width: 220px;
-  margin-bottom: var(--space-sm);
   margin-top: 4px;
 
 }
@@ -744,7 +757,7 @@ img {
   }
 
   header .header-logo {
-    margin-bottom: var(--space-sm);
+    margin-bottom: 4px;
   }
 
   main {
