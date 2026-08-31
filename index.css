@@ -306,6 +306,7 @@ header .header-logo {
   height: auto;
   max-width: 240px;
   margin-bottom: var(--space-sm);
+  margin-top: 4px;
 
 }
 
@@ -511,12 +512,22 @@ img {
 /* ============================
    CATEGORY SECTIONS
    ============================ */
+
+#landing-poster {
+  height:400px;
+  margin: 244px auto 0 auto;
+  
+
+}
+
+
+
 #bar-info {
   background-color: var(--bg-breakfast);
   color: var(--color-text);
   margin-bottom: 0 !important;
   margin-top: 0 !important;
-  padding-top: 184px !important;
+  padding-top: var(--space-xl) !important;
   
 }
 
