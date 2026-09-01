@@ -31,7 +31,7 @@ section {
   --text-xs: 14px;
   --text-sm: 15px;
   --text-base: 16px;
-  --text-price: 17px;
+  --text-price: 16px;
   --text-item: 18px;
   --text-h5: 20px;
   --text-h4: 24px;
@@ -40,8 +40,8 @@ section {
   --text-h1: 42px;
 
   /* Weights */
-  --weight-regular: 400;
-  --weight-medium: 500;
+  --weight-regular: 500;
+  --weight-medium: 600;
   --weight-semibold: 600;
   --weight-bold: 700;
 
@@ -109,11 +109,11 @@ section {
     --text-xs: 12px;
     --text-sm: 13px;
     --text-base: 14px;
-    --text-price: 14px;
-    --text-item: 16px;
+    --text-price: 15px;
+    --text-item: 17px;
     --text-h5: 17px;
     --text-h4: 19px;
-    --text-h3: 21px;
+    --text-h3: 24px;
     --text-h2: 52px;
     --text-h1: 28px;
 
@@ -129,6 +129,127 @@ section {
 /* ============================
    BASE
    ============================ */
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url('fonts/Fonts/WEB/fonts/Satoshi-Light.woff2') format('woff2'),
+       url('fonts/Fonts/WEB/fonts/Satoshi-Light.woff') format('woff'),
+       url('fonts/Fonts/WEB/fonts/Satoshi-Light.ttf') format('truetype');
+  font-weight: 300;
+  
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Satoshi';
+  src: url('fonts/Fonts/WEB/fonts/Satoshi-LightItalic.woff2') format('woff2'),
+       url('fonts/Fonts/WEB/fonts/Satoshi-LightItalic.woff') format('woff'),
+       url('fonts/Fonts/WEB/fonts/Satoshi-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Satoshi';
+  src: url('fonts/Fonts/WEB/fonts/Satoshi-Regular.woff2') format('woff2'),
+       url('fonts/Fonts/WEB/fonts/Satoshi-Regular.woff') format('woff'),
+       url('fonts/Fonts/WEB/fonts/Satoshi-Regular.ttf') format('truetype');
+  font-weight: 400;
+  
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Satoshi';
+  src: url('fonts/Fonts/WEB/fonts/Satoshi-Italic.woff2') format('woff2'),
+       url('fonts/Fonts/WEB/fonts/Satoshi-Italic.woff') format('woff'),
+       url('fonts/Fonts/WEB/fonts/Satoshi-Italic.ttf') format('truetype');
+  font-weight: 400;
+  
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Satoshi';
+  src: url('fonts/Fonts/WEB/fonts/Satoshi-Medium.woff2') format('woff2'),
+       url('fonts/Fonts/WEB/fonts/Satoshi-Medium.woff') format('woff'),
+       url('fonts/Fonts/WEB/fonts/Satoshi-Medium.ttf') format('truetype');
+  font-weight: 500;
+  
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Satoshi';
+  src: url('fonts/Fonts/WEB/fonts/Satoshi-MediumItalic.woff2') format('woff2'),
+       url('fonts/Fonts/WEB/fonts/Satoshi-MediumItalic.woff') format('woff'),
+       url('fonts/Fonts/WEB/fonts/Satoshi-MediumItalic.ttf') format('truetype');
+  font-weight: 500;
+  
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Satoshi';
+  src: url('fonts/Fonts/WEB/fonts/Satoshi-Bold.woff2') format('woff2'),
+       url('fonts/Fonts/WEB/fonts/Satoshi-Bold.woff') format('woff'),
+       url('fonts/Fonts/WEB/fonts/Satoshi-Bold.ttf') format('truetype');
+  font-weight: 700;
+  
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Satoshi';
+  src: url('fonts/Fonts/WEB/fonts/Satoshi-BoldItalic.woff2') format('woff2'),
+       url('fonts/Fonts/WEB/fonts/Satoshi-BoldItalic.woff') format('woff'),
+       url('fonts/Fonts/WEB/fonts/Satoshi-BoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Satoshi';
+  src: url('fonts/Fonts/WEB/fonts/Satoshi-Black.woff2') format('woff2'),
+       url('fonts/Fonts/WEB/fonts/Satoshi-Black.woff') format('woff'),
+       url('fonts/Fonts/WEB/fonts/Satoshi-Black.ttf') format('truetype');
+  font-weight: 900;
+  
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Satoshi';
+  src: url('fonts/Fonts/WEB/fonts/Satoshi-BlackItalic.woff2') format('woff2'),
+       url('fonts/Fonts/WEB/fonts/Satoshi-BlackItalic.woff') format('woff'),
+       url('fonts/Fonts/WEB/fonts/Satoshi-BlackItalic.ttf') format('truetype');
+  font-weight: 900;
+  
+  font-style: italic;
+}
+
+
+@font-face {
+  font-family: 'Satoshi-Variable';
+  src: url('fonts/Fonts/WEB/fonts/Satoshi-Variable.woff2') format('woff2'),
+       url('fonts/Fonts/WEB/fonts/Satoshi-Variable.woff') format('woff'),
+       url('fonts/Fonts/WEB/fonts/Satoshi-Variable.ttf') format('truetype');
+  font-weight: 300 900;
+  
+  font-style: normal;
+}
+/**
+* This is a variable font
+* You can control variable axes as shown below:
+* font-variation-settings: wght 900.0;
+*
+* available axes:
+'wght' (range from 300.0 to 900.0
+*/
+@font-face {
+  font-family: 'Satoshi-VariableItalic';
+  src: url('fonts/Fonts/WEB/fonts/Satoshi-VariableItalic.woff2') format('woff2'),
+       url('fonts/Fonts/WEB/fonts/Satoshi-VariableItalic.woff') format('woff'),
+       url('fonts/Fonts/WEB/fonts/Satoshi-VariableItalic.ttf') format('truetype');
+  font-weight: 300 900;
+  font-display: swap;
+  font-style: italic;
+}
+
+
 html {
   font-size: var(--text-base);
   -webkit-font-smoothing: antialiased;
@@ -140,7 +261,7 @@ html {
 }
 
 body {
-  font-family: 'Futura', 'Century Gothic', 'Twentieth Century',
+  font-family: 'Satoshi', 'Montserrat',  'Twentieth Century',
     'Didact Gothic', 'Questrial', 'Jost',
     'Segoe UI', 'Helvetica Neue', system-ui, sans-serif;
   font-size: var(--text-base);
@@ -211,7 +332,7 @@ h2 {
   width: 100%;
   position: relative;
     text-transform: capitalize;
-font-weight: 600;
+font-weight: 900;
 line-height: 0.9;
 }
 
@@ -484,7 +605,7 @@ dd {
 }
 
 dt span.price {
-  font-weight: var(--weight-medium);
+  font-weight: var(--weight-regular);
   font-size: var(--text-price);
   letter-spacing: 0.02em;
   margin-left: var(--space-sm);
@@ -744,6 +865,15 @@ img {
     width: 100%;
 
   }
+
+  h3 {
+  margin-top: var(--space-3xl);
+
+}
+  h4 {
+  margin-top: 38px;
+
+}
 }
 
 @media (max-width: 600px) {
@@ -782,7 +912,7 @@ img {
   #cinema,
   #footer {
     margin: 0;
-    padding: var(--space-4xl) var(--space-xl) var(--space-2xl) var(--space-xl);
+    padding: 86px var(--space-xl) var(--space-xl) var(--space-xl);
   }
 
   #footer {
@@ -1153,8 +1283,7 @@ a {
 
 
 .category-end-note {
-  margin-top: 52px;
-    margin-bottom: 24px;
+  margin-top: 32px;
 
   font-size: 12px;
   text-align: right;
@@ -1459,7 +1588,7 @@ a {
 
 .event-date span:first-child {
   font-size: clamp(2.8rem, 14vw, 5rem);
-  font-weight: 600;
+  font-weight: 900;
   line-height: 0.9;
   letter-spacing: -0.06em;
 }
@@ -1556,7 +1685,7 @@ a {
   justify-content: center;
 
   padding: 12px;
-
+  
   background: rgba(0, 0, 0, 0.98);
 
   opacity: 0;
@@ -1710,7 +1839,7 @@ margin-bottom:var(--space-4xl)
 
 .bar-date span:first-child {
   font-size: clamp(2.8rem, 14vw, 5rem);
-  font-weight: 600;
+  font-weight: 900;
   line-height: 0.9;
   font-size: 80px; margin-top:0; border-right: 1px solid #fffabd; padding-right: 10px
 }
@@ -2028,3 +2157,19 @@ margin-bottom:var(--space-4xl)
 }
 .item div:nth-child(3) {
 }
+
+.type-specimen p {
+  margin: 0.5rem 0;
+  font-size: 2rem;
+}
+
+.thin       { font-weight: 100; }
+.extralight { font-weight: 200; }
+.light      { font-weight: 300; }
+.regular    { font-weight: 400; }
+.medium     { font-weight: 500; }
+.semibold   { font-weight: 600; }
+.bold       { font-weight: 700; }
+.extrabold  { font-weight: 800; }
+.black      { font-weight: 900; }
+.italic     { font-weight: 400; font-style: italic; }
