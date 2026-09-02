@@ -334,6 +334,7 @@ h2 {
     text-transform: capitalize;
 font-weight: 900;
 line-height: 0.9;
+
 }
 
 h2 small {
@@ -594,6 +595,8 @@ dt {
   justify-content: space-between;
   align-items: baseline;
   border-bottom: 1px solid var(--color-border);
+      line-height: 1.2;
+
 }
 
 dd {
