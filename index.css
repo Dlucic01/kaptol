@@ -133,91 +133,100 @@ section {
 @font-face {
   font-family: 'Satoshi';
   src: url('fonts/Fonts/WEB/fonts/Satoshi-Light.woff2') format('woff2'),
-       url('fonts/Fonts/WEB/fonts/Satoshi-Light.woff') format('woff'),
-       url('fonts/Fonts/WEB/fonts/Satoshi-Light.ttf') format('truetype');
+    url('fonts/Fonts/WEB/fonts/Satoshi-Light.woff') format('woff'),
+    url('fonts/Fonts/WEB/fonts/Satoshi-Light.ttf') format('truetype');
   font-weight: 300;
-  
+
   font-style: normal;
 }
+
 @font-face {
   font-family: 'Satoshi';
   src: url('fonts/Fonts/WEB/fonts/Satoshi-LightItalic.woff2') format('woff2'),
-       url('fonts/Fonts/WEB/fonts/Satoshi-LightItalic.woff') format('woff'),
-       url('fonts/Fonts/WEB/fonts/Satoshi-LightItalic.ttf') format('truetype');
+    url('fonts/Fonts/WEB/fonts/Satoshi-LightItalic.woff') format('woff'),
+    url('fonts/Fonts/WEB/fonts/Satoshi-LightItalic.ttf') format('truetype');
   font-weight: 300;
-  
+
   font-style: italic;
 }
+
 @font-face {
   font-family: 'Satoshi';
   src: url('fonts/Fonts/WEB/fonts/Satoshi-Regular.woff2') format('woff2'),
-       url('fonts/Fonts/WEB/fonts/Satoshi-Regular.woff') format('woff'),
-       url('fonts/Fonts/WEB/fonts/Satoshi-Regular.ttf') format('truetype');
+    url('fonts/Fonts/WEB/fonts/Satoshi-Regular.woff') format('woff'),
+    url('fonts/Fonts/WEB/fonts/Satoshi-Regular.ttf') format('truetype');
   font-weight: 400;
-  
+
   font-style: normal;
 }
+
 @font-face {
   font-family: 'Satoshi';
   src: url('fonts/Fonts/WEB/fonts/Satoshi-Italic.woff2') format('woff2'),
-       url('fonts/Fonts/WEB/fonts/Satoshi-Italic.woff') format('woff'),
-       url('fonts/Fonts/WEB/fonts/Satoshi-Italic.ttf') format('truetype');
+    url('fonts/Fonts/WEB/fonts/Satoshi-Italic.woff') format('woff'),
+    url('fonts/Fonts/WEB/fonts/Satoshi-Italic.ttf') format('truetype');
   font-weight: 400;
-  
+
   font-style: italic;
 }
+
 @font-face {
   font-family: 'Satoshi';
   src: url('fonts/Fonts/WEB/fonts/Satoshi-Medium.woff2') format('woff2'),
-       url('fonts/Fonts/WEB/fonts/Satoshi-Medium.woff') format('woff'),
-       url('fonts/Fonts/WEB/fonts/Satoshi-Medium.ttf') format('truetype');
+    url('fonts/Fonts/WEB/fonts/Satoshi-Medium.woff') format('woff'),
+    url('fonts/Fonts/WEB/fonts/Satoshi-Medium.ttf') format('truetype');
   font-weight: 500;
-  
+
   font-style: normal;
 }
+
 @font-face {
   font-family: 'Satoshi';
   src: url('fonts/Fonts/WEB/fonts/Satoshi-MediumItalic.woff2') format('woff2'),
-       url('fonts/Fonts/WEB/fonts/Satoshi-MediumItalic.woff') format('woff'),
-       url('fonts/Fonts/WEB/fonts/Satoshi-MediumItalic.ttf') format('truetype');
+    url('fonts/Fonts/WEB/fonts/Satoshi-MediumItalic.woff') format('woff'),
+    url('fonts/Fonts/WEB/fonts/Satoshi-MediumItalic.ttf') format('truetype');
   font-weight: 500;
-  
+
   font-style: italic;
 }
+
 @font-face {
   font-family: 'Satoshi';
   src: url('fonts/Fonts/WEB/fonts/Satoshi-Bold.woff2') format('woff2'),
-       url('fonts/Fonts/WEB/fonts/Satoshi-Bold.woff') format('woff'),
-       url('fonts/Fonts/WEB/fonts/Satoshi-Bold.ttf') format('truetype');
+    url('fonts/Fonts/WEB/fonts/Satoshi-Bold.woff') format('woff'),
+    url('fonts/Fonts/WEB/fonts/Satoshi-Bold.ttf') format('truetype');
   font-weight: 700;
-  
+
   font-style: normal;
 }
+
 @font-face {
   font-family: 'Satoshi';
   src: url('fonts/Fonts/WEB/fonts/Satoshi-BoldItalic.woff2') format('woff2'),
-       url('fonts/Fonts/WEB/fonts/Satoshi-BoldItalic.woff') format('woff'),
-       url('fonts/Fonts/WEB/fonts/Satoshi-BoldItalic.ttf') format('truetype');
+    url('fonts/Fonts/WEB/fonts/Satoshi-BoldItalic.woff') format('woff'),
+    url('fonts/Fonts/WEB/fonts/Satoshi-BoldItalic.ttf') format('truetype');
   font-weight: 700;
-  
+
   font-style: italic;
 }
+
 @font-face {
   font-family: 'Satoshi';
   src: url('fonts/Fonts/WEB/fonts/Satoshi-Black.woff2') format('woff2'),
-       url('fonts/Fonts/WEB/fonts/Satoshi-Black.woff') format('woff'),
-       url('fonts/Fonts/WEB/fonts/Satoshi-Black.ttf') format('truetype');
+    url('fonts/Fonts/WEB/fonts/Satoshi-Black.woff') format('woff'),
+    url('fonts/Fonts/WEB/fonts/Satoshi-Black.ttf') format('truetype');
   font-weight: 900;
-  
+
   font-style: normal;
 }
+
 @font-face {
   font-family: 'Satoshi';
   src: url('fonts/Fonts/WEB/fonts/Satoshi-BlackItalic.woff2') format('woff2'),
-       url('fonts/Fonts/WEB/fonts/Satoshi-BlackItalic.woff') format('woff'),
-       url('fonts/Fonts/WEB/fonts/Satoshi-BlackItalic.ttf') format('truetype');
+    url('fonts/Fonts/WEB/fonts/Satoshi-BlackItalic.woff') format('woff'),
+    url('fonts/Fonts/WEB/fonts/Satoshi-BlackItalic.ttf') format('truetype');
   font-weight: 900;
-  
+
   font-style: italic;
 }
 
@@ -225,12 +234,13 @@ section {
 @font-face {
   font-family: 'Satoshi-Variable';
   src: url('fonts/Fonts/WEB/fonts/Satoshi-Variable.woff2') format('woff2'),
-       url('fonts/Fonts/WEB/fonts/Satoshi-Variable.woff') format('woff'),
-       url('fonts/Fonts/WEB/fonts/Satoshi-Variable.ttf') format('truetype');
+    url('fonts/Fonts/WEB/fonts/Satoshi-Variable.woff') format('woff'),
+    url('fonts/Fonts/WEB/fonts/Satoshi-Variable.ttf') format('truetype');
   font-weight: 300 900;
-  
+
   font-style: normal;
 }
+
 /**
 * This is a variable font
 * You can control variable axes as shown below:
@@ -242,8 +252,8 @@ section {
 @font-face {
   font-family: 'Satoshi-VariableItalic';
   src: url('fonts/Fonts/WEB/fonts/Satoshi-VariableItalic.woff2') format('woff2'),
-       url('fonts/Fonts/WEB/fonts/Satoshi-VariableItalic.woff') format('woff'),
-       url('fonts/Fonts/WEB/fonts/Satoshi-VariableItalic.ttf') format('truetype');
+    url('fonts/Fonts/WEB/fonts/Satoshi-VariableItalic.woff') format('woff'),
+    url('fonts/Fonts/WEB/fonts/Satoshi-VariableItalic.ttf') format('truetype');
   font-weight: 300 900;
   font-display: swap;
   font-style: italic;
@@ -259,7 +269,7 @@ html {
   scroll-behavior: auto;
 
 
-    text-rendering: optimizeLegibility;
+  text-rendering: optimizeLegibility;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   text-size-adjust: 100%;
@@ -271,7 +281,7 @@ html {
 }
 
 body {
-  font-family: 'Satoshi', 'Montserrat',  'Twentieth Century',
+  font-family: 'Satoshi', 'Montserrat', 'Twentieth Century',
     'Didact Gothic', 'Questrial', 'Jost',
     'Segoe UI', 'Helvetica Neue', system-ui, sans-serif;
   font-size: var(--text-base);
@@ -286,7 +296,7 @@ body {
   min-height: 100vh;
   overscroll-behavior: none;
   overflow-x: hidden !important;
-    unicode-range: U+1F6C8;
+  unicode-range: U+1F6C8;
 
 }
 
@@ -331,8 +341,8 @@ h2 {
   padding: var(--space-sm) var(--space-md);
   letter-spacing: 0.001rem;
   margin-bottom: -50px;
-  
-  
+
+
 }
 
 
@@ -342,9 +352,9 @@ h2 {
   display: inline-block;
   width: 100%;
   position: relative;
-    text-transform: capitalize;
-font-weight: 900;
-line-height: 0.9;
+  text-transform: capitalize;
+  font-weight: 900;
+  line-height: 0.9;
 
 }
 
@@ -428,7 +438,8 @@ header {
 
   min-height: 60px;
   height: auto;
-  overflow: visible; /* important */
+  overflow: visible;
+  /* important */
   align-self: center;
   justify-self: center;
 }
@@ -442,11 +453,9 @@ header::after {
   bottom: -18px;
   height: 18px;
 
-  background: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0.22),
-    rgba(0, 0, 0, 0)
-  );
+  background: linear-gradient(to bottom,
+      rgba(0, 0, 0, 0.22),
+      rgba(0, 0, 0, 0));
 
   pointer-events: none;
 }
@@ -601,12 +610,12 @@ dl {
 dt {
   font-weight: var(--weight-regular);
   font-size: var(--text-item);
-  margin-top: var(--space-md);
+  margin-top: var(--space-xl);
   display: flex;
   justify-content: space-between;
   align-items: baseline;
   border-bottom: 1px solid var(--color-border);
-      line-height: 1.2;
+  line-height: 1.2;
 
 }
 
@@ -622,14 +631,14 @@ dd {
 
 #cocktails dd {
   background: #FFB7C5;
-    border-bottom: 1px solid var(--color-border-cocktails);
-      border-top: 1px solid var(--color-border-cocktails);
+  border-bottom: 1px solid var(--color-border-cocktails);
+  border-top: 1px solid var(--color-border-cocktails);
 
 }
 
 
 #cocktails dt {
-  margin-top:24px;
+  margin-top: 24px;
   font-weight: bold;
   font-size: 24px;
 }
@@ -681,9 +690,9 @@ img {
    ============================ */
 
 #landing-poster {
-  height:100px;
+  height: 100px;
   margin: 244px auto 0 auto;
-  
+
 
 }
 
@@ -695,7 +704,7 @@ img {
   margin-bottom: 0 !important;
   margin-top: 0 !important;
   padding-top: var(--space-xl) !important;
-  
+
 }
 
 
@@ -742,6 +751,8 @@ img {
 #cocktails {
   background-color: var(--bg-cocktails);
   color: var(--text-cocktails);
+    counter-reset: cocktail-number;
+
 }
 
 #cocktails dt {
@@ -896,13 +907,14 @@ img {
   }
 
   h3 {
-  margin-top: var(--space-3xl);
+    margin-top: var(--space-3xl);
 
-}
+  }
+
   h4 {
-  margin-top: 38px;
+    margin-top: 38px;
 
-}
+  }
 }
 
 @media (max-width: 600px) {
@@ -1319,7 +1331,7 @@ a {
   margin-bottom: 0 !important;
   letter-spacing: 0;
   opacity: 0.7;
-  
+
   margin-left: auto;
   margin-right: auto;
 }
@@ -1665,14 +1677,14 @@ a {
 
 
 .event-read-more {
-    text-align: right;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  text-align: right;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .event-read-more-logo {
-  height:32px;
+  height: 32px;
   width: auto;
 }
 
@@ -1690,7 +1702,7 @@ a {
   letter-spacing: 0.12em;
   text-transform: uppercase;
 
-  
+
 
 
 }
@@ -1714,7 +1726,7 @@ a {
   justify-content: center;
 
   padding: 12px;
-  
+
   background: rgba(0, 0, 0, 0.98);
 
   opacity: 0;
@@ -1765,7 +1777,7 @@ a {
 }
 
 .event-separator {
-  height:1px;
+  height: 1px;
   width: 100%;
   margin: 20px auto 88px auto;
   background-color: var(--text-events);
@@ -1800,8 +1812,10 @@ a {
   text-align: right;
   word-break: break-word;
   overflow-wrap: break-word;
-  flex-shrink: 0; /* Prevents price from shrinking */
-  max-width: 65%; /* Adjust as needed */
+  flex-shrink: 0;
+  /* Prevents price from shrinking */
+  max-width: 65%;
+  /* Adjust as needed */
 }
 
 #event-schedule dt span.price::before {
@@ -1816,7 +1830,7 @@ a {
 
 
 #event-schedule dd {
-text-align: right;
+  text-align: right;
 }
 
 
@@ -1840,9 +1854,7 @@ text-align: right;
 
 
 
-.bar-info {
-
-}
+.bar-info {}
 
 
 .bar-title {
@@ -1863,14 +1875,17 @@ text-align: right;
   padding: 1.25rem 0;
   border-top: 1px solid currentColor;
   border-bottom: 1px solid currentColor;
-margin-bottom:var(--space-4xl)
+  margin-bottom: var(--space-4xl)
 }
 
 .bar-date span:first-child {
   font-size: clamp(2.8rem, 14vw, 5rem);
   font-weight: 900;
   line-height: 0.9;
-  font-size: 80px; margin-top:0; border-right: 1px solid #fffabd; padding-right: 10px
+  font-size: 80px;
+  margin-top: 0;
+  border-right: 1px solid #fffabd;
+  padding-right: 10px
 }
 
 .bar-date span:last-child {
@@ -1883,206 +1898,213 @@ margin-bottom:var(--space-4xl)
 
 
 
-        .swiss-container {
-            max-width: 1000px;
-            width: 100%;
-            background: #ffffff;
-            box-shadow: 0 0 0 1px #d0d0d0, 0 8px 24px rgba(0,0,0,0.04);
-            padding: 2rem 2rem 2.5rem;
-            display: flex;
-            flex-direction: column;
-            gap: 0;
-            transition: all 0.2s ease;
-        }
+.swiss-container {
+  max-width: 1000px;
+  width: 100%;
+  background: #ffffff;
+  box-shadow: 0 0 0 1px #d0d0d0, 0 8px 24px rgba(0, 0, 0, 0.04);
+  padding: 2rem 2rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  transition: all 0.2s ease;
+}
 
-        /* Naslov eventa – jasan, švicarski tipografski naglasak */
-        .swiss-title {
-            font-size: 1.8rem;
-            font-weight: 700;
-            letter-spacing: -0.02em;
-            text-transform: uppercase;
-            margin-bottom: 2rem;
-            padding-bottom: 1rem;
-            border-bottom: 3px solid #1a1a1a;
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-end;
-        }
+/* Naslov eventa – jasan, švicarski tipografski naglasak */
+.swiss-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 3px solid #1a1a1a;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
 
-        .swiss-title span {
-            font-size: 0.9rem;
-            font-weight: 500;
-            letter-spacing: 0.08em;
-            color: #1a1a1a;
-            background: #1a1a1a;
-            color: white;
-            padding: 0.2rem 0.8rem;
-            border-radius: 100px;
-            text-transform: uppercase;
-        }
+.swiss-title span {
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  color: #1a1a1a;
+  background: #1a1a1a;
+  color: white;
+  padding: 0.2rem 0.8rem;
+  border-radius: 100px;
+  text-transform: uppercase;
+}
 
-        /* Glavni sadržaj – grid s jasnim stupcima, švicarski minimalizam */
-        .event-grid {
-            display: grid;
-            grid-template-columns: 1fr auto;
-            gap: 0;
-            width: 100%;
-            border-top: 2px solid #1a1a1a;
-        }
+/* Glavni sadržaj – grid s jasnim stupcima, švicarski minimalizam */
+.event-grid {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 0;
+  width: 100%;
+  border-top: 2px solid #1a1a1a;
+}
 
-        /* Lijevi stupac – raspored dt/dd */
-        .schedule-list {
-            display: flex;
-            flex-direction: column;
-            width: 100%;
-        }
+/* Lijevi stupac – raspored dt/dd */
+.schedule-list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
 
-        /* svaki blok = redak s granicama */
-        .schedule-item {
-            display: grid;
-            grid-template-columns: 1fr 130px; /* tekst + cijena/vrijeme */
-            border-bottom: 1px solid #b0b0b0;
-            padding: 1.2rem 0;
-            transition: background 0.15s;
-        }
+/* svaki blok = redak s granicama */
+.schedule-item {
+  display: grid;
+  grid-template-columns: 1fr 130px;
+  /* tekst + cijena/vrijeme */
+  border-bottom: 1px solid #b0b0b0;
+  padding: 1.2rem 0;
+  transition: background 0.15s;
+}
 
-        .schedule-item:hover {
-            background: #f9f9f9;
-        }
+.schedule-item:hover {
+  background: #f9f9f9;
+}
 
-        /* Lijevi dio: dt i dd */
-        .item-main {
-            display: flex;
-            flex-direction: column;
-            gap: 0.25rem;
-        }
+/* Lijevi dio: dt i dd */
+.item-main {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
 
-        .item-main dt {
-            font-size: 1.25rem;
-            font-weight: 700;
-            letter-spacing: -0.01em;
-            line-height: 1.3;
-            color: #000;
-            text-transform: uppercase;
-            margin: 0;
-            padding-right: 0.5rem;
-        }
+.item-main dt {
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  line-height: 1.3;
+  color: #000;
+  text-transform: uppercase;
+  margin: 0;
+  padding-right: 0.5rem;
+}
 
-        .item-main dd {
-            font-size: 0.95rem;
-            font-weight: 400;
-            color: #2e2e2e;
-            margin: 0;
-            letter-spacing: 0.02em;
-            opacity: 0.85;
-        }
+.item-main dd {
+  font-size: 0.95rem;
+  font-weight: 400;
+  color: #2e2e2e;
+  margin: 0;
+  letter-spacing: 0.02em;
+  opacity: 0.85;
+}
 
-        /* Vremenski stupac – desno poravnat, čist */
-        .item-time {
-            font-size: 1.1rem;
-            font-weight: 600;
-            text-align: right;
-            align-self: center;
-            letter-spacing: 0.02em;
-            white-space: nowrap;
-            padding-left: 1rem;
-            border-left: 2px solid #1a1a1a;
-            margin-left: 0.5rem;
-            color: #1a1a1a;
-            text-transform: uppercase;
-        }
+/* Vremenski stupac – desno poravnat, čist */
+.item-time {
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-align: right;
+  align-self: center;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+  padding-left: 1rem;
+  border-left: 2px solid #1a1a1a;
+  margin-left: 0.5rem;
+  color: #1a1a1a;
+  text-transform: uppercase;
+}
 
-        /* dodatni redak s desne strane – "Test" */
-        .side-test {
-            grid-column: 2;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-left: 2px solid #1a1a1a;
-            padding: 0 1rem;
-            background: #f0f0f0;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 0.15em;
-            font-size: 0.9rem;
-            color: #1a1a1a;
-            min-width: 100px;
-            white-space: nowrap;
-        }
+/* dodatni redak s desne strane – "Test" */
+.side-test {
+  grid-column: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-left: 2px solid #1a1a1a;
+  padding: 0 1rem;
+  background: #f0f0f0;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-size: 0.9rem;
+  color: #1a1a1a;
+  min-width: 100px;
+  white-space: nowrap;
+}
 
-        /* prilagodba za specifičan raspored: zadnji red obično bez donje crte */
-        .schedule-item:last-child {
-            border-bottom: none;
-            padding-bottom: 0.5rem;
-        }
+/* prilagodba za specifičan raspored: zadnji red obično bez donje crte */
+.schedule-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0.5rem;
+}
 
-        /* responzivnost – manji ekrani se prilagođavaju švicarskoj rešetci */
-        @media (max-width: 650px) {
-            .swiss-container {
-                padding: 1.2rem;
-            }
-            .swiss-title {
-                font-size: 1.5rem;
-                flex-wrap: wrap;
-                gap: 0.5rem;
-            }
-            .event-grid {
-                grid-template-columns: 1fr;
-                border-top: 2px solid #1a1a1a;
-            }
-            .side-test {
-                grid-column: 1;
-                border-left: none;
-                border-top: 2px solid #1a1a1a;
-                padding: 0.8rem 0;
-                justify-content: flex-start;
-                background: white;
-                margin-top: 0.5rem;
-            }
-            .schedule-item {
-                grid-template-columns: 1fr;
-                gap: 0.3rem;
-                border-bottom: 1px solid #aaa;
-            }
-            .item-time {
-                text-align: left;
-                border-left: none;
-                padding-left: 0;
-                margin-left: 0;
-                font-weight: 500;
-                border-top: 1px dashed #aaa;
-                padding-top: 0.4rem;
-                margin-top: 0.2rem;
-                width: 100%;
-                text-transform: none;
-            }
-            .item-main dt {
-                font-size: 1.15rem;
-            }
-        }
+/* responzivnost – manji ekrani se prilagođavaju švicarskoj rešetci */
+@media (max-width: 650px) {
+  .swiss-container {
+    padding: 1.2rem;
+  }
 
-        /* dodatni švicarski elementi: crveni akcenti (vrlo diskretno) */
-        .accent-dot {
-            display: inline-block;
-            width: 10px;
-            height: 10px;
-            background: #e63946;
-            margin-right: 8px;
-            border-radius: 2px;
-            vertical-align: middle;
-        }
+  .swiss-title {
+    font-size: 1.5rem;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
 
-        .schedule-item:nth-child(3) .item-main dt::before {
-            content: "●";
-            color: #e63946;
-            font-size: 0.8rem;
-            margin-right: 0.5rem;
-            display: inline-block;
-        }
+  .event-grid {
+    grid-template-columns: 1fr;
+    border-top: 2px solid #1a1a1a;
+  }
+
+  .side-test {
+    grid-column: 1;
+    border-left: none;
+    border-top: 2px solid #1a1a1a;
+    padding: 0.8rem 0;
+    justify-content: flex-start;
+    background: white;
+    margin-top: 0.5rem;
+  }
+
+  .schedule-item {
+    grid-template-columns: 1fr;
+    gap: 0.3rem;
+    border-bottom: 1px solid #aaa;
+  }
+
+  .item-time {
+    text-align: left;
+    border-left: none;
+    padding-left: 0;
+    margin-left: 0;
+    font-weight: 500;
+    border-top: 1px dashed #aaa;
+    padding-top: 0.4rem;
+    margin-top: 0.2rem;
+    width: 100%;
+    text-transform: none;
+  }
+
+  .item-main dt {
+    font-size: 1.15rem;
+  }
+}
+
+/* dodatni švicarski elementi: crveni akcenti (vrlo diskretno) */
+.accent-dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: #e63946;
+  margin-right: 8px;
+  border-radius: 2px;
+  vertical-align: middle;
+}
+
+.schedule-item:nth-child(3) .item-main dt::before {
+  content: "●";
+  color: #e63946;
+  font-size: 0.8rem;
+  margin-right: 0.5rem;
+  display: inline-block;
+}
 
 
 
-        .schedule {
+.schedule {
   display: grid;
   grid-template-columns: auto 1fr;
   border: 1px solid #fffabd;
@@ -2111,97 +2133,132 @@ margin-bottom:var(--space-4xl)
 }
 
 
- .grid {
-    display: grid;
-    grid-template-columns: 100px 1fr;
-    gap: 10px;
-    max-width: 500px;
-  }
-  
-  .header {
-    font-weight: bold;
-    border-bottom: 1px solid #fffabd;
-    
-  }
-  
-  .time {
-    font-weight: bold;
-        border-bottom: 1px solid #fffabd;
-    border-right: 1px solid #fffabd;
-
-  }
-
-  
-  .gap {
-    border-right: 1px solid #fffabd;
-  }
-
-  .title {
-        border-bottom: 1px solid #fffabd;
-
-  }
-
- .grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 10px;
-    min-width: 100%;
+.grid {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  gap: 10px;
+  max-width: 500px;
 }
+
+.header {
+  font-weight: bold;
+  border-bottom: 1px solid #fffabd;
+
+}
+
+.time {
+  font-weight: bold;
+  border-bottom: 1px solid #fffabd;
+  border-right: 1px solid #fffabd;
+
+}
+
+
+.gap {
+  border-right: 1px solid #fffabd;
+}
+
+.title {
+  border-bottom: 1px solid #fffabd;
+
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  min-width: 100%;
+}
+
 .item {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: repeat(2, 1fr);
-    background: transparent;
-    padding: 10px;
-    width: 100%;
-    text-align: right;
-    
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: repeat(2, 1fr);
+  background: transparent;
+  padding: 10px;
+  width: 100%;
+  text-align: right;
+
 }
+
 .item div {
-    background: transparent;
-    padding: 4px;
-    text-align: left;
+  background: transparent;
+  padding: 4px;
+  text-align: left;
 }
+
 .item div:nth-child(1) {
-    border-bottom: 1px solid #fffabd;
-    text-align: left;
-    align-self: end;
+  border-bottom: 1px solid #fffabd;
+  text-align: left;
+  align-self: end;
 }
+
 .item div:nth-child(2) {
-    border-bottom: 1px solid #fffabd;
-        text-align: right;
-            align-self: end;
-                border-left: 1px solid #fffabd;
+  border-bottom: 1px solid #fffabd;
+  text-align: right;
+  align-self: end;
+  border-left: 1px solid #fffabd;
 
 
 
 }
+
 .item div:nth-child(4) {
-        text-align: right;
-            align-self: start;
-                            border-left: 1px solid #fffabd;
+  text-align: right;
+  align-self: start;
+  border-left: 1px solid #fffabd;
 
 
 
 }
-.item div:nth-child(3) {
-}
+
+.item div:nth-child(3) {}
 
 .type-specimen p {
   margin: 0.5rem 0;
   font-size: 2rem;
 }
 
-.thin       { font-weight: 100; }
-.extralight { font-weight: 200; }
-.light      { font-weight: 300; }
-.regular    { font-weight: 400; }
-.medium     { font-weight: 500; }
-.semibold   { font-weight: 600; }
-.bold       { font-weight: 700; }
-.extrabold  { font-weight: 800; }
-.black      { font-weight: 900; }
-.italic     { font-weight: 400; font-style: italic; }
+.thin {
+  font-weight: 100;
+}
+
+.extralight {
+  font-weight: 200;
+}
+
+.light {
+  font-weight: 300;
+}
+
+.regular {
+  font-weight: 400;
+}
+
+.medium {
+  font-weight: 500;
+}
+
+.semibold {
+  font-weight: 600;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.extrabold {
+  font-weight: 800;
+}
+
+.black {
+  font-weight: 900;
+}
+
+.italic {
+  font-weight: 400;
+  font-style: italic;
+}
 
 
 
@@ -2209,13 +2266,14 @@ margin-bottom:var(--space-4xl)
   display: flex;
   flex-direction: row;
   width: 100%;
-  border-bottom: 1px solid ;
-  margin-bottom:24px;
-  min-height:120px;
-    max-height:120px;
+  border-bottom: 1px solid;
+  margin-bottom: 52px;
+  min-height: 120px;
+  max-height: 120px;
 
-    border-bottom: 1px solid ;
-  padding: 12px 0 4px 0;
+  border-bottom: 4px double;
+  padding: 0;
+  border-top: 1px solid;
 }
 
 
@@ -2224,36 +2282,42 @@ margin-bottom:var(--space-4xl)
   flex-direction: column;
   justify-content: space-between;
   align-items: end;
-    margin-left: auto;
+  margin-left: auto;
 
 }
 
 .cocktail-card-left .cocktail-card-price {
-  font-size: 16px;
-  font-weight: 600;
+  font-size: 18px;
+  font-weight: 400;
 }
 
 
 .cocktail-card-left .cocktail-card-name {
   font-size: 32px;
   font-weight: 600;
-    line-height: 0.85; /* Instead of default or 1.5 */
-    text-align: right;
+  line-height: 0.85;
+  text-align: right;
+  min-width: 160px;
 }
 
 .cocktail-card-left .cocktail-card-img {
-  
 
+  align-self: stretch;
+  border-right: 2px solid;
+  display: flex;
+  align-items: end;
+  margin-right: 4px;
 
 }
 
 .cocktail-card-left img {
-  
-    border-right: 2px solid var(--color-border-cocktails);
-  padding-right:4px;
-    margin-right:4px;
-height: 103px;
-width: auto;
+
+  padding-right: 4px;
+  display: block;
+  margin-top: auto;
+  height: 100px;
+  border-right: 2px solid;
+
 }
 
 
@@ -2261,19 +2325,24 @@ width: auto;
   line-height: 1;
   align-self: end;
   width: 100%;
+  padding-left: 4px;
+  min-height: 100%;
 
 }
 
-
 .cocktail-card-right {
   display: flex;
-    flex-direction: row-reverse;
+  flex-direction: row-reverse;
   width: 100%;
-    max-height:120px;
-        min-height:120px;
+  border-bottom: 1px solid;
+  margin-bottom: 36px;
+  min-height: 120px;
+  max-height: 120px;
 
-  border-bottom: 1px solid ;
-  padding: 12px 0 4px 0;
+  border-bottom: 4px double;
+  padding: 0 0 0 0;
+   border-top: 1px solid;
+
 
 }
 
@@ -2283,32 +2352,44 @@ width: auto;
   flex-direction: column;
   justify-content: space-between;
   align-items: start;
-    margin-right: auto;
+  margin-right: auto;
 
 }
 
 .cocktail-card-right .cocktail-card-price {
-  font-size: 16px;
-  font-weight: 600;
+  font-size: 18px;
+  font-weight: 400;
 }
 
 
 .cocktail-card-right .cocktail-card-name {
   font-size: 32px;
   font-weight: 600;
-    line-height: 1; /* Instead of default or 1.5 */
-        text-align: left;
+  line-height: 1;
+  text-align: left;
+  min-width: 120px;
+
 
 }
 
 
 
-.cocktail-card-right  img {
-    border-left: 2px solid var(--color-border-cocktails);
-  padding-left:4px;
-    margin-left:4px;
-height: 103px;
-width: auto;
+.cocktail-card-right .cocktail-card-img {
+
+  align-self: stretch;
+  border-left: 2px solid;
+  display: flex;
+  align-items: end;
+  margin-left: 4px;
+}
+
+.cocktail-card-right img {
+  padding-left: 4px;
+  display: block;
+  margin-top: auto;
+  height: 100px;
+  border-left: 2px solid;
+
 }
 
 
@@ -2317,6 +2398,7 @@ width: auto;
   align-self: end;
   text-align: right;
   width: 100%;
+  padding-right: 4px;
 }
 
 
@@ -2326,12 +2408,34 @@ width: auto;
 
 .wow-poster {
   width: 100%;
-  font-size:128px !important;
+  font-size: 128px !important;
   opacity: 0.2;
   text-align: center;
   position: absolute;
   top: -26px;
   left: 0;
   font-weight: 900;
-  
+
+}
+
+
+.tumbler>img {
+  height: 60px;
+}
+
+.martini>img {
+  height: 80px;
+}
+
+.coupe>img {
+  height: 80px;
+}
+
+.margarita>img {
+  height: 88px;
+}
+
+.cocktail-number::after {
+  counter-increment: cocktail-number;
+  content: counter(cocktail-number, decimal-leading-zero);
 }

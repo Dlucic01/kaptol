@@ -2,38 +2,38 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="12.7mm"
-   height="16.934393mm"
-   viewBox="0 0 12.7 16.934393"
+   width="6.0128598mm"
+   height="7.4082689mm"
+   viewBox="0 0 6.0128598 7.4082689"
    version="1.1"
    id="svg1"
+   xml:space="preserve"
    xmlns="http://www.w3.org/2000/svg"
-   xmlns:svg="http://www.w3.org/2000/svg">
-  <defs
-     id="defs1" />
-  <g
+   xmlns:svg="http://www.w3.org/2000/svg"><defs
+     id="defs1" /><g
      id="layer1"
-     transform="translate(-108.85826,-104.04821)">
-    <rect
-       style="fill:#000000;stroke:#ffffff;stroke-width:0;stroke-linecap:square;stroke-miterlimit:0;paint-order:markers fill stroke"
-       id="rect3"
-       width="8.4666138"
-       height="0.52866209"
-       x="-119.45297"
-       y="-120.97548"
-       ry="0"
-       transform="matrix(-1,-5.9594482e-5,9.9409039e-5,-1,0,0)" />
-    <rect
-       style="fill:#000000;stroke:#ffffff;stroke-width:0;stroke-linecap:square;stroke-miterlimit:0;paint-order:markers fill stroke"
-       id="rect3-3"
-       width="1.0571066"
-       height="16.933247"
-       x="-115.74496"
-       y="-120.97292"
-       transform="matrix(-1,-8.1776642e-5,7.2444035e-5,-1,0,0)" />
-    <path
-       style="fill:#000000;stroke:#ffffff;stroke-width:0;stroke-linecap:square;stroke-miterlimit:0;paint-order:markers fill stroke"
-       d="m 121.55825,104.04979 -6.35,-8e-4 -6.35,-7.9e-4 6.34972,6.35 z"
-       id="path4" />
-  </g>
-</svg>
+     transform="translate(-113.76229,-114.31971)"><g
+       id="layer1-9"
+       transform="matrix(1,0,0,0.78563595,1.5610579,26.679688)"
+       style="fill:#2d0a1e;fill-opacity:1"><rect
+         style="fill:#2d0a1e;fill-opacity:1;stroke:#ffffff;stroke-width:0;stroke-linecap:square;stroke-miterlimit:0;paint-order:markers fill stroke"
+         id="rect3"
+         width="3.0999808"
+         height="0.52866209"
+         x="-116.76175"
+         y="-120.96362"
+         ry="0"
+         transform="matrix(-0.99999999,-1.6276342e-4,3.6397798e-5,-1,0,0)" /><rect
+         style="fill:#2d0a1e;fill-opacity:1;stroke:#ffffff;stroke-width:0;stroke-linecap:square;stroke-miterlimit:0;paint-order:markers fill stroke"
+         id="rect3-3"
+         width="0.52838683"
+         height="9.230689"
+         x="-115.47958"
+         y="-120.9721"
+         transform="matrix(-1,-8.9184613e-5,6.6426587e-5,-1,0,0)" /></g><path
+       style="fill:#2d0a1e;fill-opacity:1;stroke:#ffffff;stroke-width:0;stroke-linecap:square;stroke-miterlimit:0;paint-order:markers fill stroke"
+       d="m 119.77515,114.32068 -3.00643,-4.8e-4 -3.00643,-4.8e-4 3.00629,3.87926 z"
+       id="path4" /><path
+       style="fill:#2d0a1e;fill-opacity:1;stroke:#ffb7c5;stroke-width:0.2;stroke-linecap:square;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       d="m 117.11225,116.96979 c 1.50329,-1.93915 1.50329,-1.93915 1.50329,-1.93915 z"
+       id="path9" /></g></svg>
