@@ -2,9 +2,9 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="12.999901mm"
-   height="16.378675mm"
-   viewBox="0 0 12.999901 16.378675"
+   width="12.400001mm"
+   height="17.000513mm"
+   viewBox="0 0 12.400001 17.000513"
    version="1.1"
    id="svg1"
    xmlns="http://www.w3.org/2000/svg"
@@ -13,34 +13,27 @@
      id="defs1" />
   <g
      id="layer1"
-     transform="translate(-103.18759,-100.80241)">
+     transform="translate(-154.78124,-130.43959)">
     <rect
        style="fill:#000000;stroke:#ffffff;stroke-width:0;stroke-linecap:square;stroke-miterlimit:0;paint-order:markers fill stroke"
-       id="rect3-7-0"
+       id="rect3"
        width="6.2000332"
        height="1"
-       x="-112.7908"
-       y="-117.16371"
+       x="-164.08693"
+       y="-147.41484"
        ry="0"
        transform="matrix(-0.99999999,-1.539372e-4,3.8484718e-5,-1,0,0)" />
     <rect
        style="fill:#000000;stroke:#ffffff;stroke-width:0;stroke-linecap:square;stroke-miterlimit:0;paint-order:markers fill stroke"
-       id="rect3-3-0-6"
+       id="rect3-3"
        width="1.1607267"
-       height="15.622303"
-       x="-110.27673"
-       y="-117.17307"
-       transform="matrix(-1,-6.8710472e-5,8.6220191e-5,-1,0,0)" />
+       height="17.000004"
+       x="-161.57263"
+       y="-147.4276"
+       transform="matrix(-1,-7.4769921e-5,7.9232798e-5,-1,0,0)" />
     <path
        style="fill:#000000;stroke:#ffffff;stroke-width:0;stroke-linecap:square;stroke-miterlimit:0;paint-order:markers fill stroke"
-       id="path5-15"
-       d="m 116.18749,100.8024 a 6.5,5.2878132 0 0 1 -6.48212,5.28779 6.5,5.2878132 0 0 1 -6.51778,-5.2587 l 6.4999,-0.0291 z" />
-    <ellipse
-       style="fill:#000000;stroke:#ffffff;stroke-width:0;stroke-linecap:square;stroke-miterlimit:0;paint-order:markers fill stroke"
-       id="path5-1"
-       cx="109.68649"
-       cy="105.15826"
-       rx="3.0999999"
-       ry="3.5999999" />
+       d="m 167.18125,130.44189 -6.2,-0.001 -6.2,-0.001 6.19973,8 z"
+       id="path4" />
   </g>
 </svg>

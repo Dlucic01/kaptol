@@ -258,6 +258,16 @@ html {
   -webkit-overflow-scrolling: touch;
   scroll-behavior: auto;
 
+
+    text-rendering: optimizeLegibility;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+
 }
 
 body {
@@ -321,6 +331,7 @@ h2 {
   padding: var(--space-sm) var(--space-md);
   letter-spacing: 0.001rem;
   margin-bottom: -50px;
+  
   
 }
 
@@ -605,6 +616,22 @@ dd {
   font-size: var(--text-sm);
   opacity: 0.9;
   padding-top: var(--space-xs);
+
+}
+
+
+#cocktails dd {
+  background: #FFB7C5;
+    border-bottom: 1px solid var(--color-border-cocktails);
+      border-top: 1px solid var(--color-border-cocktails);
+
+}
+
+
+#cocktails dt {
+  margin-top:24px;
+  font-weight: bold;
+  font-size: 24px;
 }
 
 dt span.price {
@@ -635,7 +662,6 @@ hr {
 }
 
 img {
-  max-width: 100%;
   height: auto;
   display: block;
 }
@@ -2176,3 +2202,136 @@ margin-bottom:var(--space-4xl)
 .extrabold  { font-weight: 800; }
 .black      { font-weight: 900; }
 .italic     { font-weight: 400; font-style: italic; }
+
+
+
+.cocktail-card-left {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  border-bottom: 1px solid ;
+  margin-bottom:24px;
+  min-height:120px;
+    max-height:120px;
+
+    border-bottom: 1px solid ;
+  padding: 12px 0 4px 0;
+}
+
+
+.cocktail-card-left .cocktail-card-main-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: end;
+    margin-left: auto;
+
+}
+
+.cocktail-card-left .cocktail-card-price {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+
+.cocktail-card-left .cocktail-card-name {
+  font-size: 32px;
+  font-weight: 600;
+    line-height: 0.85; /* Instead of default or 1.5 */
+    text-align: right;
+}
+
+.cocktail-card-left .cocktail-card-img {
+  
+
+
+}
+
+.cocktail-card-left img {
+  
+    border-right: 2px solid var(--color-border-cocktails);
+  padding-right:4px;
+    margin-right:4px;
+height: 103px;
+width: auto;
+}
+
+
+.cocktail-card-left .cocktail-card-ingredients {
+  line-height: 1;
+  align-self: end;
+  width: 100%;
+
+}
+
+
+.cocktail-card-right {
+  display: flex;
+    flex-direction: row-reverse;
+  width: 100%;
+    max-height:120px;
+        min-height:120px;
+
+  border-bottom: 1px solid ;
+  padding: 12px 0 4px 0;
+
+}
+
+
+.cocktail-card-right .cocktail-card-main-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+    margin-right: auto;
+
+}
+
+.cocktail-card-right .cocktail-card-price {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+
+.cocktail-card-right .cocktail-card-name {
+  font-size: 32px;
+  font-weight: 600;
+    line-height: 1; /* Instead of default or 1.5 */
+        text-align: left;
+
+}
+
+
+
+.cocktail-card-right  img {
+    border-left: 2px solid var(--color-border-cocktails);
+  padding-left:4px;
+    margin-left:4px;
+height: 103px;
+width: auto;
+}
+
+
+.cocktail-card-right .cocktail-card-ingredients {
+  line-height: 1;
+  align-self: end;
+  text-align: right;
+  width: 100%;
+}
+
+
+.wow-poster-container {
+  position: relative;
+}
+
+.wow-poster {
+  width: 100%;
+  font-size:128px !important;
+  opacity: 0.2;
+  text-align: center;
+  position: absolute;
+  top: -26px;
+  left: 0;
+  font-weight: 900;
+  
+}

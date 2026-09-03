@@ -2,9 +2,9 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="6.2999868mm"
-   height="17.000004mm"
-   viewBox="0 0 6.2999868 17.000004"
+   width="7.9999962mm"
+   height="9mm"
+   viewBox="0 0 7.9999962 9"
    version="1.1"
    id="svg1"
    xmlns="http://www.w3.org/2000/svg"
@@ -13,13 +13,13 @@
      id="defs1" />
   <g
      id="layer1"
-     transform="translate(-143.40416,-97.895836)">
+     transform="translate(-138.90625,-104.24582)">
     <rect
        style="fill:#000000;stroke:#ffffff;stroke-width:0;stroke-linecap:square;stroke-miterlimit:0;paint-order:markers fill stroke"
-       id="rect1"
-       width="6.3000002"
-       height="17"
-       x="143.40416"
-       y="97.895836" />
+       id="rect2"
+       width="8"
+       height="9"
+       x="138.90625"
+       y="104.24583" />
   </g>
 </svg>
