@@ -689,12 +689,34 @@ img {
    CATEGORY SECTIONS
    ============================ */
 
-#landing-poster {
-  height: 100px;
-  margin: 244px auto 0 auto;
+.landing-menu {
+  margin: 12px auto 32px auto;
+ 
+font-weight: 100;
 
+padding: 0 0 52px 0;
+display: grid;
+ display: flex;
+ align-items: row;
+ flex-direction: row;
+ justify-content: space-between;
+}
+
+.landing-menu a {
+  font-size: 22px !important;
+}
+
+
+#landing-menu-left {
 
 }
+
+
+
+#landing-menu-right {
+
+}
+
 
 
 
@@ -702,7 +724,7 @@ img {
   background-color: var(--bg-breakfast);
   color: var(--color-text);
   margin-bottom: 0 !important;
-  margin-top: 0 !important;
+  margin-top: 180px !important;
   padding-top: var(--space-xl) !important;
 
 }
