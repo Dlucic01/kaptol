@@ -2516,3 +2516,22 @@ a {
     grid-template-columns: 180px 1fr;
     gap: var(--space-xs);
   }
+
+
+   #rbo .movie-desc h3 {
+    font-size: 26px;
+    
+  }
+  
+
+
+#rbo .rbo-poster-wrapper {
+    grid-template-columns: 180px 1fr;
+    gap: var(--space-xs);
+        display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: var(--space-md);
+    align-items: start;
+    border-bottom: 1px solid var(--text-cinema);
+    padding: var(--space-2xl) 0 var(--space-sm);
+}
