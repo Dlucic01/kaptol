@@ -425,7 +425,7 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 1000;
+  z-index: 900;
 
   width: var(--max-width);
   padding: 4px var(--space-xl) 0;
@@ -718,7 +718,20 @@ display: grid;
 }
 
 
+.landing-menu-item {
+  border-bottom: 1px solid;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  text-align: right;
+  flex-direction: row;
+  font-size: 32px;
+  margin-bottom:24px;
+}
 
+.landing-menu-item span {
+margin-bottom: -8px;
+}
 
 #bar-info {
   background-color: var(--bg-breakfast);
@@ -816,7 +829,8 @@ display: grid;
 #beer,
 #alcohol,
 #cocktails,
-#cinema {
+#cinema,
+section {
   padding:
     /*var(--space-3xl)*/
     88px var(--space-general) var(--space-md) var(--space-general);
@@ -877,7 +891,8 @@ display: grid;
 #alcohol h2,
 #cocktails h2,
 #cinema h2,
-#footer h2 {
+#footer h2,
+section h2 {
   background: transparent;
   border-left: none;
   padding: 0;
@@ -973,7 +988,8 @@ display: grid;
   #alcohol,
   #cocktails,
   #cinema,
-  #footer {
+  #footer,
+  section {
     margin: 0;
     padding: 86px var(--space-xl) var(--space-xl) var(--space-xl);
   }
@@ -2461,3 +2477,42 @@ a {
   counter-increment: cocktail-number;
   content: counter(cocktail-number, decimal-leading-zero);
 }
+
+
+.catalogue-index {
+  display: flex; flex-direction: row; justify-content: space-between;
+}
+
+.catalogue-index h4 {
+  font-size: 24px !important;
+  font-weight: 900 !important;
+}
+
+
+.catalogue-index span{
+  font-size: 20px !important;
+  font-weight: 300 !important;
+}
+
+.catalogue-index a {
+  margin-left: 12px !important;
+    font-size: 16px !important;
+
+}
+.catalogue-index span > a {
+}
+
+
+#rbo .movie-desc {
+  flex-direction: column-reverse;
+  justify-content: space-between;
+}
+
+#rbo .time-format {
+  margin-top: 0;
+}
+
+ #rbo .movie-item {
+    grid-template-columns: 180px 1fr;
+    gap: var(--space-xs);
+  }
