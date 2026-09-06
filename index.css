@@ -82,6 +82,7 @@ section {
   --bg-alcohol: #050505;
   --bg-cocktails: #ffb7c5;
   --bg-cinema: #050505;
+  --bg-upcoming: #050505;
   --bg-footer: #000000;
 
   --bg-events: #050505;
@@ -93,6 +94,8 @@ section {
   --text-alcohol: #e8eaed;
   --text-cocktails: #2d0a1e;
   --text-cinema: #fcfdff;
+    --text-upcoming: #fcfdff;
+
   --text-footer: #ffffff;
 
   --text-events: #fcfdff;
@@ -578,6 +581,7 @@ header .header-logo {
    ============================ */
 main {
   flex: 1;
+  transition: opacity 500ms ease-in;
 }
 
 /* 
@@ -808,6 +812,11 @@ margin-bottom: -8px;
   color: var(--text-cinema);
 }
 
+#upcoming {
+  background-color: var(--bg-upcoming);
+  color: var(--text-upcoming);
+}
+
 #footer {
   padding:
     /*var(--space-3xl)*/
@@ -830,6 +839,7 @@ margin-bottom: -8px;
 #alcohol,
 #cocktails,
 #cinema,
+#upcoming
 section {
   padding:
     /*var(--space-3xl)*/
@@ -873,7 +883,12 @@ section {
 }
 
 #cinema h2 {
-  color: var(--text-cinema)
+  color: var(--text-cinema);
+}
+
+
+#upcoming h2 {
+  color: var(--text-upcoming);
 }
 
 #footer h2 {
@@ -1936,75 +1951,7 @@ a {
 
 
 
-.swiss-container {
-  max-width: 1000px;
-  width: 100%;
-  background: #ffffff;
-  box-shadow: 0 0 0 1px #d0d0d0, 0 8px 24px rgba(0, 0, 0, 0.04);
-  padding: 2rem 2rem 2.5rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0;
-  transition: all 0.2s ease;
-}
 
-/* Naslov eventa – jasan, švicarski tipografski naglasak */
-.swiss-title {
-  font-size: 1.8rem;
-  font-weight: 700;
-  letter-spacing: -0.02em;
-  text-transform: uppercase;
-  margin-bottom: 2rem;
-  padding-bottom: 1rem;
-  border-bottom: 3px solid #1a1a1a;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-}
-
-.swiss-title span {
-  font-size: 0.9rem;
-  font-weight: 500;
-  letter-spacing: 0.08em;
-  color: #1a1a1a;
-  background: #1a1a1a;
-  color: white;
-  padding: 0.2rem 0.8rem;
-  border-radius: 100px;
-  text-transform: uppercase;
-}
-
-/* Glavni sadržaj – grid s jasnim stupcima, švicarski minimalizam */
-.event-grid {
-  display: grid;
-  grid-template-columns: 1fr auto;
-  gap: 0;
-  width: 100%;
-  border-top: 2px solid #1a1a1a;
-}
-
-/* Lijevi stupac – raspored dt/dd */
-.schedule-list {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-
-/* svaki blok = redak s granicama */
-.schedule-item {
-  display: grid;
-  grid-template-columns: 1fr 130px;
-  /* tekst + cijena/vrijeme */
-  border-bottom: 1px solid #b0b0b0;
-  padding: 1.2rem 0;
-  transition: background 0.15s;
-}
-
-.schedule-item:hover {
-  background: #f9f9f9;
-}
-
-/* Lijevi dio: dt i dd */
 .item-main {
   display: flex;
   flex-direction: column;
@@ -2031,7 +1978,6 @@ a {
   opacity: 0.85;
 }
 
-/* Vremenski stupac – desno poravnat, čist */
 .item-time {
   font-size: 1.1rem;
   font-weight: 600;
@@ -2046,7 +1992,6 @@ a {
   text-transform: uppercase;
 }
 
-/* dodatni redak s desne strane – "Test" */
 .side-test {
   grid-column: 2;
   display: flex;
@@ -2064,13 +2009,11 @@ a {
   white-space: nowrap;
 }
 
-/* prilagodba za specifičan raspored: zadnji red obično bez donje crte */
 .schedule-item:last-child {
   border-bottom: none;
   padding-bottom: 0.5rem;
 }
 
-/* responzivnost – manji ekrani se prilagođavaju švicarskoj rešetci */
 @media (max-width: 650px) {
   .swiss-container {
     padding: 1.2rem;
@@ -2121,7 +2064,6 @@ a {
   }
 }
 
-/* dodatni švicarski elementi: crveni akcenti (vrlo diskretno) */
 .accent-dot {
   display: inline-block;
   width: 10px;
@@ -2544,4 +2486,43 @@ a {
   width:75%;
   margin:0 auto;
 padding: 80px 0 36px 0;
+}
+
+
+
+#timeline-wrapper {
+  height: 400px;
+  position: relative;
+  overflow-x: scroll;
+}
+
+#timeline-wrapper {
+  height: 400px;
+  position: relative;
+  overflow-x: scroll;
+
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 0,
+    black 32px,
+    black 100%
+  );
+
+  mask-image: linear-gradient(
+    to right,
+    transparent 0,
+    black 32px,
+    black 100%
+  );
+}
+
+#timeline-container {
+
+}
+
+#timeline-line {
+  margin:198px 0 0 32px;
+  width: 2000px;
+  height: 4px;
+  background-color: #fff;
 }

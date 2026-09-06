@@ -200,8 +200,9 @@
 
 
   <header>
-
-    <?xml version="1.0" encoding="UTF-8" standalone="no"?><svg class="header-logo" id="logo"
+    <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+    <a href="javascript:void(0)" onclick="goTo('bar-info-nav-placeholder')" style="all: unset; min-width: 100%; min-height:100%">
+    <svg class="header-logo" id="logo"
       xmlns="http://www.w3.org/2000/svg" viewBox="0 0 185.4733 99.14493">
       <defs>
         <clipPath id="a">
@@ -244,7 +245,7 @@
           d="M114.968 29.792c-.173.1-.352.144-.923.144h-2.25v-1.83h2.25c.525 0 .757.03.956.167.26.174.38.486.38.772 0 .305-.12.585-.41.747m.31-1.855c-.26-.174-.63-.243-.81-.255l1.26-1.96h-.52l-1.24 1.96h-2.16v-1.96h-.46v4.643h2.92c.5 0 .64-.038.93-.187.41-.21.65-.747.65-1.152 0-.392-.2-.86-.55-1.09" />
       </g>
     </svg>
-
+    </a>
 
 
 
@@ -312,7 +313,7 @@
 
 
 
-
+    <div id="bar-info-nav-placeholder"></div>
     <section id="bar-info">
 
 
@@ -359,7 +360,7 @@
             <h4>Ove sezone</h4>
             <span>Događanja</span> 
             <br> 
-            <span>Ljetni Kokteli</span>
+            <a href="javascript:void(0)" onclick="goTo('seasonal-cocktails')"><span>Ljetni Kokteli</span></a>
             <br> 
             <span>Nadolazeći Filmovi</span>
           </div>
@@ -1389,7 +1390,7 @@
 
 
 
-
+<div id="seasonal-cocktails"></div>
       <h3>Ljetni Kokteli</h3>
       <div class="cocktail-number"></div>
       <div class="cocktail-card-left">
@@ -3600,6 +3601,25 @@
 
     </section>
 
+    <section id="upcoming">
+      <h2>TIMELINE</h2>
+      <div id="timeline-wrapper">
+        <div id="timeline-container">
+     <div id="timeline-line"></div>    
+
+          
+
+      </div>
+        </div>
+
+ 
+      
+    </section>
+
+
+
+
+
     <h2 style="color: #fcfdff; line-height: 0.7;">Događanja</h2>
 
     <section id="events">
@@ -3856,56 +3876,44 @@
 
 
 
+async function goTo(targetId) {
+  const target = document.getElementById(targetId);
 
-  async function goTo(targetId, duration = 2000) {
-    const target = document.getElementById(targetId);
-    if (!target) return;
+  if (!target) return;
 
-    // Get the target position with offset
-    const offset = 120; // or whatever your offset value is
-    const startY = window.scrollY;
-    const targetY = target.getBoundingClientRect().top + window.pageYOffset - offset;
-    const distance = targetY - startY;
-    const startTime = performance.now();
+  const offset = 120;
+  const main = document.querySelector('main');
 
-    // Close drawer if it exists
-    if (typeof drawer !== 'undefined') {
-      drawer.classList.remove('open');
-      drawerSpaceTop.classList.remove('header-drawer-space-expanded');
-      drawerSpaceBot.classList.remove('header-drawer-space-expanded');
-    }
-
-    return new Promise((resolve) => {
-      function step(currentTime) {
-        const elapsed = currentTime - startTime;
-        const progress = Math.min(elapsed / duration, 1);
-
-        // Ease-in-out cubic: smooth start and end
-        const easeInOutCubic = progress < 0.5
-          ? 4 * progress * progress * progress
-          : 1 - Math.pow(-2 * progress + 2, 3) / 2;
-
-        const easeInOutSine = -(Math.cos(Math.PI * progress) - 1) / 2;
-
-        const easeInOutQuart = progress < 0.5
-          ? 8 * progress * progress * progress * progress
-          : 1 - Math.pow(-2 * progress + 2, 4) / 2;
-
-        window.scrollTo(0, startY + distance * easeInOutQuart);
-
-        if (progress < 1) {
-          requestAnimationFrame(step);
-        } else {
-          // Ensure we land exactly at the target
-          window.scrollTo(0, targetY);
-          resolve();
-        }
-      }
-
-      // Start the animation
-      requestAnimationFrame(step);
-    });
+  // Close drawer
+  if (typeof drawer !== 'undefined') {
+    drawer.classList.remove('open');
+    drawerSpaceTop.classList.remove('header-drawer-space-expanded');
+    drawerSpaceBot.classList.remove('header-drawer-space-expanded');
   }
+
+  if (!main) return;
+
+  // Fade out
+  main.style.opacity = '0';
+
+  // Wait for fade-out
+  await new Promise(resolve => setTimeout(resolve, 900));
+
+  // Calculate target position
+  const targetY =
+    target.getBoundingClientRect().top + window.pageYOffset - offset;
+
+  // Instant scroll
+  window.scrollTo({
+    top: targetY,
+    behavior: 'instant'
+  });
+
+  // Fade in
+  requestAnimationFrame(() => {
+    main.style.opacity = '1';
+  });
+}
 </script>
 <script>
 
