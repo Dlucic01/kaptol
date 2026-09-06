@@ -333,7 +333,7 @@
           <span><a href="javascript:void(0)" onclick="goTo('alcohol')">Alkoholna pića</a></span> <br>
           <span><a href="javascript:void(0)" onclick="goTo('cocktails')">Kokteli</a></span> <br>
 
-          <span><a href="javascript:void(0)" onclick="goTo('cocktails')">Promo Ponuda</a></span> <br>
+          <span><a href="javascript:void(0)" onclick="goTo('breakfast')">Promo Ponuda</a></span> <br>
         </div>
 
 
@@ -344,21 +344,32 @@
             <h4>Kino</h4>
 
 
-            <span>Danas u kinu</span><br>
-            <span>Novo ovaj mjesec</span> <br> <span>Royal Ballet & Opera</span>
+            <a href="javascript:void(0)" onclick="goTo('cinema')"><span>Danas u Kinu</span></a><br>
+            <a href="javascript:void(0)" onclick="goTo('rbo')">
+            <span>Uskoro</span> 
+          </a>
+            <br> 
+            <a href="javascript:void(0)" onclick="goTo('rbo')">
+              <span>Royal Ballet &
+                Opera</span>
+              </a>
           </div>
 
-<div>
-          <h4>Novo <br>ove sezone</h4>
-          <span>Kokteli</span><br> <span>Filmovi</span><br> <span>Događanja</span>
+          <div>
+            <h4>Ove sezone</h4>
+            <span>Događanja</span> 
+            <br> 
+            <span>Ljetni Kokteli</span>
+            <br> 
+            <span>Nadolazeći Filmovi</span>
+          </div>
         </div>
-      </div>
       </div>
 
 
       <div style="padding: 48px;"></div>
 
-<!--
+      <!--
       <h2 class="bar-title">
         Boutique Kupon
       </h2>
@@ -376,14 +387,15 @@
       <div class="bar-info">
 
         <div style="display: none;">
-        <h2>Event Raspored<small><img src="img/kaptol-logo-black_og.png" class="event-schedule-img" alt=""></small></h2>
-        <div id="event-schedule">
+          <h2>Event Raspored<small><img src="img/kaptol-logo-black_og.png" class="event-schedule-img" alt=""></small>
+          </h2>
+          <div id="event-schedule">
 
-          <div class="bar-date">
-            <span>09:00</span>
-            <span>Ulaz u dvoranu 3</span>
-          </div>
-          <!--
+            <div class="bar-date">
+              <span>09:00</span>
+              <span>Ulaz u dvoranu 3</span>
+            </div>
+            <!--
         <div class="grid">
  
   
@@ -413,34 +425,34 @@
   <div class="description">Description 6</div>
 </div>
 -->
-          <dt>09:00 - 11:00 <span class="price">Prezentacija o svemu i svačemu</span></dt>
-          <dd>Voditelj: Joško Lokas</dd>
+            <dt>09:00 - 11:00 <span class="price">Prezentacija o svemu i svačemu</span></dt>
+            <dd>Voditelj: Joško Lokas</dd>
 
-          <dt>11:00 - 11:30<span class="price">Pauza</span></dt>
-          <dd>Pit, Pušit, Pojest</dd>
+            <dt>11:00 - 11:30<span class="price">Pauza</span></dt>
+            <dd>Pit, Pušit, Pojest</dd>
 
-          <dt>11:30 - 13:00<span class="price">Komentar na današnju socioekonomsku situaciju</span></dt>
-          <dd>Voditelj: prof. Žarko</dd>
+            <dt>11:30 - 13:00<span class="price">Komentar na današnju socioekonomsku situaciju</span></dt>
+            <dd>Voditelj: prof. Žarko</dd>
 
-          <dt>13:00 - 14:00<span class="price">Ručak</span></dt>
-          <dd>Puno finoga njom njom njom njom</dd>
+            <dt>13:00 - 14:00<span class="price">Ručak</span></dt>
+            <dd>Puno finoga njom njom njom njom</dd>
 
-          <dt>14:00 - 15:30<span class="price">Prezentacija o ničemu i kako ne postoji</span></dt>
-          <dd>Voditelj: Mr. Nobody</dd>
+            <dt>14:00 - 15:30<span class="price">Prezentacija o ničemu i kako ne postoji</span></dt>
+            <dd>Voditelj: Mr. Nobody</dd>
 
-          <dt>15:30 - 16:00<span class="price">Završna riječ</span></dt>
-          <dd>Hvala</dd>
+            <dt>15:30 - 16:00<span class="price">Završna riječ</span></dt>
+            <dd>Hvala</dd>
 
+          </div>
+
+          <h2 class="bar-title">
+            Event Info
+          </h2>
+          <div class="bar-date">
+            <span>i</span>
+            <span>Naručite kavu na šanku ili se poslužite već spremnim sokovima</span>
+          </div>
         </div>
-
-        <h2 class="bar-title">
-          Event Info
-        </h2>
-        <div class="bar-date">
-          <span>i</span>
-          <span>Naručite kavu na šanku ili se poslužite već spremnim sokovima</span>
-        </div>
-</div>
         <p class="category-end-note"></p>
 
 
@@ -1956,1543 +1968,1631 @@
     <!--
 ### KINO ###  
 -->
-    <h2 style="line-height: 0.75;">Kino</h2>
+    <h2 style="line-height: 0.75; font-size: 68px; color: #fcfdff;">Kino</h2>
 
     <section id="cinema">
-          <h2>Današnji Raspored<small id="cinema-date"></small></h2>
+      <h2>Danas <br>u Kinu<small id="cinema-date"></small></h2>
 
       <h2 style="display: none;"></h2>
-      <div class="movie-item d-flex" data-format="TITL" data-genre="Akcijski Triler">
-        <a class="poster-wrapper" href="https://cinestarcinemas.hr/zagreb-kaptol-boutique-cinema/pobuna/6535">
-          <img alt="Pobuna" class="img-fluid"
-            src="https://cinestarcinemas.hr/remote/185.155.226.145/movies/Mutiny/mutiny_300x400_hr.jpg?preset=film">
-        </a>
+   
 
 
-        <div class="movie-desc">
-          <a href="https://cinestarcinemas.hr/zagreb-kaptol-boutique-cinema/pobuna/6535">
-            <h3>Pobuna </h3>
-          </a>
-          <span class="age"><img alt="Iznad 15 godina" class="img-fluid" src="img/15.png"></span>
-          <div class="age-duration d-flex justify-content-between">
-
-            <div class="age">Žanr: Akcijski Triler</div>
-            <div class="duration">1h 35min</div>
-
-          </div>
-
-
-
-
-          <div class="najava-wrapper">
-          </div>
-
-
-
-          <div class="time-format">
-            <div class="kinoholder" data-gradid="68" data-kinoid="73">
-              <div class="day-wrapper">
-
-                <div class="timings-wrapper center-page">
-
-
-                  <a class="perf" data-format="TITL"
-                    href="https://cinestarcinemas.hr/Shop/zagreb-kaptol-boutique-cinema/pobuna/57E11000023EDZCTNJ"
-                    rel="nofollow">
-                    <div class="format" data-bs-placement="top" data-bs-title="" data-bs-toggle="tooltip">TITL</div>
-                    <div class="time">20:15</div>
-                    <div class="venue">Dvorana 5</div>
-                  </a>
-                </div>
-
-              </div>
-
-
-
-
-
-
-
-            </div>
-
-          </div>
-
-
-        </div>
-      </div>
       <div class="movie-item d-flex" data-format="TITL" data-genre="SF">
-        <a class="poster-wrapper"
-          href="https://cinestarcinemas.hr/zagreb-kaptol-boutique-cinema/magija-2-tres-chic/6582">
-          <img alt="Magija 2 - Tres Chic" class="img-fluid"
-            src="https://cinestarcinemas.hr/remote/185.155.226.145/movies/Practical%20Magic%202/magic_300x400_hrr.jpg?preset=film">
-        </a>
+            <a class="poster-wrapper" href="https://cinestarcinemas.hr/zagreb-kaptol-boutique-cinema/magija-2/6538">
+                <img alt="Magija 2" class="img-fluid" src="https://cinestarcinemas.hr/remote/185.155.226.145/movies/Practical%20Magic%202/magic_300x400_hrr.jpg?preset=film">
+            </a>
 
 
         <div class="movie-desc">
-          <a href="https://cinestarcinemas.hr/zagreb-kaptol-boutique-cinema/magija-2-tres-chic/6582">
-            <h3>Magija 2 - Tres Chic </h3>
-          </a>
-          <span class="age"><img alt="Iznad 12 godina" class="img-fluid" src="img/12.png"></span>
-          <div class="age-duration d-flex justify-content-between">
+            <a href="https://cinestarcinemas.hr/zagreb-kaptol-boutique-cinema/magija-2/6538"><h3>Magija 2 </h3></a>
+            <span class="age"><img alt="Iznad 12 godina" class="img-fluid" src="/img/12.png"></span>
+            <div class="age-duration d-flex justify-content-between">
 
-            <div class="age">Žanr: SF</div>
-            <div class="duration">2h 10min</div>
-
-          </div>
-
-
-
-
-          <div class="najava-wrapper">
-          </div>
-
-
-
-          <div class="time-format">
-            <div class="kinoholder" data-gradid="68" data-kinoid="73">
-              <div class="day-wrapper">
-
-                <div class="timings-wrapper center-page">
-
-
-                  <a class="perf" data-format="TITL"
-                    href="https://cinestarcinemas.hr/Shop/zagreb-kaptol-boutique-cinema/magija-2-tres-chic/36D11000023EDZCTNJ"
-                    rel="nofollow">
-                    <div class="format" data-bs-placement="top" data-bs-title="" data-bs-toggle="tooltip">TITL</div>
-                    <div class="time">20:00</div>
-                    <div class="venue">Dvorana 3</div>
-                  </a>
-
-
-                  <a class="perf" data-format="TITL"
-                    href="https://cinestarcinemas.hr/Shop/zagreb-kaptol-boutique-cinema/magija-2-tres-chic/D8E11000023EDZCTNJ"
-                    rel="nofollow">
-                    <div class="format" data-bs-placement="top" data-bs-title="" data-bs-toggle="tooltip">TITL</div>
-                    <div class="time">20:15</div>
-                    <div class="venue">Dvorana 2</div>
-                  </a>
-                </div>
-
-              </div>
-
-
-
+                <div class="age">Žanr: SF</div>
+                    <div class="duration">2h 10min</div>
 
             </div>
 
-          </div>
+
+
+
+            <div class="najava-wrapper">
+            </div>
+
+
+
+                <div class="time-format">
+                            <div class="kinoholder" data-gradid="68" data-kinoid="73">
+                                <div class="day-wrapper">
+
+                                        <div class="timings-wrapper center-page">
+
+
+    <a class="perf" data-format="TITL" href="https://cinestarcinemas.hr/Shop/zagreb-kaptol-boutique-cinema/magija-2/23F11000023EDZCTNJ" rel="nofollow">
+        <div class="format" data-bs-placement="top" data-bs-title="" data-bs-toggle="tooltip">TITL</div>
+        <div class="time">19:30</div>
+        <div class="venue">Dvorana 1</div>
+    </a>
+                                        </div>
+
+                                </div>
+
+
+
+
+
+
+
+                                                            </div>
+
+                </div>
 
 
         </div>
-      </div>
-      <div class="movie-item d-flex" data-format="TITL" data-genre="Akcijska Avantura">
-        <a class="poster-wrapper" href="https://cinestarcinemas.hr/zagreb-kaptol-boutique-cinema/srce-zvijeri/6542">
-          <img alt="Srce zvijeri" class="img-fluid"
-            src="https://cinestarcinemas.hr/remote/185.155.226.145/movies/Heart%20of%20the%20Beast/HeartofTheBeast_teaser.jpg?preset=film">
-        </a>
+    </div>
+<div class="movie-item d-flex" data-format="TITL" data-genre="Akcijski Triler">
+            <a class="poster-wrapper" href="https://cinestarcinemas.hr/zagreb-kaptol-boutique-cinema/pobuna/6535">
+                <img alt="Pobuna" class="img-fluid" src="https://cinestarcinemas.hr/remote/185.155.226.145/movies/Mutiny/mutiny_300x400_hr_novi.jpg?preset=film">
+            </a>
 
 
         <div class="movie-desc">
-          <a href="https://cinestarcinemas.hr/zagreb-kaptol-boutique-cinema/srce-zvijeri/6542">
-            <h3>Srce zvijeri </h3>
-          </a>
-          <span class="age"><img alt="Iznad 12 godina" class="img-fluid" src="img/12.png"></span>
-          <div class="age-duration d-flex justify-content-between">
+            <a href="https://cinestarcinemas.hr/zagreb-kaptol-boutique-cinema/pobuna/6535"><h3>Pobuna</h3></a>
+            <span class="age"><img alt="Iznad 15 godina" class="img-fluid" src="/img/15.png"></span>
+            <div class="age-duration d-flex justify-content-between">
 
-            <div class="age">Žanr: Akcijska Avantura</div>
-
-          </div>
+                <div class="age">Žanr: Akcijski Triler</div>
+                    <div class="duration">1h 35min</div>
+                            </div>
 
 
 
 
-          <div class="najava-wrapper">
-          </div>
-
-
-
-          <div class="time-format">
-            <div class="kinoholder" data-gradid="68" data-kinoid="73">
-              <div class="day-wrapper">
-
-                <div class="timings-wrapper center-page">
-
-
-                  <a class="perf" data-format="TITL"
-                    href="https://cinestarcinemas.hr/Shop/zagreb-kaptol-boutique-cinema/srce-zvijeri/B8E11000023EDZCTNJ"
-                    rel="nofollow">
-                    <div class="format" data-bs-placement="top" data-bs-title="" data-bs-toggle="tooltip">TITL</div>
-                    <div class="time">19:15</div>
-                    <div class="venue">Dvorana 1</div>
-                  </a>
-                </div>
-
-              </div>
-
-
-
-
-
+            <div class="najava-wrapper">
             </div>
 
-          </div>
+
+
+                <div class="time-format">
+                            <div class="kinoholder" data-gradid="68" data-kinoid="73">
+                                <div class="day-wrapper">
+
+                                        <div class="timings-wrapper center-page">
+
+
+    <a class="perf" data-format="TITL" href="https://cinestarcinemas.hr/Shop/zagreb-kaptol-boutique-cinema/pobuna/1DE11000023EDZCTNJ" rel="nofollow">
+        <div class="format" data-bs-placement="top" data-bs-title="" data-bs-toggle="tooltip">TITL</div>
+        <div class="time">19:15</div>
+        <div class="venue">Dvorana 3</div>
+    </a>
+                                        </div>
+
+                                </div>
+
+
+
+
+
+
+
+                                                            </div>
+
+                </div>
 
 
         </div>
-      </div>
-      <div class="movie-item d-flex" data-format="SINK" data-genre="Animirani">
-        <a class="poster-wrapper" href="https://cinestarcinemas.hr/zagreb-kaptol-boutique-cinema/kristalni-planet/6533">
-          <img alt="Kristalni planet" class="img-fluid"
-            src="https://cinestarcinemas.hr/remote/185.155.226.145/movies/Kristalni%20planet/planet_556x800_hrr.jpg?preset=film">
-        </a>
+    </div>
+<div class="movie-item d-flex" data-format="TITL" data-genre="Horor">
+            <a class="poster-wrapper" href="https://cinestarcinemas.hr/zagreb-kaptol-boutique-cinema/resident-evil/6583">
+                <img alt="Resident evil" class="img-fluid" src="https://cinestarcinemas.hr/remote/185.155.226.145/movies/Resident%20evil/evil_300x400_hr.jpg?preset=film">
+            </a>
 
 
         <div class="movie-desc">
-          <a href="https://cinestarcinemas.hr/zagreb-kaptol-boutique-cinema/kristalni-planet/6533">
-            <h3>Kristalni planet </h3>
-          </a>
+            <a href="https://cinestarcinemas.hr/zagreb-kaptol-boutique-cinema/resident-evil/6583"><h3>Resident evil </h3></a>
+            <span class="age"><img alt="Iznad 15 godina" class="img-fluid" src="/img/15.png"></span>
+            <div class="age-duration d-flex justify-content-between">
 
-          <div class="age-duration d-flex justify-content-between">
-
-            <div class="age">Žanr: Animirani</div>
-            <div class="duration">1h 37min</div>
-          </div>
-
-
-
-
-          <div class="najava-wrapper">
-          </div>
-
-
-
-          <div class="time-format">
-            <div class="kinoholder" data-gradid="68" data-kinoid="73">
-              <div class="day-wrapper">
-
-                <div class="timings-wrapper center-page">
-
-
-                  <a class="disabled perf" data-format="SINK" href="javascript:;" rel="nofollow">
-                    <div class="format" data-bs-placement="top" data-bs-title="Sinkronizirano" data-bs-toggle="tooltip">
-                      SINK</div>
-                    <div class="time">16:15</div>
-                    <div class="venue">Dvorana 1</div>
-                  </a>
-
-
-                  <a class="disabled perf" data-format="SINK" href="javascript:;" rel="nofollow">
-                    <div class="format" data-bs-placement="top" data-bs-title="Sinkronizirano" data-bs-toggle="tooltip">
-                      SINK</div>
-                    <div class="time">18:15</div>
-                    <div class="venue">Dvorana 1</div>
-                  </a>
-                </div>
-
-              </div>
-
-
-
-
-
-
+                <div class="age">Žanr: Horor</div>
+                    <div class="duration">1h 30min</div>
 
             </div>
 
-          </div>
+
+
+
+            <div class="najava-wrapper">
+            </div>
+
+
+
+                <div class="time-format">
+                            <div class="kinoholder" data-gradid="68" data-kinoid="73">
+                                <div class="day-wrapper">
+
+                                        <div class="timings-wrapper center-page">
+
+
+    <a class="perf" data-format="TITL" href="https://cinestarcinemas.hr/Shop/zagreb-kaptol-boutique-cinema/resident-evil/E2F11000023EDZCTNJ" rel="nofollow">
+        <div class="format" data-bs-placement="top" data-bs-title="" data-bs-toggle="tooltip">TITL</div>
+        <div class="time">19:30</div>
+        <div class="venue">Dvorana 3</div>
+    </a>
+                                        </div>
+
+                                </div>
+
+
+
+
+
+
+
+                                                            </div>
+
+                </div>
 
 
         </div>
-      </div>
-      <div class="movie-item d-flex" data-format="TITL" data-genre="Akcijski">
-        <a class="poster-wrapper"
-          href="https://cinestarcinemas.hr/zagreb-kaptol-boutique-cinema/psi-pod-zvijezdama/6515">
-          <img alt="Psi pod zvijezdama" class="img-fluid"
-            src="https://cinestarcinemas.hr/remote/185.155.226.145/movies/Dog%20Stars/dog_556x800_hrr.jpg?preset=film">
-        </a>
+    </div>
+<div class="movie-item d-flex" data-format="TITL" data-genre="Triler">
+            <a class="poster-wrapper" href="https://cinestarcinemas.hr/zagreb-kaptol-boutique-cinema/pad-2-bez-povratka/6267">
+                <img alt="Pad 2: Bez povratka" class="img-fluid" src="https://cinestarcinemas.hr/remote/185.155.226.145/movies/The%20Fall%202%20Deadpoint/fall_300x400_hr.jpg?preset=film">
+            </a>
 
 
         <div class="movie-desc">
-          <a href="https://cinestarcinemas.hr/zagreb-kaptol-boutique-cinema/psi-pod-zvijezdama/6515">
-            <h3>Psi pod zvijezdama</h3>
-          </a>
-          <span class="age"><img alt="Iznad 15 godina" class="img-fluid" src="img/15.png"></span>
-          <div class="age-duration d-flex justify-content-between">
+            <a href="https://cinestarcinemas.hr/zagreb-kaptol-boutique-cinema/pad-2-bez-povratka/6267"><h3>Pad 2: Bez povratka </h3></a>
+            <span class="age"><img alt="Iznad 12 godina" class="img-fluid" src="/img/12.png"></span>
+            <div class="age-duration d-flex justify-content-between">
 
-            <div class="age">Žanr: Akcijski</div>
-            <div class="duration">1h 58min</div>
-          </div>
-
-
-
-
-          <div class="najava-wrapper">
-          </div>
-
-
-
-          <div class="time-format">
-            <div class="kinoholder" data-gradid="68" data-kinoid="73">
-              <div class="day-wrapper">
-
-                <div class="timings-wrapper center-page">
-
-
-                  <a class="disabled perf" data-format="TITL" href="javascript:;" rel="nofollow">
-                    <div class="format" data-bs-placement="top" data-bs-title="" data-bs-toggle="tooltip">TITL</div>
-                    <div class="time">20:00</div>
-                    <div class="venue">Dvorana 2</div>
-                  </a>
-
-
-                  <a class="perf" data-format="TITL"
-                    href="https://cinestarcinemas.hr/Shop/zagreb-kaptol-boutique-cinema/psi-pod-zvijezdama/F5E11000023EDZCTNJ"
-                    rel="nofollow">
-                    <div class="format" data-bs-placement="top" data-bs-title="" data-bs-toggle="tooltip">TITL</div>
-                    <div class="time">22:30</div>
-                    <div class="venue">Dvorana 4</div>
-                  </a>
-                </div>
-
-              </div>
-
-
-
-
-
-
+                <div class="age">Žanr: Triler</div>
+                    <div class="duration">1h 37min</div>
 
             </div>
 
-          </div>
+
+
+
+            <div class="najava-wrapper">
+            </div>
+
+
+
+                <div class="time-format">
+                            <div class="kinoholder" data-gradid="68" data-kinoid="73">
+                                <div class="day-wrapper">
+
+                                        <div class="timings-wrapper center-page">
+
+
+    <a class="perf" data-format="TITL" href="https://cinestarcinemas.hr/Shop/zagreb-kaptol-boutique-cinema/pad-2-bez-povratka/B0F11000023EDZCTNJ" rel="nofollow">
+        <div class="format" data-bs-placement="top" data-bs-title="" data-bs-toggle="tooltip">TITL</div>
+        <div class="time">20:30</div>
+        <div class="venue">Dvorana 5</div>
+    </a>
+                                        </div>
+
+                                </div>
+
+
+
+
+
+
+
+                                                            </div>
+
+                </div>
 
 
         </div>
-      </div>
-      <div class="movie-item d-flex" data-format="TITL" data-genre="Romantična komedija">
-        <a class="poster-wrapper" href="https://cinestarcinemas.hr/zagreb-kaptol-boutique-cinema/zelim-seks/6534">
-          <img alt="Želim seks" class="img-fluid"
-            src="https://cinestarcinemas.hr/remote/185.155.226.145/movies/I%20Want%20Your%20Sex/IWantYourSexHR.jpg?preset=film">
-        </a>
+    </div>
+<div class="movie-item d-flex" data-format="TITL" data-genre="SF">
+            <a class="poster-wrapper" href="https://cinestarcinemas.hr/zagreb-kaptol-boutique-cinema/magija-2-tres-chic/6582">
+                <img alt="Magija 2 - Tres Chic" class="img-fluid" src="https://cinestarcinemas.hr/remote/185.155.226.145/movies/Practical%20Magic%202/magic_300x400_hrr.jpg?preset=film">
+            </a>
 
 
         <div class="movie-desc">
-          <a href="https://cinestarcinemas.hr/zagreb-kaptol-boutique-cinema/zelim-seks/6534">
-            <h3>Želim seks</h3>
-          </a>
-          <span class="age"><img alt="Iznad 18 godina" class="img-fluid" src="img/18.png"></span>
-          <div class="age-duration d-flex justify-content-between">
+            <a href="https://cinestarcinemas.hr/zagreb-kaptol-boutique-cinema/magija-2-tres-chic/6582"><h3>Magija 2 - Tres Chic</h3></a>
+            <span class="age"><img alt="Iznad 12 godina" class="img-fluid" src="/img/12.png"></span>
+            <div class="age-duration d-flex justify-content-between">
 
-            <div class="age">Žanr: Romantična komedija</div>
-            <div class="duration">1h 30min</div>
-          </div>
-
-
-
-
-          <div class="najava-wrapper">
-          </div>
-
-
-
-          <div class="time-format">
-            <div class="kinoholder" data-gradid="68" data-kinoid="73">
-              <div class="day-wrapper">
-
-                <div class="timings-wrapper center-page">
-
-
-                  <a class="perf" data-format="TITL"
-                    href="https://cinestarcinemas.hr/Shop/zagreb-kaptol-boutique-cinema/zelim-seks/95E11000023EDZCTNJ"
-                    rel="nofollow">
-                    <div class="format" data-bs-placement="top" data-bs-title="" data-bs-toggle="tooltip">TITL</div>
-                    <div class="time">20:30</div>
-                    <div class="venue">Dvorana 4</div>
-                  </a>
-
-
-                  <a class="perf" data-format="TITL"
-                    href="https://cinestarcinemas.hr/Shop/zagreb-kaptol-boutique-cinema/zelim-seks/D2E11000023EDZCTNJ"
-                    rel="nofollow">
-                    <div class="format" data-bs-placement="top" data-bs-title="" data-bs-toggle="tooltip">TITL</div>
-                    <div class="time">22:25</div>
-                    <div class="venue">Dvorana 2</div>
-                  </a>
-                </div>
-
-              </div>
-
-
-
-
-
-
+                <div class="age">Žanr: SF</div>
+                    <div class="duration">2h 10min</div>
 
             </div>
 
-          </div>
+
+
+
+            <div class="najava-wrapper">
+            </div>
+
+
+
+                <div class="time-format">
+                            <div class="kinoholder" data-gradid="68" data-kinoid="73">
+                                <div class="day-wrapper">
+
+                                        <div class="timings-wrapper center-page">
+
+
+    <a class="perf" data-format="TITL" href="https://cinestarcinemas.hr/Shop/zagreb-kaptol-boutique-cinema/magija-2-tres-chic/36D11000023EDZCTNJ" rel="nofollow">
+        <div class="format" data-bs-placement="top" data-bs-title="" data-bs-toggle="tooltip">TITL</div>
+        <div class="time">20:00</div>
+        <div class="venue">Dvorana 3</div>
+    </a>
+
+
+    <a class="perf" data-format="TITL" href="https://cinestarcinemas.hr/Shop/zagreb-kaptol-boutique-cinema/magija-2-tres-chic/D8E11000023EDZCTNJ" rel="nofollow">
+        <div class="format" data-bs-placement="top" data-bs-title="" data-bs-toggle="tooltip">TITL</div>
+        <div class="time">20:15</div>
+        <div class="venue">Dvorana 2</div>
+    </a>
+
+
+    <a class="perf" data-format="TITL" href="https://cinestarcinemas.hr/Shop/zagreb-kaptol-boutique-cinema/magija-2-tres-chic/8AE11000023EDZCTNJ" rel="nofollow">
+        <div class="format" data-bs-placement="top" data-bs-title="" data-bs-toggle="tooltip">TITL</div>
+        <div class="time">20:30</div>
+        <div class="venue">Dvorana 1</div>
+    </a>
+                                        </div>
+
+                                </div>
+
+
+
+
+                                                            </div>
+
+                </div>
 
 
         </div>
-      </div>
-      <div class="movie-item d-flex" data-format="TITL" data-genre="Horor">
-        <a class="poster-wrapper"
-          href="https://cinestarcinemas.hr/zagreb-kaptol-boutique-cinema/podmuklo-oni-su-meu-nama/6551">
-          <img alt="Podmuklo: Oni su među nama" class="img-fluid"
-            src="https://cinestarcinemas.hr/remote/185.155.226.145/movies/Insidious%20Out%20of%20the%20Further/insidious_300x400_hr.jpg?preset=film">
-        </a>
+    </div>
+<div class="movie-item d-flex" data-format="SINK" data-genre="Animirani">
+            <a class="poster-wrapper" href="https://cinestarcinemas.hr/zagreb-kaptol-boutique-cinema/janko-strizic-film-bundevasti-kaos/6539">
+                <img alt="Janko Strižić film: Bundevasti kaos" class="img-fluid" src="https://cinestarcinemas.hr/remote/185.155.226.145/movies/Shaun%20the%20Sheep%20The%20Beast%20of%20Mossy%20Bottom/shaun_556x800_hr.jpg?preset=film">
+            </a>
 
 
         <div class="movie-desc">
-          <a href="https://cinestarcinemas.hr/zagreb-kaptol-boutique-cinema/podmuklo-oni-su-meu-nama/6551">
-            <h3>Podmuklo: Oni su među nama</h3>
-          </a>
-          <span class="age"><img alt="Iznad 15 godina" class="img-fluid" src="img/15.png"></span>
-          <div class="age-duration d-flex justify-content-between">
+            <a href="https://cinestarcinemas.hr/zagreb-kaptol-boutique-cinema/janko-strizic-film-bundevasti-kaos/6539"><h3>Janko Strižić film: Bundevasti kaos </h3></a>
 
-            <div class="age">Žanr: Horor</div>
-            <div class="duration">1h 46min</div>
-          </div>
+            <div class="age-duration d-flex justify-content-between">
 
-
-
-
-          <div class="najava-wrapper">
-          </div>
-
-
-
-          <div class="time-format">
-            <div class="kinoholder" data-gradid="68" data-kinoid="73">
-              <div class="day-wrapper">
-
-                <div class="timings-wrapper center-page">
-
-
-                  <a class="perf" data-format="TITL"
-                    href="https://cinestarcinemas.hr/Shop/zagreb-kaptol-boutique-cinema/podmuklo-oni-su-meu-nama/B7E11000023EDZCTNJ"
-                    rel="nofollow">
-                    <div class="format" data-bs-placement="top" data-bs-title="" data-bs-toggle="tooltip">TITL</div>
-                    <div class="time">22:15</div>
-                    <div class="venue">Dvorana 5</div>
-                  </a>
-                </div>
-
-              </div>
-
-
-
-
-
-
+                <div class="age">Žanr: Animirani</div>
+                    <div class="duration">1h 21min</div>
 
             </div>
 
-          </div>
+
+
+
+            <div class="najava-wrapper">
+            </div>
+
+
+
+                <div class="time-format">
+                            <div class="kinoholder" data-gradid="68" data-kinoid="73">
+                                <div class="day-wrapper">
+
+                                        <div class="timings-wrapper center-page">
+
+
+    <a class="perf" data-format="SINK" href="https://cinestarcinemas.hr/Shop/zagreb-kaptol-boutique-cinema/janko-strizic-film-bundevasti-kaos/02F11000023EDZCTNJ" rel="nofollow">
+        <div class="format" data-bs-placement="top" data-bs-title="Sinkronizirano" data-bs-toggle="tooltip">SINK</div>
+        <div class="time">17:45</div>
+        <div class="venue">Dvorana 3</div>
+    </a>
+                                        </div>
+
+                                </div>
+
+
+
+
+
+
+
+                                                            </div>
+
+                </div>
 
 
         </div>
-      </div>
-      <div class="movie-item d-flex" data-format="3D/OV" data-genre="Avantura">
-        <a class="poster-wrapper"
-          href="https://cinestarcinemas.hr/zagreb-kaptol-boutique-cinema/harry-potter-and-the-philosophers-stone/6579">
-          <img alt="Harry Potter and the Philosopher's Stone" class="img-fluid"
-            src="https://cinestarcinemas.hr/remote/185.155.226.145/movies/Harry%20Potter%20and%20the%20Philoshopers%20Stone/harry_300x400_hr.jpg?preset=film">
-        </a>
+    </div>
+<div class="movie-item d-flex" data-format="TITL" data-genre="Akcijska Avantura">
+            <a class="poster-wrapper" href="https://cinestarcinemas.hr/zagreb-kaptol-boutique-cinema/srce-zvijeri/6542">
+                <img alt="Srce zvijeri" class="img-fluid" src="https://cinestarcinemas.hr/remote/185.155.226.145/movies/Heart%20of%20the%20Beast/heart%20of%20the%20beast_300x400_hr.jpg?preset=film">
+            </a>
 
 
         <div class="movie-desc">
-          <a
-            href="https://cinestarcinemas.hr/zagreb-kaptol-boutique-cinema/harry-potter-and-the-philosophers-stone/6579">
-            <h3>Harry Potter and the Philosopher's Stone</h3>
-          </a>
+            <a href="https://cinestarcinemas.hr/zagreb-kaptol-boutique-cinema/srce-zvijeri/6542"><h3>Srce zvijeri </h3></a>
+            <span class="age"><img alt="Iznad 12 godina" class="img-fluid" src="/img/12.png"></span>
+            <div class="age-duration d-flex justify-content-between">
 
-          <div class="age-duration d-flex justify-content-between">
-
-            <div class="age">Žanr: Avantura</div>
-            <div class="duration">2h 46min</div>
-          </div>
-
-
-
-
-          <div class="najava-wrapper">
-          </div>
-
-
-
-          <div class="time-format">
-            <div class="kinoholder" data-gradid="68" data-kinoid="73">
-              <div class="day-wrapper">
-
-                <div class="timings-wrapper center-page">
-
-
-                  <a class="disabled perf" data-format="3D/OV" href="javascript:;" rel="nofollow">
-                    <div class="format" data-bs-placement="top"
-                      data-bs-title="realD3D - toliko stvaran da je nestvaran!" data-bs-toggle="tooltip">3D </div>
-                    <div class="time">19:15</div>
-                    <div class="venue">Dvorana 3</div>
-                  </a>
-                </div>
-
-              </div>
-
-
-
-
-
-
+                <div class="age">Žanr: Akcijska Avantura</div>
+                    <div class="duration">1h 41min</div>
 
             </div>
 
-          </div>
+
+
+
+            <div class="najava-wrapper">
+            </div>
+
+
+
+                <div class="time-format">
+                            <div class="kinoholder" data-gradid="68" data-kinoid="73">
+                                <div class="day-wrapper">
+
+                                        <div class="timings-wrapper center-page">
+
+
+    <a class="perf" data-format="TITL" href="https://cinestarcinemas.hr/Shop/zagreb-kaptol-boutique-cinema/srce-zvijeri/B8E11000023EDZCTNJ" rel="nofollow">
+        <div class="format" data-bs-placement="top" data-bs-title="" data-bs-toggle="tooltip">TITL</div>
+        <div class="time">19:15</div>
+        <div class="venue">Dvorana 1</div>
+    </a>
+                                        </div>
+
+                                </div>
+
+
+
+
+
+                                                            </div>
+
+                </div>
 
 
         </div>
-      </div>
-      <div class="movie-item d-flex" data-format="TITL" data-genre="Komedija">
-        <a class="poster-wrapper" href="https://cinestarcinemas.hr/zagreb-kaptol-boutique-cinema/spa-weekend/6543">
-          <img alt="Spa Weekend" class="img-fluid"
-            src="https://cinestarcinemas.hr/remote/185.155.226.145/movies/Spa%20Weekend/spa_556x800_hr.jpg?preset=film">
-        </a>
+    </div>
+<div class="movie-item d-flex" data-format="TITL" data-genre="Komedija">
+            <a class="poster-wrapper" href="https://cinestarcinemas.hr/zagreb-kaptol-boutique-cinema/idioti/6537">
+                <img alt="Idioti" class="img-fluid" src="https://cinestarcinemas.hr/remote/185.155.226.145/movies/Idiots/IdiotsHR.jpg?preset=film">
+            </a>
 
 
         <div class="movie-desc">
-          <a href="https://cinestarcinemas.hr/zagreb-kaptol-boutique-cinema/spa-weekend/6543">
-            <h3>Spa Weekend</h3>
-          </a>
-          <span class="age"><img alt="Iznad 12 godina" class="img-fluid" src="img/12.png"></span>
-          <div class="age-duration d-flex justify-content-between">
+            <a href="https://cinestarcinemas.hr/zagreb-kaptol-boutique-cinema/idioti/6537"><h3>Idioti</h3></a>
+            <span class="age"><img alt="Iznad 15 godina" class="img-fluid" src="/img/15.png"></span>
+            <div class="age-duration d-flex justify-content-between">
 
-            <div class="age">Žanr: Komedija</div>
-            <div class="duration">1h 37min</div>
-          </div>
+                <div class="age">Žanr: Komedija</div>
+                    <div class="duration">1h 38min</div>
+                            </div>
 
 
 
 
-          <div class="najava-wrapper">
-          </div>
-
-
-
-          <div class="time-format">
-            <div class="kinoholder" data-gradid="68" data-kinoid="73">
-              <div class="day-wrapper">
-
-                <div class="timings-wrapper center-page">
-
-
-                  <a class="disabled perf" data-format="TITL" href="javascript:;" rel="nofollow">
-                    <div class="format" data-bs-placement="top" data-bs-title="" data-bs-toggle="tooltip">TITL</div>
-                    <div class="time">18:00</div>
-                    <div class="venue">Dvorana 2</div>
-                  </a>
-                </div>
-
-              </div>
-
-
-
-
-
-
-
+            <div class="najava-wrapper">
             </div>
 
-          </div>
+
+
+                <div class="time-format">
+                            <div class="kinoholder" data-gradid="68" data-kinoid="73">
+                                <div class="day-wrapper">
+
+                                        <div class="timings-wrapper center-page">
+
+
+    <a class="perf" data-format="TITL" href="https://cinestarcinemas.hr/Shop/zagreb-kaptol-boutique-cinema/idioti/EEE11000023EDZCTNJ" rel="nofollow">
+        <div class="format" data-bs-placement="top" data-bs-title="" data-bs-toggle="tooltip">TITL</div>
+        <div class="time">19:00</div>
+        <div class="venue">Dvorana 4</div>
+    </a>
+
+
+    <a class="perf" data-format="TITL" href="https://cinestarcinemas.hr/Shop/zagreb-kaptol-boutique-cinema/idioti/8DE11000023EDZCTNJ" rel="nofollow">
+        <div class="format" data-bs-placement="top" data-bs-title="" data-bs-toggle="tooltip">TITL</div>
+        <div class="time">21:15</div>
+        <div class="venue">Dvorana 3</div>
+    </a>
+                                        </div>
+
+                                </div>
+
+
+
+
+
+
+
+                                                            </div>
+
+                </div>
 
 
         </div>
-      </div>
-      <div class="movie-item d-flex" data-format="TITL" data-genre="Akcijski">
-        <a class="poster-wrapper"
-          href="https://cinestarcinemas.hr/zagreb-kaptol-boutique-cinema/kraj-hrastove-ulice/6514">
-          <img alt="Kraj Hrastove ulice" class="img-fluid"
-            src="https://cinestarcinemas.hr/remote/185.155.226.145/movies/The%20End%20of%20Oak%20Street/oak_300x400_hrr.jpg?preset=film">
-        </a>
+    </div>
+<div class="movie-item d-flex" data-format="SINK" data-genre="Animirani">
+            <a class="poster-wrapper" href="https://cinestarcinemas.hr/zagreb-kaptol-boutique-cinema/kristalni-planet/6533">
+                <img alt="Kristalni planet" class="img-fluid" src="https://cinestarcinemas.hr/remote/185.155.226.145/movies/Kristalni%20planet/planet_556x800_hrr.jpg?preset=film">
+            </a>
 
 
         <div class="movie-desc">
-          <a href="https://cinestarcinemas.hr/zagreb-kaptol-boutique-cinema/kraj-hrastove-ulice/6514">
-            <h3>Kraj Hrastove ulice</h3>
-          </a>
-          <span class="age"><img alt="Iznad 12 godina" class="img-fluid" src="img/12.png"></span>
-          <div class="age-duration d-flex justify-content-between">
+            <a href="https://cinestarcinemas.hr/zagreb-kaptol-boutique-cinema/kristalni-planet/6533"><h3>Kristalni planet </h3></a>
 
-            <div class="age">Žanr: Akcijski</div>
-            <div class="duration">1h 40min</div>
-          </div>
+            <div class="age-duration d-flex justify-content-between">
+
+                <div class="age">Žanr: Animirani</div>
+                    <div class="duration">1h 37min</div>
+                            </div>
 
 
 
 
-          <div class="najava-wrapper">
-          </div>
-
-
-
-          <div class="time-format">
-            <div class="kinoholder" data-gradid="68" data-kinoid="73">
-              <div class="day-wrapper">
-
-                <div class="timings-wrapper center-page">
-
-
-                  <a class="perf" data-format="TITL"
-                    href="https://cinestarcinemas.hr/Shop/zagreb-kaptol-boutique-cinema/kraj-hrastove-ulice/E3E11000023EDZCTNJ"
-                    rel="nofollow">
-                    <div class="format" data-bs-placement="top" data-bs-title="" data-bs-toggle="tooltip">TITL</div>
-                    <div class="time">22:30</div>
-                    <div class="venue">Dvorana 3</div>
-                  </a>
-                </div>
-
-              </div>
-
-
-
-
-
-
-
+            <div class="najava-wrapper">
             </div>
 
-          </div>
+
+
+                <div class="time-format">
+                            <div class="kinoholder" data-gradid="68" data-kinoid="73">
+                                <div class="day-wrapper">
+
+                                        <div class="timings-wrapper center-page">
+
+
+    <a class="disabled perf" data-format="SINK" href="javascript:;" rel="nofollow">
+        <div class="format" data-bs-placement="top" data-bs-title="Sinkronizirano" data-bs-toggle="tooltip">SINK</div>
+        <div class="time">11:15</div>
+        <div class="venue">Dvorana 3</div>
+    </a>
+
+
+    <a class="disabled perf" data-format="SINK" href="javascript:;" rel="nofollow">
+        <div class="format" data-bs-placement="top" data-bs-title="Sinkronizirano" data-bs-toggle="tooltip">SINK</div>
+        <div class="time">13:15</div>
+        <div class="venue">Dvorana 3</div>
+    </a>
+
+
+    <a class="disabled perf" data-format="SINK" href="javascript:;" rel="nofollow">
+        <div class="format" data-bs-placement="top" data-bs-title="Sinkronizirano" data-bs-toggle="tooltip">SINK</div>
+        <div class="time">14:15</div>
+        <div class="venue">Dvorana 2</div>
+    </a>
+
+
+    <a class="disabled perf" data-format="SINK" href="javascript:;" rel="nofollow">
+        <div class="format" data-bs-placement="top" data-bs-title="Sinkronizirano" data-bs-toggle="tooltip">SINK</div>
+        <div class="time">15:15</div>
+        <div class="venue">Dvorana 3</div>
+    </a>
+
+
+    <a class="perf" data-format="SINK" href="https://cinestarcinemas.hr/Shop/zagreb-kaptol-boutique-cinema/kristalni-planet/ACE11000023EDZCTNJ" rel="nofollow">
+        <div class="format" data-bs-placement="top" data-bs-title="Sinkronizirano" data-bs-toggle="tooltip">SINK</div>
+        <div class="time">17:15</div>
+        <div class="venue">Dvorana 3</div>
+    </a>
+                                        </div>
+
+                                </div>
+
+
+
+
+
+
+
+                                                            </div>
+
+                </div>
 
 
         </div>
-      </div>
-      <div class="movie-item d-flex" data-format="SINK" data-genre="Animirani">
-        <a class="poster-wrapper"
-          href="https://cinestarcinemas.hr/zagreb-kaptol-boutique-cinema/vau-vau-zvijezda-3-bitka-bendova/6530">
-          <img alt="Vau vau zvijezda 3: Bitka bendova" class="img-fluid"
-            src="https://cinestarcinemas.hr/remote/185.155.226.145/movies/Rock%20Dog%203/rock_556x800_hr.jpg?preset=film">
-        </a>
+    </div>
+<div class="movie-item d-flex" data-format="TITL" data-genre="Akcijski">
+            <a class="poster-wrapper" href="https://cinestarcinemas.hr/zagreb-kaptol-boutique-cinema/psi-pod-zvijezdama/6515">
+                <img alt="Psi pod zvijezdama" class="img-fluid" src="https://cinestarcinemas.hr/remote/185.155.226.145/movies/Dog%20Stars/dog_556x800_hrr.jpg?preset=film">
+            </a>
 
 
         <div class="movie-desc">
-          <a href="https://cinestarcinemas.hr/zagreb-kaptol-boutique-cinema/vau-vau-zvijezda-3-bitka-bendova/6530">
-            <h3>Vau vau zvijezda 3: Bitka bendova</h3>
-          </a>
+            <a href="https://cinestarcinemas.hr/zagreb-kaptol-boutique-cinema/psi-pod-zvijezdama/6515"><h3>Psi pod zvijezdama</h3></a>
+            <span class="age"><img alt="Iznad 15 godina" class="img-fluid" src="/img/15.png"></span>
+            <div class="age-duration d-flex justify-content-between">
 
-          <div class="age-duration d-flex justify-content-between">
-
-            <div class="age">Žanr: Animirani</div>
-            <div class="duration">1h 30min</div>
-          </div>
+                <div class="age">Žanr: Akcijski</div>
+                    <div class="duration">1h 58min</div>
+                            </div>
 
 
 
 
-          <div class="najava-wrapper">
-          </div>
-
-
-
-          <div class="time-format">
-            <div class="kinoholder" data-gradid="68" data-kinoid="73">
-              <div class="day-wrapper">
-
-                <div class="timings-wrapper center-page">
-
-
-                  <a class="disabled perf" data-format="SINK" href="javascript:;" rel="nofollow">
-                    <div class="format" data-bs-placement="top" data-bs-title="Sinkronizirano" data-bs-toggle="tooltip">
-                      SINK</div>
-                    <div class="time">16:00</div>
-                    <div class="venue">Dvorana 2</div>
-                  </a>
-                </div>
-
-              </div>
-
-
-
-
-
-
-
+            <div class="najava-wrapper">
             </div>
 
-          </div>
+
+
+                <div class="time-format">
+                            <div class="kinoholder" data-gradid="68" data-kinoid="73">
+                                <div class="day-wrapper">
+
+                                        <div class="timings-wrapper center-page">
+
+
+    <a class="perf" data-format="TITL" href="https://cinestarcinemas.hr/Shop/zagreb-kaptol-boutique-cinema/psi-pod-zvijezdama/0CE11000023EDZCTNJ" rel="nofollow">
+        <div class="format" data-bs-placement="top" data-bs-title="" data-bs-toggle="tooltip">TITL</div>
+        <div class="time">18:05</div>
+        <div class="venue">Dvorana 2</div>
+    </a>
+
+
+    <a class="perf" data-format="TITL" href="https://cinestarcinemas.hr/Shop/zagreb-kaptol-boutique-cinema/psi-pod-zvijezdama/4FE11000023EDZCTNJ" rel="nofollow">
+        <div class="format" data-bs-placement="top" data-bs-title="" data-bs-toggle="tooltip">TITL</div>
+        <div class="time">21:05</div>
+        <div class="venue">Dvorana 4</div>
+    </a>
+                                        </div>
+
+                                </div>
+
+
+
+
+
+
+
+                                                            </div>
+
+                </div>
 
 
         </div>
-      </div>
-      <div class="movie-item d-flex" data-format="SINK" data-genre="Animirani">
-        <a class="poster-wrapper"
-          href="https://cinestarcinemas.hr/zagreb-kaptol-boutique-cinema/psici-u-ophodnji-dino-avantura/6529">
-          <img alt="Psići u ophodnji: Dino avantura" class="img-fluid"
-            src="https://cinestarcinemas.hr/remote/185.155.226.145/movies/PAW%20Patrol%20The%20Dino%20Movie/paw_556x800_hr.jpg?preset=film">
-        </a>
+    </div>
+<div class="movie-item d-flex" data-format="TITL" data-genre="Romantična komedija">
+            <a class="poster-wrapper" href="https://cinestarcinemas.hr/zagreb-kaptol-boutique-cinema/zelim-seks/6534">
+                <img alt="Želim seks" class="img-fluid" src="https://cinestarcinemas.hr/remote/185.155.226.145/movies/I%20Want%20Your%20Sex/IWantYourSexHR.jpg?preset=film">
+            </a>
 
 
         <div class="movie-desc">
-          <a href="https://cinestarcinemas.hr/zagreb-kaptol-boutique-cinema/psici-u-ophodnji-dino-avantura/6529">
-            <h3>Psići u ophodnji: Dino avantura</h3>
-          </a>
+            <a href="https://cinestarcinemas.hr/zagreb-kaptol-boutique-cinema/zelim-seks/6534"><h3>Želim seks</h3></a>
+            <span class="age"><img alt="Iznad 18 godina" class="img-fluid" src="/img/18.png"></span>
+            <div class="age-duration d-flex justify-content-between">
 
-          <div class="age-duration d-flex justify-content-between">
-
-            <div class="age">Žanr: Animirani</div>
-            <div class="duration">1h 28min</div>
-          </div>
+                <div class="age">Žanr: Romantična komedija</div>
+                    <div class="duration">1h 30min</div>
+                            </div>
 
 
 
 
-          <div class="najava-wrapper">
-          </div>
-
-
-
-          <div class="time-format">
-            <div class="kinoholder" data-gradid="68" data-kinoid="73">
-              <div class="day-wrapper">
-
-                <div class="timings-wrapper center-page">
-
-
-                  <a class="disabled perf" data-format="SINK" href="javascript:;" rel="nofollow">
-                    <div class="format" data-bs-placement="top" data-bs-title="Sinkronizirano" data-bs-toggle="tooltip">
-                      SINK</div>
-                    <div class="time">16:15</div>
-                    <div class="venue">Dvorana 4</div>
-                  </a>
-
-
-                  <a class="disabled perf" data-format="SINK" href="javascript:;" rel="nofollow">
-                    <div class="format" data-bs-placement="top" data-bs-title="Sinkronizirano" data-bs-toggle="tooltip">
-                      SINK</div>
-                    <div class="time">17:15</div>
-                    <div class="venue">Dvorana 3</div>
-                  </a>
-                </div>
-
-              </div>
-
-
-
-
-
-
-
+            <div class="najava-wrapper">
             </div>
 
-          </div>
+
+
+                <div class="time-format">
+                            <div class="kinoholder" data-gradid="68" data-kinoid="73">
+                                <div class="day-wrapper">
+
+                                        <div class="timings-wrapper center-page">
+
+
+    <a class="perf" data-format="TITL" href="https://cinestarcinemas.hr/Shop/zagreb-kaptol-boutique-cinema/zelim-seks/11F11000023EDZCTNJ" rel="nofollow">
+        <div class="format" data-bs-placement="top" data-bs-title="" data-bs-toggle="tooltip">TITL</div>
+        <div class="time">22:30</div>
+        <div class="venue">Dvorana 5</div>
+    </a>
+                                        </div>
+
+                                </div>
+
+
+
+
+
+
+
+                                                            </div>
+
+                </div>
 
 
         </div>
-      </div>
-      <div class="movie-item d-flex" data-format="TITL/3D" data-genre="Akcijski">
-        <a class="poster-wrapper"
-          href="https://cinestarcinemas.hr/zagreb-kaptol-boutique-cinema/spider-man-novo-doba/6511">
-          <img alt="Spider-Man: Novo doba" class="img-fluid"
-            src="https://cinestarcinemas.hr/remote/185.155.226.145/movies/SpiderMan%20Brand%20New%20Day/spiderman_556x800_hr.jpg?preset=film">
-        </a>
+    </div>
+<div class="movie-item d-flex" data-format="TITL" data-genre="Komedija">
+            <a class="poster-wrapper" href="https://cinestarcinemas.hr/zagreb-kaptol-boutique-cinema/spa-weekend/6543">
+                <img alt="Spa Weekend" class="img-fluid" src="https://cinestarcinemas.hr/remote/185.155.226.145/movies/Spa%20Weekend/spa_556x800_hr.jpg?preset=film">
+            </a>
 
 
         <div class="movie-desc">
-          <a href="https://cinestarcinemas.hr/zagreb-kaptol-boutique-cinema/spider-man-novo-doba/6511">
-            <h3>Spider-Man: Novo doba</h3>
-          </a>
-          <span class="age"><img alt="Iznad 12 godina" class="img-fluid" src="img/12.png"></span>
-          <div class="age-duration d-flex justify-content-between">
+            <a href="https://cinestarcinemas.hr/zagreb-kaptol-boutique-cinema/spa-weekend/6543"><h3>Spa Weekend</h3></a>
+            <span class="age"><img alt="Iznad 12 godina" class="img-fluid" src="/img/12.png"></span>
+            <div class="age-duration d-flex justify-content-between">
 
-            <div class="age">Žanr: Akcijski</div>
-            <div class="duration">2h 25min</div>
-          </div>
+                <div class="age">Žanr: Komedija</div>
+                    <div class="duration">1h 37min</div>
+                            </div>
 
 
 
 
-          <div class="najava-wrapper">
-          </div>
-
-
-
-          <div class="time-format">
-            <div class="kinoholder" data-gradid="68" data-kinoid="73">
-              <div class="day-wrapper">
-
-                <div class="timings-wrapper center-page">
-
-
-                  <a class="perf" data-format="TITL"
-                    href="https://cinestarcinemas.hr/Shop/zagreb-kaptol-boutique-cinema/spider-man-novo-doba/70E11000023EDZCTNJ"
-                    rel="nofollow">
-                    <div class="format" data-bs-placement="top" data-bs-title="" data-bs-toggle="tooltip">TITL</div>
-                    <div class="time">20:15</div>
-                    <div class="venue">Dvorana 1</div>
-                  </a>
-                </div>
-
-              </div>
-
-
-
-
-
-
-
+            <div class="najava-wrapper">
             </div>
 
-          </div>
+
+
+                <div class="time-format">
+                            <div class="kinoholder" data-gradid="68" data-kinoid="73">
+                                <div class="day-wrapper">
+
+                                        <div class="timings-wrapper center-page">
+
+
+    <a class="perf" data-format="TITL" href="https://cinestarcinemas.hr/Shop/zagreb-kaptol-boutique-cinema/spa-weekend/8EE11000023EDZCTNJ" rel="nofollow">
+        <div class="format" data-bs-placement="top" data-bs-title="" data-bs-toggle="tooltip">TITL</div>
+        <div class="time">17:00</div>
+        <div class="venue">Dvorana 4</div>
+    </a>
+                                        </div>
+
+                                </div>
+
+
+
+
+
+
+
+                                                            </div>
+
+                </div>
 
 
         </div>
-      </div>
-      <div class="movie-item d-flex" data-format="SINK" data-genre="Animirani">
-        <a class="poster-wrapper" href="https://cinestarcinemas.hr/zagreb-kaptol-boutique-cinema/tigric-teo/6243">
-          <img alt="Tigrić Teo" class="img-fluid"
-            src="https://cinestarcinemas.hr/remote/185.155.226.145/movies/The%20Lost%20Tiger/lost_556x800_hr.jpg?preset=film">
-        </a>
+    </div>
+<div class="movie-item d-flex" data-format="SINK" data-genre="Animirani">
+            <a class="poster-wrapper" href="https://cinestarcinemas.hr/zagreb-kaptol-boutique-cinema/vau-vau-zvijezda-3-bitka-bendova/6530">
+                <img alt="Vau vau zvijezda 3: Bitka bendova" class="img-fluid" src="https://cinestarcinemas.hr/remote/185.155.226.145/movies/Rock%20Dog%203/rock_556x800_hr.jpg?preset=film">
+            </a>
 
 
         <div class="movie-desc">
-          <a href="https://cinestarcinemas.hr/zagreb-kaptol-boutique-cinema/tigric-teo/6243">
-            <h3>Tigrić Teo</h3>
-          </a>
+            <a href="https://cinestarcinemas.hr/zagreb-kaptol-boutique-cinema/vau-vau-zvijezda-3-bitka-bendova/6530"><h3>Vau vau zvijezda 3: Bitka bendova</h3></a>
 
-          <div class="age-duration d-flex justify-content-between">
+            <div class="age-duration d-flex justify-content-between">
 
-            <div class="age">Žanr: Animirani</div>
-            <div class="duration">1h 22min</div>
-          </div>
+                <div class="age">Žanr: Animirani</div>
+                    <div class="duration">1h 30min</div>
+                            </div>
 
 
 
 
-          <div class="najava-wrapper">
-          </div>
-
-
-
-          <div class="time-format">
-            <div class="kinoholder" data-gradid="68" data-kinoid="73">
-              <div class="day-wrapper">
-
-                <div class="timings-wrapper center-page">
-
-
-                  <a class="perf" data-format="SINK"
-                    href="https://cinestarcinemas.hr/Shop/zagreb-kaptol-boutique-cinema/tigric-teo/56E11000023EDZCTNJ"
-                    rel="nofollow">
-                    <div class="format" data-bs-placement="top" data-bs-title="Sinkronizirano" data-bs-toggle="tooltip">
-                      SINK</div>
-                    <div class="time">11:00</div>
-                    <div class="venue">Dvorana 4</div>
-                  </a>
-                </div>
-
-              </div>
-
-
-
-
-
+            <div class="najava-wrapper">
             </div>
 
-          </div>
+
+
+                <div class="time-format">
+                            <div class="kinoholder" data-gradid="68" data-kinoid="73">
+                                <div class="day-wrapper">
+
+                                        <div class="timings-wrapper center-page">
+
+
+    <a class="disabled perf" data-format="SINK" href="javascript:;" rel="nofollow">
+        <div class="format" data-bs-placement="top" data-bs-title="Sinkronizirano" data-bs-toggle="tooltip">SINK</div>
+        <div class="time">15:00</div>
+        <div class="venue">Dvorana 4</div>
+    </a>
+                                        </div>
+
+                                </div>
+
+
+
+
+                                                            </div>
+
+                </div>
 
 
         </div>
-      </div>
-      <div class="movie-item d-flex" data-format="TITL" data-genre="Epski Spektakl">
-        <a class="poster-wrapper" href="https://cinestarcinemas.hr/zagreb-kaptol-boutique-cinema/odiseja/6519">
-          <img alt="Odiseja" class="img-fluid"
-            src="https://cinestarcinemas.hr/remote/185.155.226.145/movies/The%20Odyssey/odyssey_556x800_hr.jpg?preset=film">
-        </a>
+    </div>
+<div class="movie-item d-flex" data-format="SINK" data-genre="Animirani">
+            <a class="poster-wrapper" href="https://cinestarcinemas.hr/zagreb-kaptol-boutique-cinema/psici-u-ophodnji-dino-avantura/6529">
+                <img alt="Psići u ophodnji: Dino avantura" class="img-fluid" src="https://cinestarcinemas.hr/remote/185.155.226.145/movies/PAW%20Patrol%20The%20Dino%20Movie/paw_556x800_hr.jpg?preset=film">
+            </a>
 
 
         <div class="movie-desc">
-          <a href="https://cinestarcinemas.hr/zagreb-kaptol-boutique-cinema/odiseja/6519">
-            <h3>Odiseja</h3>
-          </a>
-          <span class="age"><img alt="Iznad 12 godina" class="img-fluid" src="img/12.png"></span>
-          <div class="age-duration d-flex justify-content-between">
+            <a href="https://cinestarcinemas.hr/zagreb-kaptol-boutique-cinema/psici-u-ophodnji-dino-avantura/6529"><h3>Psići u ophodnji: Dino avantura</h3></a>
 
-            <div class="age">Žanr: Epski Spektakl</div>
-            <div class="duration">2h 52min</div>
-          </div>
+            <div class="age-duration d-flex justify-content-between">
+
+                <div class="age">Žanr: Animirani</div>
+                    <div class="duration">1h 28min</div>
+                            </div>
 
 
 
 
-          <div class="najava-wrapper">
-          </div>
-
-
-
-          <div class="time-format">
-            <div class="kinoholder" data-gradid="68" data-kinoid="73">
-              <div class="day-wrapper">
-
-                <div class="timings-wrapper center-page">
-
-
-                  <a class="disabled perf" data-format="TITL" href="javascript:;" rel="nofollow">
-                    <div class="format" data-bs-placement="top" data-bs-title="" data-bs-toggle="tooltip">TITL</div>
-                    <div class="time">17:00</div>
-                    <div class="venue">Dvorana 5</div>
-                  </a>
-                </div>
-
-              </div>
-
-
-
-
-
-
-
+            <div class="najava-wrapper">
             </div>
 
-          </div>
+
+
+                <div class="time-format">
+                            <div class="kinoholder" data-gradid="68" data-kinoid="73">
+                                <div class="day-wrapper">
+
+                                        <div class="timings-wrapper center-page">
+
+
+    <a class="disabled perf" data-format="SINK" href="javascript:;" rel="nofollow">
+        <div class="format" data-bs-placement="top" data-bs-title="Sinkronizirano" data-bs-toggle="tooltip">SINK</div>
+        <div class="time">11:00</div>
+        <div class="venue">Dvorana 1</div>
+    </a>
+
+
+    <a class="disabled perf" data-format="SINK" href="javascript:;" rel="nofollow">
+        <div class="format" data-bs-placement="top" data-bs-title="Sinkronizirano" data-bs-toggle="tooltip">SINK</div>
+        <div class="time">13:00</div>
+        <div class="venue">Dvorana 1</div>
+    </a>
+
+
+    <a class="disabled perf" data-format="SINK" href="javascript:;" rel="nofollow">
+        <div class="format" data-bs-placement="top" data-bs-title="Sinkronizirano" data-bs-toggle="tooltip">SINK</div>
+        <div class="time">15:00</div>
+        <div class="venue">Dvorana 1</div>
+    </a>
+
+
+    <a class="perf" data-format="SINK" href="https://cinestarcinemas.hr/Shop/zagreb-kaptol-boutique-cinema/psici-u-ophodnji-dino-avantura/79E11000023EDZCTNJ" rel="nofollow">
+        <div class="format" data-bs-placement="top" data-bs-title="Sinkronizirano" data-bs-toggle="tooltip">SINK</div>
+        <div class="time">16:55</div>
+        <div class="venue">Dvorana 1</div>
+    </a>
+                                        </div>
+
+                                </div>
+
+
+
+
+
+
+
+                                                            </div>
+
+                </div>
 
 
         </div>
-      </div>
-      <div class="movie-item d-flex" data-format="TITL" data-genre="Romantična komedija">
-        <a class="poster-wrapper" href="https://cinestarcinemas.hr/zagreb-kaptol-boutique-cinema/poziv/6328">
-          <img alt="Poziv" class="img-fluid"
-            src="https://cinestarcinemas.hr/remote/185.155.226.145/movies/The%20Invite/invite_556x800_hrr.jpg?preset=film">
-        </a>
+    </div>
+<div class="movie-item d-flex" data-format="TITL" data-genre="Akcijski">
+            <a class="poster-wrapper" href="https://cinestarcinemas.hr/zagreb-kaptol-boutique-cinema/spider-man-novo-doba/6511">
+                <img alt="Spider-Man: Novo doba" class="img-fluid" src="https://cinestarcinemas.hr/remote/185.155.226.145/movies/SpiderMan%20Brand%20New%20Day/spiderman_556x800_hr.jpg?preset=film">
+            </a>
 
 
         <div class="movie-desc">
-          <a href="https://cinestarcinemas.hr/zagreb-kaptol-boutique-cinema/poziv/6328">
-            <h3>Poziv</h3>
-          </a>
-          <span class="age"><img alt="Iznad 15 godina" class="img-fluid" src="img/15.png"></span>
-          <div class="age-duration d-flex justify-content-between">
+            <a href="https://cinestarcinemas.hr/zagreb-kaptol-boutique-cinema/spider-man-novo-doba/6511"><h3>Spider-Man: Novo doba</h3></a>
+            <span class="age"><img alt="Iznad 12 godina" class="img-fluid" src="/img/12.png"></span>
+            <div class="age-duration d-flex justify-content-between">
 
-            <div class="age">Žanr: Romantična komedija</div>
-            <div class="duration">1h 47min</div>
-          </div>
+                <div class="age">Žanr: Akcijski</div>
+                    <div class="duration">2h 25min</div>
+                            </div>
 
 
 
 
-          <div class="najava-wrapper">
-          </div>
-
-
-
-          <div class="time-format">
-            <div class="kinoholder" data-gradid="68" data-kinoid="73">
-              <div class="day-wrapper">
-
-                <div class="timings-wrapper center-page">
-
-
-                  <a class="disabled perf" data-format="TITL" href="javascript:;" rel="nofollow">
-                    <div class="format" data-bs-placement="top" data-bs-title="" data-bs-toggle="tooltip">TITL</div>
-                    <div class="time">18:15</div>
-                    <div class="venue">Dvorana 4</div>
-                  </a>
-                </div>
-
-              </div>
-
-
-
-
-
-
-
+            <div class="najava-wrapper">
             </div>
 
-          </div>
+
+
+                <div class="time-format">
+                            <div class="kinoholder" data-gradid="68" data-kinoid="73">
+                                <div class="day-wrapper">
+
+                                        <div class="timings-wrapper center-page">
+
+
+    <a class="disabled perf" data-format="TITL" href="javascript:;" rel="nofollow">
+        <div class="format" data-bs-placement="top" data-bs-title="" data-bs-toggle="tooltip">TITL</div>
+        <div class="time">12:15</div>
+        <div class="venue">Dvorana 5</div>
+    </a>
+
+
+    <a class="perf" data-format="TITL" href="https://cinestarcinemas.hr/Shop/zagreb-kaptol-boutique-cinema/spider-man-novo-doba/D9E11000023EDZCTNJ" rel="nofollow">
+        <div class="format" data-bs-placement="top" data-bs-title="" data-bs-toggle="tooltip">TITL</div>
+        <div class="time">19:00</div>
+        <div class="venue">Dvorana 1</div>
+    </a>
+                                        </div>
+
+                                </div>
+
+
+
+
+
+
+
+                                                            </div>
+
+                </div>
 
 
         </div>
-      </div>
-      <div class="movie-item d-flex" data-format="SINK" data-genre="Animirani">
-        <a class="poster-wrapper"
-          href="https://cinestarcinemas.hr/zagreb-kaptol-boutique-cinema/malci-i-cudovista/6518">
-          <img alt="Malci i čudovišta" class="img-fluid"
-            src="https://cinestarcinemas.hr/remote/185.155.226.145/movies/Minions%20and%20Monsters/minions_556x800_hr.jpg?preset=film">
-        </a>
+    </div>
+<div class="movie-item d-flex" data-format="SINK" data-genre="Animirani">
+            <a class="poster-wrapper" href="https://cinestarcinemas.hr/zagreb-kaptol-boutique-cinema/tigric-teo/6243">
+                <img alt="Tigrić Teo" class="img-fluid" src="https://cinestarcinemas.hr/remote/185.155.226.145/movies/The%20Lost%20Tiger/lost_556x800_hr.jpg?preset=film">
+            </a>
 
 
         <div class="movie-desc">
-          <a href="https://cinestarcinemas.hr/zagreb-kaptol-boutique-cinema/malci-i-cudovista/6518">
-            <h3>Malci i čudovišta</h3>
-          </a>
+            <a href="https://cinestarcinemas.hr/zagreb-kaptol-boutique-cinema/tigric-teo/6243"><h3>Tigrić Teo</h3></a>
 
-          <div class="age-duration d-flex justify-content-between">
+            <div class="age-duration d-flex justify-content-between">
 
-            <div class="age">Žanr: Animirani</div>
-            <div class="duration">1h 30min</div>
-          </div>
+                <div class="age">Žanr: Animirani</div>
+                    <div class="duration">1h 22min</div>
+                            </div>
 
 
 
 
-          <div class="najava-wrapper">
-          </div>
-
-
-
-          <div class="time-format">
-            <div class="kinoholder" data-gradid="68" data-kinoid="73">
-              <div class="day-wrapper">
-
-                <div class="timings-wrapper center-page">
-
-
-                  <a class="perf" data-format="SINK"
-                    href="https://cinestarcinemas.hr/Shop/zagreb-kaptol-boutique-cinema/malci-i-cudovista/18E11000023EDZCTNJ"
-                    rel="nofollow">
-                    <div class="format" data-bs-placement="top" data-bs-title="Sinkronizirano" data-bs-toggle="tooltip">
-                      SINK</div>
-                    <div class="time">11:00</div>
-                    <div class="venue">Dvorana 5</div>
-                  </a>
-                </div>
-
-              </div>
-
-
-
-
-
+            <div class="najava-wrapper">
             </div>
 
-          </div>
+
+
+                <div class="time-format">
+                            <div class="kinoholder" data-gradid="68" data-kinoid="73">
+                                <div class="day-wrapper">
+
+                                        <div class="timings-wrapper center-page">
+
+
+    <a class="disabled perf" data-format="SINK" href="javascript:;" rel="nofollow">
+        <div class="format" data-bs-placement="top" data-bs-title="Sinkronizirano" data-bs-toggle="tooltip">SINK</div>
+        <div class="time">10:00</div>
+        <div class="venue">Dvorana 4</div>
+    </a>
+
+
+    <a class="disabled perf" data-format="SINK" href="javascript:;" rel="nofollow">
+        <div class="format" data-bs-placement="top" data-bs-title="Sinkronizirano" data-bs-toggle="tooltip">SINK</div>
+        <div class="time">13:15</div>
+        <div class="venue">Dvorana 4</div>
+    </a>
+                                        </div>
+
+                                </div>
+
+
+
+
+                                                            </div>
+
+                </div>
 
 
         </div>
-      </div>
-        <p class="category-end-note">9</p>
+    </div>
+<div class="movie-item d-flex" data-format="TITL" data-genre="Epski Spektakl">
+            <a class="poster-wrapper" href="https://cinestarcinemas.hr/zagreb-kaptol-boutique-cinema/odiseja/6519">
+                <img alt="Odiseja" class="img-fluid" src="https://cinestarcinemas.hr/remote/185.155.226.145/movies/The%20Odyssey/odyssey_556x800_hr.jpg?preset=film">
+            </a>
+
+
+        <div class="movie-desc">
+            <a href="https://cinestarcinemas.hr/zagreb-kaptol-boutique-cinema/odiseja/6519"><h3>Odiseja</h3></a>
+            <span class="age"><img alt="Iznad 12 godina" class="img-fluid" src="/img/12.png"></span>
+            <div class="age-duration d-flex justify-content-between">
+
+                <div class="age">Žanr: Epski Spektakl</div>
+                    <div class="duration">2h 52min</div>
+                            </div>
+
+
+
+
+            <div class="najava-wrapper">
+            </div>
+
+
+
+                <div class="time-format">
+                            <div class="kinoholder" data-gradid="68" data-kinoid="73">
+                                <div class="day-wrapper">
+
+                                        <div class="timings-wrapper center-page">
+
+
+    <a class="perf" data-format="TITL" href="https://cinestarcinemas.hr/Shop/zagreb-kaptol-boutique-cinema/odiseja/8BE11000023EDZCTNJ" rel="nofollow">
+        <div class="format" data-bs-placement="top" data-bs-title="" data-bs-toggle="tooltip">TITL</div>
+        <div class="time">20:30</div>
+        <div class="venue">Dvorana 2</div>
+    </a>
+                                        </div>
+
+                                </div>
+
+
+
+
+
+
+
+                                                            </div>
+
+                </div>
+
+
+        </div>
+    </div>
+<div class="movie-item d-flex" data-format="TITL" data-genre="Romantična komedija">
+            <a class="poster-wrapper" href="https://cinestarcinemas.hr/zagreb-kaptol-boutique-cinema/poziv/6328">
+                <img alt="Poziv" class="img-fluid" src="https://cinestarcinemas.hr/remote/185.155.226.145/movies/The%20Invite/invite_556x800_hrr.jpg?preset=film">
+            </a>
+
+
+        <div class="movie-desc">
+            <a href="https://cinestarcinemas.hr/zagreb-kaptol-boutique-cinema/poziv/6328"><h3>Poziv</h3></a>
+            <span class="age"><img alt="Iznad 15 godina" class="img-fluid" src="/img/15.png"></span>
+            <div class="age-duration d-flex justify-content-between">
+
+                <div class="age">Žanr: Romantična komedija</div>
+                    <div class="duration">1h 47min</div>
+                            </div>
+
+
+
+
+            <div class="najava-wrapper">
+            </div>
+
+
+
+                <div class="time-format">
+                            <div class="kinoholder" data-gradid="68" data-kinoid="73">
+                                <div class="day-wrapper">
+
+                                        <div class="timings-wrapper center-page">
+
+
+    <a class="perf" data-format="TITL" href="https://cinestarcinemas.hr/Shop/zagreb-kaptol-boutique-cinema/poziv/50F11000023EDZCTNJ" rel="nofollow">
+        <div class="format" data-bs-placement="top" data-bs-title="" data-bs-toggle="tooltip">TITL</div>
+        <div class="time">18:15</div>
+        <div class="venue">Dvorana 5</div>
+    </a>
+
+
+    <a class="perf" data-format="TITL" href="https://cinestarcinemas.hr/Shop/zagreb-kaptol-boutique-cinema/poziv/3AE11000023EDZCTNJ" rel="nofollow">
+        <div class="format" data-bs-placement="top" data-bs-title="" data-bs-toggle="tooltip">TITL</div>
+        <div class="time">21:45</div>
+        <div class="venue">Dvorana 1</div>
+    </a>
+                                        </div>
+
+                                </div>
+
+
+
+
+
+
+
+                                                            </div>
+
+                </div>
+
+
+        </div>
+    </div>
+<div class="movie-item d-flex" data-format="SINK" data-genre="Animirani">
+            <a class="poster-wrapper" href="https://cinestarcinemas.hr/zagreb-kaptol-boutique-cinema/malci-i-cudovista/6518">
+                <img alt="Malci i čudovišta" class="img-fluid" src="https://cinestarcinemas.hr/remote/185.155.226.145/movies/Minions%20and%20Monsters/minions_556x800_hr.jpg?preset=film">
+            </a>
+
+
+        <div class="movie-desc">
+            <a href="https://cinestarcinemas.hr/zagreb-kaptol-boutique-cinema/malci-i-cudovista/6518"><h3>Malci i čudovišta</h3></a>
+
+            <div class="age-duration d-flex justify-content-between">
+
+                <div class="age">Žanr: Animirani</div>
+                    <div class="duration">1h 30min</div>
+                            </div>
+
+
+
+
+            <div class="najava-wrapper">
+            </div>
+
+
+
+                <div class="time-format">
+                            <div class="kinoholder" data-gradid="68" data-kinoid="73">
+                                <div class="day-wrapper">
+
+                                        <div class="timings-wrapper center-page">
+
+
+    <a class="disabled perf" data-format="SINK" href="javascript:;" rel="nofollow">
+        <div class="format" data-bs-placement="top" data-bs-title="Sinkronizirano" data-bs-toggle="tooltip">SINK</div>
+        <div class="time">11:55</div>
+        <div class="venue">Dvorana 2</div>
+    </a>
+
+
+    <a class="disabled perf" data-format="SINK" href="javascript:;" rel="nofollow">
+        <div class="format" data-bs-placement="top" data-bs-title="Sinkronizirano" data-bs-toggle="tooltip">SINK</div>
+        <div class="time">16:15</div>
+        <div class="venue">Dvorana 2</div>
+    </a>
+                                        </div>
+
+                                </div>
+
+
+
+
+
+
+                                                            </div>
+
+                </div>
+
+
+        </div>
+    </div>
+
+
+
+      <p class="category-end-note">9</p>
 
 
       <div id="rbo">
-      <div style="width: 100%; margin: 80px auto 36px auto;">
+        <div style="width: 100%; ">
 
-        <img src="img/rbo.svg" style="width: 100%; height: auto;" alt="">
-        
-      </div>
+          <img class="rbo-poster" src="img/rbo.svg" alt="">
 
-
-      <div class="movie-item d-flex"  data-genre="Balet">
-        <a class="poster-wrapper" href="https://cinestarcinemas.hr/zagreb-kaptol-boutique-cinema/manon-uzivo/6565">
-          <img alt="Manon - UŽIVO" class="img-fluid"
-            src="https://cinestarcinemas.hr/remote/185.155.226.145/movies/RBO%202026%202027/manon_300x400_eng.jpg?preset=film">
-        </a>
+        </div>
 
 
-        <div class="movie-desc">
-          <a href="https://cinestarcinemas.hr/zagreb-kaptol-boutique-cinema/manon-uzivo/6565">
-            <h3>Manon</h3>
+        <div class="movie-item d-flex" data-genre="Balet">
+          <a class="poster-wrapper" href="https://cinestarcinemas.hr/zagreb-kaptol-boutique-cinema/manon-uzivo/6565">
+            <img alt="Manon - UŽIVO" class="img-fluid"
+              src="https://cinestarcinemas.hr/remote/185.155.226.145/movies/RBO%202026%202027/manon_300x400_eng.jpg?preset=film">
           </a>
 
-          <div class="age-duration d-flex justify-content-between">
 
-            <div class="age">Žanr: Balet</div>
-            <div class="duration">3h 10min</div>
+          <div class="movie-desc">
+            <a href="https://cinestarcinemas.hr/zagreb-kaptol-boutique-cinema/manon-uzivo/6565">
+              <h3>Manon</h3>
+            </a>
 
-          </div>
+            <div class="age-duration d-flex justify-content-between">
 
-
-
-
-          <div class="najava-wrapper">
-          </div>
-
-
-
-          <div class="time-format">
-            <div class="kinoholder" data-gradid="68" data-kinoid="73">
-              <div class="day-wrapper">
-
-                <div class="timings-wrapper center-page">
-
-
-                  <a class="perf" 
-                    href="https://cinestarcinemas.hr/Shop/zagreb-kaptol-boutique-cinema/manon-uzivo/EED11000023EDZCTNJ"
-                    rel="nofollow">
-                    <div class="format" data-bs-placement="top" data-bs-title="" data-bs-toggle="tooltip">UŽIVO</div>
-                    <div class="time">20:15</div>
-                    <div class="venue">Dvorana 1</div>
-                  </a>
-                </div>
-
-              </div>
-
-
-
+              <div class="age">Žanr: Balet</div>
+              <div class="duration">3h 10min</div>
 
             </div>
 
-          </div>
-
-
-        </div>
-      </div>
-
-
-      <div class="movie-item d-flex"  data-genre="Opera">
-        <a class="poster-wrapper" href="https://cinestarcinemas.hr/zagreb-kaptol-boutique-cinema/carmen-uzivo/6566">
-          <img alt="Carmen - UŽIVO" class="img-fluid"
-            src="https://cinestarcinemas.hr/remote/185.155.226.145/movies/RBO%202026%202027/carmen_300x400_eng.jpg?preset=film">
-        </a>
-
-
-        <div class="movie-desc">
-          <a href="https://cinestarcinemas.hr/zagreb-kaptol-boutique-cinema/carmen-uzivo/6566">
-            <h3>Carmen</h3>
-          </a>
-
-          <div class="age-duration d-flex justify-content-between">
-
-            <div class="age">Žanr: Opera</div>
-            <div class="duration">3h 35min</div>
-
-          </div>
 
 
 
-
-          <div class="najava-wrapper">
-          </div>
-
+            <div class="najava-wrapper">
+            </div>
 
 
-          <div class="time-format">
-            <div class="kinoholder" data-gradid="68" data-kinoid="73">
-              <div class="day-wrapper">
 
-                <div class="timings-wrapper center-page">
+            <div class="time-format">
+              <div class="kinoholder" data-gradid="68" data-kinoid="73">
+                <div class="day-wrapper">
+
+                  <div class="timings-wrapper center-page">
 
 
-                  <a class="perf" 
-                    href="https://cinestarcinemas.hr/Shop/zagreb-kaptol-boutique-cinema/carmen-uzivo/FED11000023EDZCTNJ"
-                    rel="nofollow">
-                    <div class="format" data-bs-placement="top" data-bs-title="" data-bs-toggle="tooltip">UŽIVO</div>
-                    <div class="time">20:00</div>
-                    <div class="venue">Dvorana 1</div>
-                  </a>
+                    <a class="perf"
+                      href="https://cinestarcinemas.hr/Shop/zagreb-kaptol-boutique-cinema/manon-uzivo/EED11000023EDZCTNJ"
+                      rel="nofollow">
+                      <div class="format" data-bs-placement="top" data-bs-title="" data-bs-toggle="tooltip">UŽIVO</div>
+                      <div class="time">20:15</div>
+                      <div class="venue">Dvorana 1</div>
+                    </a>
+                  </div>
+
                 </div>
+
+
+
 
               </div>
 
+            </div>
 
 
+          </div>
+        </div>
+
+
+        <div class="movie-item d-flex" data-genre="Opera">
+          <a class="poster-wrapper" href="https://cinestarcinemas.hr/zagreb-kaptol-boutique-cinema/carmen-uzivo/6566">
+            <img alt="Carmen - UŽIVO" class="img-fluid"
+              src="https://cinestarcinemas.hr/remote/185.155.226.145/movies/RBO%202026%202027/carmen_300x400_eng.jpg?preset=film">
+          </a>
+
+
+          <div class="movie-desc">
+            <a href="https://cinestarcinemas.hr/zagreb-kaptol-boutique-cinema/carmen-uzivo/6566">
+              <h3>Carmen</h3>
+            </a>
+
+            <div class="age-duration d-flex justify-content-between">
+
+              <div class="age">Žanr: Opera</div>
+              <div class="duration">3h 35min</div>
 
             </div>
 
-          </div>
-
-
-        </div>
-      </div>
-
-
-      <div class="movie-item d-flex"  data-genre="Balet">
-        <a class="poster-wrapper" href="https://cinestarcinemas.hr/zagreb-kaptol-boutique-cinema/orasar/6567">
-          <img alt="Orašar" class="img-fluid"
-            src="https://cinestarcinemas.hr/remote/185.155.226.145/movies/RBO%202026%202027/nutcracker_300x400_eng.jpg?preset=film">
-        </a>
-
-
-        <div class="movie-desc">
-          <a href="https://cinestarcinemas.hr/zagreb-kaptol-boutique-cinema/orasar/6567">
-            <h3>Orašar </h3>
-          </a>
-
-          <div class="age-duration d-flex justify-content-between">
-
-            <div class="age">Žanr: Balet</div>
-            <div class="duration">2h 20min</div>
-
-          </div>
 
 
 
-
-          <div class="najava-wrapper">
-          </div>
-
+            <div class="najava-wrapper">
+            </div>
 
 
-          <div class="time-format">
-            <div class="kinoholder" data-gradid="68" data-kinoid="73">
-              <div class="day-wrapper">
 
-                <div class="timings-wrapper center-page">
+            <div class="time-format">
+              <div class="kinoholder" data-gradid="68" data-kinoid="73">
+                <div class="day-wrapper">
+
+                  <div class="timings-wrapper center-page">
 
 
-                  <a class="perf" 
-                    href="https://cinestarcinemas.hr/Shop/zagreb-kaptol-boutique-cinema/orasar/0FD11000023EDZCTNJ"
-                    rel="nofollow">
-                    <div class="format" data-bs-placement="top" data-bs-title="" data-bs-toggle="tooltip">TITL</div>
-                    <div class="time">20:15</div>
-                    <div class="venue">Dvorana 1</div>
-                  </a>
+                    <a class="perf"
+                      href="https://cinestarcinemas.hr/Shop/zagreb-kaptol-boutique-cinema/carmen-uzivo/FED11000023EDZCTNJ"
+                      rel="nofollow">
+                      <div class="format" data-bs-placement="top" data-bs-title="" data-bs-toggle="tooltip">UŽIVO</div>
+                      <div class="time">20:00</div>
+                      <div class="venue">Dvorana 1</div>
+                    </a>
+                  </div>
+
                 </div>
+
+
+
 
               </div>
 
+            </div>
 
 
+          </div>
+        </div>
+
+
+        <div class="movie-item d-flex" data-genre="Balet">
+          <a class="poster-wrapper" href="https://cinestarcinemas.hr/zagreb-kaptol-boutique-cinema/orasar/6567">
+            <img alt="Orašar" class="img-fluid"
+              src="https://cinestarcinemas.hr/remote/185.155.226.145/movies/RBO%202026%202027/nutcracker_300x400_eng.jpg?preset=film">
+          </a>
+
+
+          <div class="movie-desc">
+            <a href="https://cinestarcinemas.hr/zagreb-kaptol-boutique-cinema/orasar/6567">
+              <h3>Orašar </h3>
+            </a>
+
+            <div class="age-duration d-flex justify-content-between">
+
+              <div class="age">Žanr: Balet</div>
+              <div class="duration">2h 20min</div>
 
             </div>
 
-          </div>
-
-
-        </div>
-      </div>
-
-
-      <div class="movie-item d-flex"  data-genre="Opera">
-        <a class="poster-wrapper"
-          href="https://cinestarcinemas.hr/zagreb-kaptol-boutique-cinema/sumrak-bogova-uzivo/6568">
-          <img alt="Sumrak bogova - UŽIVO" class="img-fluid"
-            src="https://cinestarcinemas.hr/remote/185.155.226.145/movies/RBO%202026%202027/gotterdamerung_300x400_eng.jpg?preset=film">
-        </a>
-
-
-        <div class="movie-desc">
-          <a href="https://cinestarcinemas.hr/zagreb-kaptol-boutique-cinema/sumrak-bogova-uzivo/6568">
-            <h3>Sumrak bogova</h3>
-          </a>
-
-          <div class="age-duration d-flex justify-content-between">
-
-            <div class="age">Žanr: Opera</div>
-            <div class="duration">5h 50min</div>
-
-          </div>
 
 
 
-
-          <div class="najava-wrapper">
-          </div>
-
+            <div class="najava-wrapper">
+            </div>
 
 
-          <div class="time-format">
-            <div class="kinoholder" data-gradid="68" data-kinoid="73">
-              <div class="day-wrapper">
 
-                <div class="timings-wrapper center-page">
+            <div class="time-format">
+              <div class="kinoholder" data-gradid="68" data-kinoid="73">
+                <div class="day-wrapper">
+
+                  <div class="timings-wrapper center-page">
 
 
-                  <a class="perf" 
-                    href="https://cinestarcinemas.hr/Shop/zagreb-kaptol-boutique-cinema/sumrak-bogova-uzivo/1FD11000023EDZCTNJ"
-                    rel="nofollow">
-                    <div class="format" data-bs-placement="top" data-bs-title="" data-bs-toggle="tooltip">UŽIVO</div>
-                    <div class="time">17:45</div>
-                    <div class="venue">Dvorana 1</div>
-                  </a>
+                    <a class="perf"
+                      href="https://cinestarcinemas.hr/Shop/zagreb-kaptol-boutique-cinema/orasar/0FD11000023EDZCTNJ"
+                      rel="nofollow">
+                      <div class="format" data-bs-placement="top" data-bs-title="" data-bs-toggle="tooltip">TITL</div>
+                      <div class="time">20:15</div>
+                      <div class="venue">Dvorana 1</div>
+                    </a>
+                  </div>
+
                 </div>
+
+
+
 
               </div>
 
+            </div>
 
 
+          </div>
+        </div>
+
+
+        <div class="movie-item d-flex" data-genre="Opera">
+          <a class="poster-wrapper"
+            href="https://cinestarcinemas.hr/zagreb-kaptol-boutique-cinema/sumrak-bogova-uzivo/6568">
+            <img alt="Sumrak bogova - UŽIVO" class="img-fluid"
+              src="https://cinestarcinemas.hr/remote/185.155.226.145/movies/RBO%202026%202027/gotterdamerung_300x400_eng.jpg?preset=film">
+          </a>
+
+
+          <div class="movie-desc">
+            <a href="https://cinestarcinemas.hr/zagreb-kaptol-boutique-cinema/sumrak-bogova-uzivo/6568">
+              <h3>Sumrak bogova</h3>
+            </a>
+
+            <div class="age-duration d-flex justify-content-between">
+
+              <div class="age">Žanr: Opera</div>
+              <div class="duration">5h 50min</div>
 
             </div>
 
-          </div>
-
-
-        </div>
-      </div>
-
-
-      <div class="movie-item d-flex"  data-genre="Opera">
-        <a class="poster-wrapper"
-          href="https://cinestarcinemas.hr/zagreb-kaptol-boutique-cinema/cosi-fan-tutte-uzivo/6569">
-          <img alt="Cosi fan tutte - UŽIVO" class="img-fluid"
-            src="https://cinestarcinemas.hr/remote/185.155.226.145/movies/RBO%202026%202027/cosi_300x400_eng.jpg?preset=film">
-        </a>
-
-
-        <div class="movie-desc">
-          <a href="https://cinestarcinemas.hr/zagreb-kaptol-boutique-cinema/cosi-fan-tutte-uzivo/6569">
-            <h3>Cosi fan tutte</h3>
-          </a>
-
-          <div class="age-duration d-flex justify-content-between">
-
-            <div class="age">Žanr: Opera</div>
-            <div class="duration">3h 30min</div>
-
-          </div>
 
 
 
-
-          <div class="najava-wrapper">
-          </div>
-
+            <div class="najava-wrapper">
+            </div>
 
 
-          <div class="time-format">
-            <div class="kinoholder" data-gradid="68" data-kinoid="73">
-              <div class="day-wrapper">
 
-                <div class="timings-wrapper center-page">
+            <div class="time-format">
+              <div class="kinoholder" data-gradid="68" data-kinoid="73">
+                <div class="day-wrapper">
+
+                  <div class="timings-wrapper center-page">
 
 
-                  <a class="perf" 
-                    href="https://cinestarcinemas.hr/Shop/zagreb-kaptol-boutique-cinema/cosi-fan-tutte-uzivo/2FD11000023EDZCTNJ"
-                    rel="nofollow">
-                    <div class="format" data-bs-placement="top" data-bs-title="" data-bs-toggle="tooltip">UŽIVO</div>
-                    <div class="time">19:45</div>
-                    <div class="venue">Dvorana 1</div>
-                  </a>
+                    <a class="perf"
+                      href="https://cinestarcinemas.hr/Shop/zagreb-kaptol-boutique-cinema/sumrak-bogova-uzivo/1FD11000023EDZCTNJ"
+                      rel="nofollow">
+                      <div class="format" data-bs-placement="top" data-bs-title="" data-bs-toggle="tooltip">UŽIVO</div>
+                      <div class="time">17:45</div>
+                      <div class="venue">Dvorana 1</div>
+                    </a>
+                  </div>
+
                 </div>
+
+
+
 
               </div>
 
+            </div>
 
 
+          </div>
+        </div>
+
+
+        <div class="movie-item d-flex" data-genre="Opera">
+          <a class="poster-wrapper"
+            href="https://cinestarcinemas.hr/zagreb-kaptol-boutique-cinema/cosi-fan-tutte-uzivo/6569">
+            <img alt="Cosi fan tutte - UŽIVO" class="img-fluid"
+              src="https://cinestarcinemas.hr/remote/185.155.226.145/movies/RBO%202026%202027/cosi_300x400_eng.jpg?preset=film">
+          </a>
+
+
+          <div class="movie-desc">
+            <a href="https://cinestarcinemas.hr/zagreb-kaptol-boutique-cinema/cosi-fan-tutte-uzivo/6569">
+              <h3>Cosi fan tutte</h3>
+            </a>
+
+            <div class="age-duration d-flex justify-content-between">
+
+              <div class="age">Žanr: Opera</div>
+              <div class="duration">3h 30min</div>
 
             </div>
 
-          </div>
-
-
-        </div>
-      </div>
-
-
-      <div class="movie-item d-flex"  data-genre="Balet">
-        <a class="poster-wrapper"
-          href="https://cinestarcinemas.hr/zagreb-kaptol-boutique-cinema/alisa-u-zemlji-cudesa/6570">
-          <img alt="Alisa u Zemlji čudesa" class="img-fluid"
-            src="https://cinestarcinemas.hr/remote/185.155.226.145/movies/RBO%202026%202027/alice_300x400_eng.jpg?preset=film">
-        </a>
-
-
-        <div class="movie-desc">
-          <a href="https://cinestarcinemas.hr/zagreb-kaptol-boutique-cinema/alisa-u-zemlji-cudesa/6570">
-            <h3>Alisa u Zemlji čudesa </h3>
-          </a>
-
-          <div class="age-duration d-flex justify-content-between">
-
-            <div class="age">Žanr: Balet</div>
-            <div class="duration">2h 50min</div>
-
-          </div>
 
 
 
-
-          <div class="najava-wrapper">
-          </div>
-
+            <div class="najava-wrapper">
+            </div>
 
 
-          <div class="time-format">
-            <div class="kinoholder" data-gradid="68" data-kinoid="73">
-              <div class="day-wrapper">
 
-                <div class="timings-wrapper center-page">
+            <div class="time-format">
+              <div class="kinoholder" data-gradid="68" data-kinoid="73">
+                <div class="day-wrapper">
+
+                  <div class="timings-wrapper center-page">
 
 
-                  <a class="perf" 
-                    href="https://cinestarcinemas.hr/Shop/zagreb-kaptol-boutique-cinema/alisa-u-zemlji-cudesa/3FD11000023EDZCTNJ"
-                    rel="nofollow">
-                    <div class="format" data-bs-placement="top" data-bs-title="" data-bs-toggle="tooltip">TITL</div>
-                    <div class="time">20:15</div>
-                    <div class="venue">Dvorana 1</div>
-                  </a>
+                    <a class="perf"
+                      href="https://cinestarcinemas.hr/Shop/zagreb-kaptol-boutique-cinema/cosi-fan-tutte-uzivo/2FD11000023EDZCTNJ"
+                      rel="nofollow">
+                      <div class="format" data-bs-placement="top" data-bs-title="" data-bs-toggle="tooltip">UŽIVO</div>
+                      <div class="time">19:45</div>
+                      <div class="venue">Dvorana 1</div>
+                    </a>
+                  </div>
+
                 </div>
+
+
+
 
               </div>
 
+            </div>
 
 
+          </div>
+        </div>
+
+
+        <div class="movie-item d-flex" data-genre="Balet">
+          <a class="poster-wrapper"
+            href="https://cinestarcinemas.hr/zagreb-kaptol-boutique-cinema/alisa-u-zemlji-cudesa/6570">
+            <img alt="Alisa u Zemlji čudesa" class="img-fluid"
+              src="https://cinestarcinemas.hr/remote/185.155.226.145/movies/RBO%202026%202027/alice_300x400_eng.jpg?preset=film">
+          </a>
+
+
+          <div class="movie-desc">
+            <a href="https://cinestarcinemas.hr/zagreb-kaptol-boutique-cinema/alisa-u-zemlji-cudesa/6570">
+              <h3>Alisa u Zemlji čudesa </h3>
+            </a>
+
+            <div class="age-duration d-flex justify-content-between">
+
+              <div class="age">Žanr: Balet</div>
+              <div class="duration">2h 50min</div>
 
             </div>
 
-          </div>
-
-
-        </div>
-      </div>
-
-
-      <div class="movie-item d-flex"  data-genre="Balet">
-        <a class="poster-wrapper"
-          href="https://cinestarcinemas.hr/zagreb-kaptol-boutique-cinema/labue-jezero-uzivo/6571">
-          <img alt="Labuđe jezero - UŽIVO" class="img-fluid"
-            src="https://cinestarcinemas.hr/remote/185.155.226.145/movies/RBO%202026%202027/swan_300x400_eng.jpg?preset=film">
-        </a>
-
-
-        <div class="movie-desc">
-          <a href="https://cinestarcinemas.hr/zagreb-kaptol-boutique-cinema/labue-jezero-uzivo/6571">
-            <h3>Labuđe jezero</h3>
-          </a>
-
-          <div class="age-duration d-flex justify-content-between">
-
-            <div class="age">Žanr: Balet</div>
-            <div class="duration">3h 25min</div>
-
-          </div>
 
 
 
-
-          <div class="najava-wrapper">
-          </div>
-
+            <div class="najava-wrapper">
+            </div>
 
 
-          <div class="time-format">
-            <div class="kinoholder" data-gradid="68" data-kinoid="73">
-              <div class="day-wrapper">
 
-                <div class="timings-wrapper center-page">
+            <div class="time-format">
+              <div class="kinoholder" data-gradid="68" data-kinoid="73">
+                <div class="day-wrapper">
+
+                  <div class="timings-wrapper center-page">
 
 
-                  <a class="perf" 
-                    href="https://cinestarcinemas.hr/Shop/zagreb-kaptol-boutique-cinema/labue-jezero-uzivo/4FD11000023EDZCTNJ"
-                    rel="nofollow">
-                    <div class="format" data-bs-placement="top" data-bs-title="" data-bs-toggle="tooltip">UŽIVO</div>
-                    <div class="time">20:15</div>
-                    <div class="venue">Dvorana 1</div>
-                  </a>
+                    <a class="perf"
+                      href="https://cinestarcinemas.hr/Shop/zagreb-kaptol-boutique-cinema/alisa-u-zemlji-cudesa/3FD11000023EDZCTNJ"
+                      rel="nofollow">
+                      <div class="format" data-bs-placement="top" data-bs-title="" data-bs-toggle="tooltip">TITL</div>
+                      <div class="time">20:15</div>
+                      <div class="venue">Dvorana 1</div>
+                    </a>
+                  </div>
+
                 </div>
+
+
+
 
               </div>
 
+            </div>
 
 
+          </div>
+        </div>
+
+
+        <div class="movie-item d-flex" data-genre="Balet">
+          <a class="poster-wrapper"
+            href="https://cinestarcinemas.hr/zagreb-kaptol-boutique-cinema/labue-jezero-uzivo/6571">
+            <img alt="Labuđe jezero - UŽIVO" class="img-fluid"
+              src="https://cinestarcinemas.hr/remote/185.155.226.145/movies/RBO%202026%202027/swan_300x400_eng.jpg?preset=film">
+          </a>
+
+
+          <div class="movie-desc">
+            <a href="https://cinestarcinemas.hr/zagreb-kaptol-boutique-cinema/labue-jezero-uzivo/6571">
+              <h3>Labuđe jezero</h3>
+            </a>
+
+            <div class="age-duration d-flex justify-content-between">
+
+              <div class="age">Žanr: Balet</div>
+              <div class="duration">3h 25min</div>
 
             </div>
 
-          </div>
-
-
-        </div>
-      </div>
-
-
-      <div class="movie-item d-flex"  data-genre="Opera">
-        <a class="poster-wrapper" href="https://cinestarcinemas.hr/zagreb-kaptol-boutique-cinema/tosca-uzivo/6572">
-          <img alt="Tosca - UŽIVO" class="img-fluid"
-            src="https://cinestarcinemas.hr/remote/185.155.226.145/movies/RBO%202026%202027/tosca_300x400_eng.jpg?preset=film">
-        </a>
-
-
-        <div class="movie-desc">
-          <a href="https://cinestarcinemas.hr/zagreb-kaptol-boutique-cinema/tosca-uzivo/6572">
-            <h3>Tosca</h3>
-          </a>
-
-          <div class="age-duration d-flex justify-content-between">
-
-            <div class="age">Žanr: Opera</div>
-            <div class="duration">3h 15min</div>
-
-          </div>
 
 
 
-
-          <div class="najava-wrapper">
-          </div>
-
+            <div class="najava-wrapper">
+            </div>
 
 
-          <div class="time-format">
-            <div class="kinoholder" data-gradid="68" data-kinoid="73">
-              <div class="day-wrapper">
 
-                <div class="timings-wrapper center-page">
+            <div class="time-format">
+              <div class="kinoholder" data-gradid="68" data-kinoid="73">
+                <div class="day-wrapper">
+
+                  <div class="timings-wrapper center-page">
 
 
-                  <a class="perf" 
-                    href="https://cinestarcinemas.hr/Shop/zagreb-kaptol-boutique-cinema/tosca-uzivo/5FD11000023EDZCTNJ"
-                    rel="nofollow">
-                    <div class="format" data-bs-placement="top" data-bs-title="" data-bs-toggle="tooltip">UŽIVO</div>
-                    <div class="time">20:00</div>
-                    <div class="venue">Dvorana 1</div>
-                  </a>
+                    <a class="perf"
+                      href="https://cinestarcinemas.hr/Shop/zagreb-kaptol-boutique-cinema/labue-jezero-uzivo/4FD11000023EDZCTNJ"
+                      rel="nofollow">
+                      <div class="format" data-bs-placement="top" data-bs-title="" data-bs-toggle="tooltip">UŽIVO</div>
+                      <div class="time">20:15</div>
+                      <div class="venue">Dvorana 1</div>
+                    </a>
+                  </div>
+
                 </div>
+
+
+
 
               </div>
 
+            </div>
 
 
+          </div>
+        </div>
+
+
+        <div class="movie-item d-flex" data-genre="Opera">
+          <a class="poster-wrapper" href="https://cinestarcinemas.hr/zagreb-kaptol-boutique-cinema/tosca-uzivo/6572">
+            <img alt="Tosca - UŽIVO" class="img-fluid"
+              src="https://cinestarcinemas.hr/remote/185.155.226.145/movies/RBO%202026%202027/tosca_300x400_eng.jpg?preset=film">
+          </a>
+
+
+          <div class="movie-desc">
+            <a href="https://cinestarcinemas.hr/zagreb-kaptol-boutique-cinema/tosca-uzivo/6572">
+              <h3>Tosca</h3>
+            </a>
+
+            <div class="age-duration d-flex justify-content-between">
+
+              <div class="age">Žanr: Opera</div>
+              <div class="duration">3h 15min</div>
 
             </div>
 
-          </div>
-
-
-        </div>
-      </div>
-
-
-      <div class="movie-item d-flex"  data-genre="Balet">
-        <a class="poster-wrapper" href="https://cinestarcinemas.hr/zagreb-kaptol-boutique-cinema/romeo-i-julija/6573">
-          <img alt="Romeo i Julija" class="img-fluid"
-            src="https://cinestarcinemas.hr/remote/185.155.226.145/movies/RBO%202026%202027/romeo_300x400_eng.jpg?preset=film">
-        </a>
-
-
-        <div class="movie-desc">
-          <a href="https://cinestarcinemas.hr/zagreb-kaptol-boutique-cinema/romeo-i-julija/6573">
-            <h3>Romeo i Julija </h3>
-          </a>
-
-          <div class="age-duration d-flex justify-content-between">
-
-            <div class="age">Žanr: Balet</div>
-            <div class="duration">2h 50min</div>
-
-          </div>
 
 
 
-
-          <div class="najava-wrapper">
-          </div>
-
+            <div class="najava-wrapper">
+            </div>
 
 
-          <div class="time-format">
-            <div class="kinoholder" data-gradid="68" data-kinoid="73">
-              <div class="day-wrapper">
 
-                <div class="timings-wrapper center-page">
+            <div class="time-format">
+              <div class="kinoholder" data-gradid="68" data-kinoid="73">
+                <div class="day-wrapper">
+
+                  <div class="timings-wrapper center-page">
 
 
-                  <a class="perf" 
-                    href="https://cinestarcinemas.hr/Shop/zagreb-kaptol-boutique-cinema/romeo-i-julija/6FD11000023EDZCTNJ"
-                    rel="nofollow">
-                    <div class="format" data-bs-placement="top" data-bs-title="" data-bs-toggle="tooltip">TITL</div>
-                    <div class="time">20:15</div>
-                    <div class="venue">Dvorana 1</div>
-                  </a>
+                    <a class="perf"
+                      href="https://cinestarcinemas.hr/Shop/zagreb-kaptol-boutique-cinema/tosca-uzivo/5FD11000023EDZCTNJ"
+                      rel="nofollow">
+                      <div class="format" data-bs-placement="top" data-bs-title="" data-bs-toggle="tooltip">UŽIVO</div>
+                      <div class="time">20:00</div>
+                      <div class="venue">Dvorana 1</div>
+                    </a>
+                  </div>
+
                 </div>
+
+
+
 
               </div>
 
+            </div>
 
 
+          </div>
+        </div>
+
+
+        <div class="movie-item d-flex" data-genre="Balet">
+          <a class="poster-wrapper" href="https://cinestarcinemas.hr/zagreb-kaptol-boutique-cinema/romeo-i-julija/6573">
+            <img alt="Romeo i Julija" class="img-fluid"
+              src="https://cinestarcinemas.hr/remote/185.155.226.145/movies/RBO%202026%202027/romeo_300x400_eng.jpg?preset=film">
+          </a>
+
+
+          <div class="movie-desc">
+            <a href="https://cinestarcinemas.hr/zagreb-kaptol-boutique-cinema/romeo-i-julija/6573">
+              <h3>Romeo i Julija </h3>
+            </a>
+
+            <div class="age-duration d-flex justify-content-between">
+
+              <div class="age">Žanr: Balet</div>
+              <div class="duration">2h 50min</div>
 
             </div>
 
+
+
+
+            <div class="najava-wrapper">
+            </div>
+
+
+
+            <div class="time-format">
+              <div class="kinoholder" data-gradid="68" data-kinoid="73">
+                <div class="day-wrapper">
+
+                  <div class="timings-wrapper center-page">
+
+
+                    <a class="perf"
+                      href="https://cinestarcinemas.hr/Shop/zagreb-kaptol-boutique-cinema/romeo-i-julija/6FD11000023EDZCTNJ"
+                      rel="nofollow">
+                      <div class="format" data-bs-placement="top" data-bs-title="" data-bs-toggle="tooltip">TITL</div>
+                      <div class="time">20:15</div>
+                      <div class="venue">Dvorana 1</div>
+                    </a>
+                  </div>
+
+                </div>
+
+
+
+
+              </div>
+
+            </div>
+
+
           </div>
-
-
         </div>
-      </div>
 
 
       </div>
@@ -3500,11 +3600,11 @@
 
     </section>
 
-      <h2 style="color: #fcfdff; line-height: 0.7;">Događanja</h2>
+    <h2 style="color: #fcfdff; line-height: 0.7;">Događanja</h2>
 
-  <section id="events">
-    <h2 style="display: none;"></h2>
-    
+    <section id="events">
+      <h2 style="display: none;"></h2>
+
 
       <div class="event-poster-wrap">
         <img class="event-poster" src="img/japan-film.webp" alt="Japanese Film Week poster">
@@ -3591,8 +3691,78 @@
 ### FOOTER ###  
 -->
     <section id="footer">
-      <h2>Radno Vrijeme</h2>
+      <div style="display: flex; flex-direction: row; align-items: center; margin-bottom: 32px;">
+        <h2 style="border-bottom: 0; margin-bottom:0; width: unset;">Radno Vrijeme</h2>
+        <div
+          style="display: flex; flex-direction: column; justify-content: center; align-items: end; text-align: right; width: 100%; ">
+          <span style="border-bottom: 1px solid; width: 100%;  font-size: 16px;">Bar</span>
+          <span style=" font-size: 16px;">Kino</span>
+        </div>
+      </div>
 
+      <div style="display: flex; flex-direction: row; align-items: center; font-size: 14px; margin-bottom: 28px;">
+        <p style="border-bottom: 0; margin-bottom:0; width: unset; margin-right: 8px; font-size: 18px;">Ponedjeljak</p>
+        <div
+          style="display: flex; flex-direction: column; justify-content: center; align-items: end; text-align: right; width: 100%;">
+          <span style="border-bottom: 1px solid; width: 100%; ">09:00 - 23:00</span>
+          <span>15:30 - 23:00</span>
+        </div>
+      </div>
+      <div style="display: flex; flex-direction: row; align-items: center; font-size: 14px; margin-bottom: 28px;">
+        <p style="border-bottom: 0; margin-bottom:0; width: unset; margin-right: 8px; font-size: 18px;">Utorak</p>
+        <div
+          style="display: flex; flex-direction: column; justify-content: center; align-items: end; text-align: right; width: 100%;">
+          <span style="border-bottom: 1px solid; width: 100%; ">09:00 - 23:00</span>
+          <span>15:30 - 23:00</span>
+        </div>
+      </div>
+
+      <div style="display: flex; flex-direction: row; align-items: center; font-size: 14px; margin-bottom: 28px;">
+        <p style="border-bottom: 0; margin-bottom:0; width: unset; margin-right: 8px; font-size: 18px;">Srijeda</p>
+        <div
+          style="display: flex; flex-direction: column; justify-content: center; align-items: end; text-align: right; width: 100%;">
+          <span style="border-bottom: 1px solid; width: 100%; ">09:00 - 23:00</span>
+          <span>15:30 - 23:00</span>
+        </div>
+      </div>
+
+      <div style="display: flex; flex-direction: row; align-items: center; font-size: 14px; margin-bottom: 28px;">
+        <p style="border-bottom: 0; margin-bottom:0; width: unset; margin-right: 8px; font-size: 18px;">Četvrtak</p>
+        <div
+          style="display: flex; flex-direction: column; justify-content: center; align-items: end; text-align: right; width: 100%;">
+          <span style="border-bottom: 1px solid; width: 100%; ">09:00 - 23:00</span>
+          <span>15:30 - 23:00</span>
+        </div>
+      </div>
+
+      <div style="display: flex; flex-direction: row; align-items: center; font-size: 14px; margin-bottom: 28px;">
+        <p style="border-bottom: 0; margin-bottom:0; width: unset; margin-right: 8px; font-size: 18px;">Petak</p>
+        <div
+          style="display: flex; flex-direction: column; justify-content: center; align-items: end; text-align: right; width: 100%;">
+          <span style="border-bottom: 1px solid; width: 100%; ">09:00 - 00:00</span>
+          <span>15:30 - 23:00</span>
+        </div>
+      </div>
+
+      <div style="display: flex; flex-direction: row; align-items: center; font-size: 14px; margin-bottom: 28px;">
+        <p style="border-bottom: 0; margin-bottom:0; width: unset; margin-right: 8px; font-size: 18px;">Subota</p>
+        <div
+          style="display: flex; flex-direction: column; justify-content: center; align-items: end; text-align: right; width: 100%;">
+          <span style="border-bottom: 1px solid; width: 100%; ">09:00 - 00:00</span>
+          <span>15:30 - 23:00</span>
+        </div>
+      </div>
+
+      <div style="display: flex; flex-direction: row; align-items: center; font-size: 14px; margin-bottom: 28px;">
+        <p style="border-bottom: 0; margin-bottom:0; width: unset; margin-right: 8px; font-size: 18px;">Nedjelja</p>
+        <div
+          style="display: flex; flex-direction: column; justify-content: center; align-items: end; text-align: right; width: 100%;">
+          <span style="border-bottom: 1px solid; width: 100%; ">10:00 - 23:00</span>
+          <span>15:30 - 23:00</span>
+        </div>
+      </div>
+
+      <!--
       <div id="week-days">
         <dt class="day-mon">Ponedijeljak <span class="price">09:00 - 23:00</span></dt>
         <dd></dd>
@@ -3616,7 +3786,7 @@
         <dt class="day-sun">Nedjelja <span class="price">10:00 - 23:00</span></dt>
         <dd></dd>
       </div>
-
+-->
 
 
       <div class="footer-info">
@@ -3646,7 +3816,7 @@
 
     </section>
 
-  
+
   </main>
 </body>
 
