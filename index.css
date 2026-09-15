@@ -2506,12 +2506,19 @@ padding: 80px 0 36px 0;
 }
 
 .rbo-title-wrap {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  justify-content: space-between;
-  border-bottom: 1px solid;
+
+display: flex;
+
+flex-direction: row;
+
+width: 100%;
+
+justify-content: space-between;
+
+border-bottom: 1px solid;
+
 }
+
 
 .rbo-number {
   font-size: 12px;
@@ -2534,7 +2541,7 @@ padding: 80px 0 36px 0;
   justify-content: end;
   align-items: center;
 
- border-right: 1px dashed #fff;
+ border-right: 1px dashed #a1a4a5;
   margin-right: 12px;
   padding-right: 4px;
 }
@@ -2546,25 +2553,34 @@ padding: 80px 0 36px 0;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+    color: #a1a4a5;
+
 }
 
 .rbo-meta {
   display: flex;
   justify-content: space-between;
+    color: #a1a4a5;
+
 }
 
 .rbo-time {
   font-weight: 900;
   font-size: 52px;
   line-height: 1;
+  color: var(--text-cinema);
 }
 
 .rbo-date {
   font-weight: 900;
+  color: var(--text-cinema);
+
 }
 
 .rbo-live {
   font-weight: 400;
+    color: #a1a4a5;
+
 }
 
 
@@ -2573,6 +2589,8 @@ padding: 80px 0 36px 0;
   font-weight: 300 !important;
   line-height: 1;
   justify-self: end;
+    color: var(--text-cinema);
+
 }
 
 .rbo-details {
