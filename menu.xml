@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<menu>
+  <section
+    id="hot-beverages"
+    title="TOPLI NAPITCI"
+    hours="DO 22h"
+  >
+
+    <category id="coffee" name="Kave">
+
+      <item id="espresso">
+        <name>Espresso</name>
+        <price>2,50€</price>
+        <price2>2,50€</price2>
+        <description />
+      </item>
+
+      <item id="americano">
+        <name>Americano</name>
+        <price>2,60€</price>
+        <price2>2,60€</price2>
+        <description />
+      </item>
+
+      <item id="small-macchiato">
+        <name>Mali Machiatto</name>
+        <price>2,70€</price>
+        <price2>2,70€</price2>
+        <description />
+      </item>
+
+      <item id="large-macchiato">
+        <name>Veliki Machiatto</name>
+        <price>3,00€</price>
+        <price2>3,00€</price2>
+        <description />
+      </item>
+
+      <item id="cappuccino">
+        <name>Cappucino</name>
+        <price>3,00€</price>
+        <price2>3,00€</price2>
+        <description />
+      </item>
+
+      <item id="small-whipped-cream">
+        <name>Mala sa Šlagom</name>
+        <price>2,80€</price>
+        <price2>2,80€</price2>
+        <description />
+      </item>
+
+      <item id="large-whipped-cream">
+        <name>Velika sa Šlagom</name>
+        <price>3,20€</price>
+        <price2>3,20€</price2>
+        <description />
+      </item>
+
+      <item id="white-coffee">
+        <name>Bijela Kava</name>
+        <price>3,30€</price>
+        <price2>3,30€</price2>
+        <description />
+      </item>
+
+      <item id="iced-coffee">
+        <name>Ledena Kava</name>
+        <price>3,30€</price>
+        <price2>3,30€</price2>
+        <description />
+      </item>
+
+    </category>
+
+
+    <category id="matcha" name="Matcha">
+
+      <item id="matcha-latte">
+        <name>Matcha Latte</name>
+        <price>3,80€</price>
+        <price2>3,80€</price2>
+        <description />
+      </item>
+
+      <item id="iced-matcha-latte">
+        <name>Ledena Matcha Latte</name>
+        <price>3,80€</price>
+        <price2>3,80€</price2>
+        <description />
+      </item>
+
+      <item id="strawberry-matcha-latte">
+        <name>Matcha Latte s Jagodom</name>
+        <price>4,50€</price>
+        <price2>4,50€</price2>
+        <description />
+      </item>
+
+    </category>
+
+
+    <category id="tea" name="Čaj">
+
+      <item id="mint-tea">
+        <name>Menta</name>
+        <price>3,50€</price>
+        <price2>3,50€</price2>
+        <description />
+      </item>
+
+      <item id="rosehip-tea">
+        <name>Šipak</name>
+        <price>3,50€</price>
+        <price2>3,50€</price2>
+        <description />
+      </item>
+
+      <item id="chamomile-tea">
+        <name>Kamilica</name>
+        <price>3,50€</price>
+        <price2>3,50€</price2>
+        <description />
+      </item>
+
+      <item id="green-tea">
+        <name>Zeleni</name>
+        <price>3,50€</price>
+        <price2>3,50€</price2>
+        <description />
+      </item>
+
+      <item id="black-tea">
+        <name>Crni</name>
+        <price>3,50€</price>
+        <price2>3,50€</price2>
+        <description />
+      </item>
+
+    </category>
+
+
+    <category id="instant-coffee" name="Instant Kava">
+
+      <item id="instant-classic">
+        <name>Classic</name>
+        <price>3,50€</price>
+        <price2>3,50€</price2>
+        <description />
+      </item>
+
+      <item id="instant-vanilla">
+        <name>Vanilija</name>
+        <price>3,50€</price>
+        <price2>3,50€</price2>
+        <description />
+      </item>
+
+      <item id="instant-chocolate">
+        <name>Čokolada</name>
+        <price>3,50€</price>
+        <price2>3,50€</price2>
+        <description />
+      </item>
+
+      <item id="instant-coconut">
+        <name>Kokos</name>
+        <price>3,50€</price>
+        <price2>3,50€</price2>
+        <description />
+      </item>
+
+    </category>
+
+
+    <category id="sweet-hot-chocolate" name="Slatko / Vruća Čokolada">
+
+      <item id="cocoa">
+        <name>Kakao</name>
+        <price>3,30€</price>
+        <price2>3,30€</price2>
+        <description />
+      </item>
+
+      <item id="vanilla-frappe">
+        <name>Frape od Vanilije</name>
+        <price>4,60€</price>
+        <price2>4,60€</price2>
+        <description>0,35l</description>
+      </item>
+
+      <item id="hot-chocolate">
+        <name>Vruća Čokolada</name>
+        <price>3,80€</price>
+        <price2>3,80€</price2>
+        <description>Obična</description>
+      </item>
+
+      <item id="coconut-hot-chocolate">
+        <name>Kokos</name>
+        <price>4,00€</price>
+        <price2>4,00€</price2>
+        <description>Vruća čokolada</description>
+      </item>
+
+      <item id="nougat-hot-chocolate">
+        <name>Nougat</name>
+        <price>4,00€</price>
+        <price2>4,00€</price2>
+        <description>Vruća čokolada</description>
+      </item>
+
+      <item id="white-hot-chocolate">
+        <name>Bijela</name>
+        <price>4,00€</price>
+        <price2>4,00€</price2>
+        <description>Vruća čokolada</description>
+      </item>
+
+      <item id="white-pistachio-hot-chocolate">
+        <name>Bijela &amp; Pistacio</name>
+        <price>4,00€</price>
+        <price2>4,00€</price2>
+        <description>Vruća čokolada</description>
+      </item>
+
+      <item id="cookie-caramel-hot-chocolate">
+        <name>Keks &amp; Karamela</name>
+        <price>4,00€</price>
+        <price2>4,00€</price2>
+        <description>Vruća čokolada</description>
+      </item>
+
+    </category>
+
+  </section>
+
+
+   <section id="rbo" title="Predstave">
+    <item id="manon">
+      <name>Manon</name>
+      <status>UŽIVO</status>
+      <schedule>
+        <day>Utorak</day>
+        <date>27.10.2026.</date>
+        <time>20:15</time>
+      </schedule>
+      <details>
+        <type>Balet</type>
+        <duration>3h 10min</duration>
+        <venue>Dvorana 1</venue>
+      </details>
+      <media>
+        <poster src="rbo/manon.webp" alt="Manon" />
+      </media>
+    </item>
+    <item id="carmen">
+      <name>Carmen</name>
+      <status>UŽIVO</status>
+      <schedule>
+        <day>Utorak</day>
+        <date>10.11.2026.</date>
+        <time>20:00</time>
+      </schedule>
+      <details>
+        <type>Opera</type>
+        <duration>3h 35min</duration>
+        <venue>Dvorana 1</venue>
+      </details>
+      <media>
+        <poster src="rbo/carmen.png" alt="Carmen" />
+      </media>
+    </item>
+    <item id="orasar">
+      <name>Orašar</name>
+      <status>TITL</status>
+      <schedule>
+        <day>Utorak</day>
+        <date>01.12.2026.</date>
+        <time>20:15</time>
+      </schedule>
+      <details>
+        <type>Balet</type>
+        <duration>2h 20min</duration>
+        <venue>Dvorana 1</venue>
+      </details>
+      <media>
+        <poster src="rbo/orasar.png" alt="Orašar" />
+      </media>
+    </item>
+    <item id="sumrak-bogova">
+      <name>Sumrak Bogova</name>
+      <status>UŽIVO</status>
+      <schedule>
+        <day>Srijeda</day>
+        <date>03.02.2027.</date>
+        <time>17:45</time>
+      </schedule>
+      <details>
+        <type>Opera</type>
+        <duration>5h 50min</duration>
+        <venue>Dvorana 1</venue>
+      </details>
+      <media>
+        <poster src="rbo/orasar.png" alt="Sumrak Bogova" />
+      </media>
+    </item>
+    <item id="cosi-fan-tutte">
+      <name>Cosi Fan Tutte</name>
+      <status>UŽIVO</status>
+      <schedule>
+        <day>Utorak</day>
+        <date>23.02.2027.</date>
+        <time>19:45</time>
+      </schedule>
+      <details>
+        <type>Opera</type>
+        <duration>3h 30min</duration>
+        <venue>Dvorana 1</venue>
+      </details>
+      <media>
+        <poster src="rbo/cosi.png" alt="Cosi Fan Tutte" />
+      </media>
+    </item>
+    <item id="alisa-u-zemlji-cudesa">
+      <name>Alisa u Zemlji Čudesa</name>
+      <status>TITL</status>
+      <schedule>
+        <day>Utorak</day>
+        <date>23.03.2027.</date>
+        <time>20:15</time>
+      </schedule>
+      <details>
+        <type>Balet</type>
+        <duration>2h 50min</duration>
+        <venue>Dvorana 1</venue>
+      </details>
+      <media>
+        <poster src="rbo/alice.png" alt="Alisa u zemlji čudesa" />
+      </media>
+    </item>
+    <item id="labude-jezero">
+      <name>Labuđe Jezero</name>
+      <status>UŽIVO</status>
+      <schedule>
+        <day>Četvrtak</day>
+        <date>22.04.2027.</date>
+        <time>20:15</time>
+      </schedule>
+      <details>
+        <type>Balet</type>
+        <duration>3h 25min</duration>
+        <venue>Dvorana 1</venue>
+      </details>
+      <media>
+        <poster src="rbo/swan.png" alt="Labuđe jezero" />
+      </media>
+    </item>
+    <item id="tosca">
+      <name>Tosca</name>
+      <status>UŽIVO</status>
+      <schedule>
+        <day>Srijeda</day>
+        <date>05.05.2027.</date>
+        <time>20:00</time>
+      </schedule>
+      <details>
+        <type>Opera</type>
+        <duration>3h 15min</duration>
+        <venue>Dvorana 1</venue>
+      </details>
+      <media>
+        <poster src="rbo/tosca.png" alt="Tosca" />
+      </media>
+    </item>
+    <item id="romeo-and-julija">
+      <name>Romeo &amp; Julija</name>
+      <status>TITL</status>
+      <schedule>
+        <day>Utorak</day>
+        <date>25.05.2027.</date>
+        <time>20:15</time>
+      </schedule>
+      <details>
+        <type>Balet</type>
+        <duration>2h 50min</duration>
+        <venue>Dvorana 1</venue>
+      </details>
+      <media>
+        <poster src="rbo/rij.png" alt="Romeo i Julija" />
+      </media>
+    </item>
+  </section>
+</menu>
