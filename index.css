@@ -618,7 +618,7 @@ dt {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  border-bottom: 1px solid var(--color-border);
+/*  border-bottom: 1px solid var(--color-border);*/
   line-height: 1.2;
 
 }
@@ -784,7 +784,7 @@ margin-bottom: -8px;
 }
 
 #alcohol dt {
-  border-bottom: 1px solid var(--color-border-alcohol);
+ /* border-bottom: 1px solid var(--color-border-alcohol);*/
 }
 
 #cocktails {
@@ -800,7 +800,7 @@ margin-bottom: -8px;
 
 
 #food dt {
-  border-bottom: 1px solid var(--color-border-food);
+ /* border-bottom: 1px solid var(--color-border-food);*/
 }
 
 #footer dt {
